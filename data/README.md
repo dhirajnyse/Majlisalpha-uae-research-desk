@@ -1,6 +1,6 @@
 # MajlisAlpha Data Pack
 
-MajlisAlpha UAE v11 loads its starter research universe, source workflow, and pilot operating data from this folder.
+MajlisAlpha UAE v20 loads its starter research universe, source workflow, and pilot operating data from this folder.
 
 ## Files
 
@@ -19,6 +19,15 @@ MajlisAlpha UAE v11 loads its starter research universe, source workflow, and pi
 - disclosure-alert-watchtower.json: official source routes, alert types, SLA rules, triage fields, review statuses, and launch gate.
 - analyst-mission-control.json: workflow lanes, priorities, task statuses, required fields, and publish-readiness gate.
 - answer-quality-lab.json: score bands, evaluation dimensions, failure reasons, and answer export gate.
+- customer-signal-room.json: pilot signal types, required fields, decision rules, metrics, and roadmap gate.
+- pilot-kpi-board.json: pilot health bands, KPI targets, scale gates, and review cadence.
+- compliance-audit-center.json: compliance control areas, audit events, required export fields, and launch gate.
+- source-refresh-scheduler.json: source cadences, freshness windows, refresh statuses, escalation rules, required fields, and launch gate.
+- corporate-action-tracker.json: corporate action event types, statuses, workflow, escalation rules, required fields, and launch gate.
+- ownership-pulse-monitor.json: ownership signal types, statuses, workflow, escalation rules, required fields, and launch gate.
+- macro-rates-radar.json: macro driver types, affected sectors, statuses, workflow, escalation rules, required fields, and launch gate.
+- aed-scenario-lab.json: scenario types, statuses, workflow, escalation rules, required fields, assumptions, and launch gate.
+- committee-pack-builder.json: committee pack sections, statuses, workflow, escalation rules, required fields, and launch gate.
 
 ## Source labels
 

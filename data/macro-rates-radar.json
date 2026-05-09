@@ -1,0 +1,93 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Macro & Rates Radar",
+  "purpose": "Track UAE macro and rates drivers so company answers can connect source-backed issuer evidence to rates, oil, AED/USD peg context, real estate liquidity, bank funding, inflation pressure, and government spending.",
+  "macroPolicy": "No macro read-through should be used in a brief unless driver, date, source route, affected tickers, assumption impact, owner, and reviewer status are captured.",
+  "driverTypes": [
+    {
+      "type": "rates and funding",
+      "sourceRoutes": ["central bank release", "earnings call transcript", "annual report", "bank results presentation"],
+      "watchFor": ["policy-rate movement", "deposit cost language", "net interest margin pressure", "mortgage demand", "refinancing risk"],
+      "affectedSectors": ["banks", "property", "utilities", "consumer finance"],
+      "researchImpact": ["discount rate", "funding cost", "loan growth", "property affordability"],
+      "escalateTo": ["Answer Quality Lab", "Peer Benchmark Matrix"]
+    },
+    {
+      "type": "oil and fiscal spending",
+      "sourceRoutes": ["macro note", "issuer presentation", "government project announcement", "annual report"],
+      "watchFor": ["oil-price regime", "government spending", "project awards", "energy capex", "infrastructure activity"],
+      "affectedSectors": ["energy", "utilities", "contracting", "banks", "real estate"],
+      "researchImpact": ["revenue visibility", "asset quality", "project pipeline", "confidence indicator"],
+      "escalateTo": ["Catalyst Calendar", "Portfolio Risk Radar"]
+    },
+    {
+      "type": "AED/USD peg and dollar strength",
+      "sourceRoutes": ["macro note", "annual report", "earnings call transcript", "rating note"],
+      "watchFor": ["USD strength", "imported inflation", "dollar funding", "tourism flows", "cross-border exposure"],
+      "affectedSectors": ["banks", "airlines", "tourism", "consumer", "property"],
+      "researchImpact": ["FX assumption", "margin pressure", "travel demand", "valuation discount rate"],
+      "escalateTo": ["Claim Trace Inspector", "Answer Quality Lab"]
+    },
+    {
+      "type": "real estate liquidity",
+      "sourceRoutes": ["developer results", "earnings call transcript", "market disclosure", "company presentation"],
+      "watchFor": ["off-plan sales", "handover timing", "collections", "mortgage pressure", "rental demand"],
+      "affectedSectors": ["property", "banks", "utilities", "consumer"],
+      "researchImpact": ["cash conversion", "backlog quality", "credit growth", "working capital"],
+      "escalateTo": ["Peer Benchmark Matrix", "Portfolio Risk Radar"]
+    },
+    {
+      "type": "inflation and operating costs",
+      "sourceRoutes": ["annual report", "earnings call transcript", "results presentation", "macro note"],
+      "watchFor": ["wage inflation", "input costs", "energy costs", "pricing power", "margin bridge"],
+      "affectedSectors": ["consumer", "utilities", "telecom", "airlines", "industrial"],
+      "researchImpact": ["margin risk", "pricing power", "cost pass-through", "scenario sensitivity"],
+      "escalateTo": ["Answer Quality Lab", "Corporate Action Tracker"]
+    }
+  ],
+  "driverStatuses": ["new", "confirmed", "watch", "stale", "blocked", "escalated", "reviewed"],
+  "requiredMacroFields": [
+    "driverId",
+    "driverType",
+    "sourceRoute",
+    "officialUrl",
+    "observationDate",
+    "affectedSectors",
+    "affectedTickers",
+    "assumptionImpact",
+    "evidenceSnippet",
+    "owner",
+    "reviewerStatus",
+    "nextAction"
+  ],
+  "workflow": [
+    "capture macro driver from official or issuer-backed source",
+    "classify driver type and observation date",
+    "map affected sectors and tickers",
+    "record valuation, margin, funding, liquidity, or risk impact",
+    "route material driver to peer, portfolio, quality, catalyst, or claim-trace workflow",
+    "mark macro read-through usable only after reviewer approval"
+  ],
+  "escalationRules": [
+    {
+      "condition": "rates or funding driver changes bank, property, or discount-rate language",
+      "action": "route to Answer Quality Lab and Peer Benchmark Matrix"
+    },
+    {
+      "condition": "oil, fiscal, or project-spending driver changes sector outlook",
+      "action": "send to Catalyst Calendar and Portfolio Risk Radar"
+    },
+    {
+      "condition": "macro driver is unsupported by source URL, date, or evidence snippet",
+      "action": "mark blocked and assign Source Refresh Scheduler owner"
+    },
+    {
+      "condition": "macro driver changes a customer-facing claim or valuation scenario",
+      "action": "open Claim Trace Inspector review before export"
+    }
+  ],
+  "launchGate": {
+    "readyRule": "Macro & Rates Radar is pilot-ready when every material macro driver has driver type, source route, official URL, observation date, affected tickers, assumption impact, owner, and reviewer status.",
+    "blockedRule": "If a macro read-through is missing source path, date, affected ticker mapping, or assumption impact, it cannot support an exported brief."
+  }
+}

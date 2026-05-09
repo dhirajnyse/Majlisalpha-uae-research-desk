@@ -1,0 +1,85 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Committee Pack Builder",
+  "purpose": "Package UAE research into review-ready decision packets that combine thesis, source provenance, scenario table, risk register, reviewer status, and compliance controls.",
+  "packPolicy": "No committee pack should be shared unless every material claim, assumption, risk, and recommendation-style sentence has source path, reviewer status, non-advisory framing, and unresolved gap handling.",
+  "packSections": [
+    {
+      "section": "decision narrative",
+      "inputs": ["answer brief", "memo review room", "decision journal", "customer question"],
+      "requiredFields": ["ticker", "question", "thesis", "whyNow", "decisionUse", "nonAdvisoryFrame"],
+      "qualityGate": "Narrative is clear, source-backed, and avoids buy/sell/hold language."
+    },
+    {
+      "section": "evidence appendix",
+      "inputs": ["Claim Trace Inspector", "Source Refresh Scheduler", "official source links", "imported documents"],
+      "requiredFields": ["claimId", "sourceRoute", "officialUrl", "evidenceDate", "sourceStatus", "refreshStatus"],
+      "qualityGate": "Every material claim has a source URL, date, snippet, and trace status."
+    },
+    {
+      "section": "scenario table",
+      "inputs": ["AED Scenario Lab", "Macro & Rates Radar", "Peer Benchmark Matrix"],
+      "requiredFields": ["scenarioType", "assumptionName", "assumptionValue", "sensitivityRange", "affectedMetrics", "reviewerStatus"],
+      "qualityGate": "Base, upside, downside, and stress cases carry assumption provenance and sensitivity ranges."
+    },
+    {
+      "section": "risk register",
+      "inputs": ["Portfolio Risk Radar", "Answer Quality Lab", "Compliance Audit Center", "Disclosure Alert Watchtower"],
+      "requiredFields": ["riskId", "riskType", "severity", "sourceStatus", "mitigation", "unresolvedGap"],
+      "qualityGate": "Known risk and weak-evidence areas are visible before any export."
+    },
+    {
+      "section": "review and export controls",
+      "inputs": ["Compliance Audit Center", "Answer Quality Lab", "Pilot KPI Board"],
+      "requiredFields": ["reviewer", "reviewDecision", "qualityScore", "disclaimerStatus", "exportTimestamp", "shareReadyStatus"],
+      "qualityGate": "Pack is share-ready only when reviewer, disclaimer, quality score, and unresolved gap status are complete."
+    }
+  ],
+  "packStatuses": ["draft", "source-check", "quality-review", "compliance-review", "committee-ready", "blocked", "export-ready"],
+  "requiredPackFields": [
+    "packId",
+    "ticker",
+    "question",
+    "briefId",
+    "sourceList",
+    "scenarioList",
+    "riskRegister",
+    "claimTraceStatus",
+    "answerQualityScore",
+    "reviewerStatus",
+    "nonAdvisoryDisclaimer",
+    "unresolvedGaps",
+    "exportTimestamp",
+    "nextAction"
+  ],
+  "workflow": [
+    "select brief, ticker, and committee question",
+    "pull source-backed claims and official URLs",
+    "attach AED scenarios and sensitivity ranges",
+    "attach risk register, macro drivers, ownership signals, and corporate actions",
+    "run answer quality and compliance checks",
+    "mark pack committee-ready only after reviewer approval"
+  ],
+  "escalationRules": [
+    {
+      "condition": "pack contains source-blocked or stale evidence",
+      "action": "route to Source Refresh Scheduler and keep pack blocked"
+    },
+    {
+      "condition": "scenario table contains unreviewed assumptions",
+      "action": "route to AED Scenario Lab and Answer Quality Lab"
+    },
+    {
+      "condition": "risk register omits a known unresolved gap",
+      "action": "route to Portfolio Risk Radar and Claim Trace Inspector"
+    },
+    {
+      "condition": "pack language appears advisory",
+      "action": "route to Compliance Audit Center and require non-advisory rewrite"
+    }
+  ],
+  "launchGate": {
+    "readyRule": "Committee Pack Builder is pilot-ready when each pack has source list, scenario table, risk register, claim trace status, quality score, reviewer status, disclaimer, unresolved gaps, and export timestamp.",
+    "blockedRule": "If any material claim, assumption, risk, or scenario lacks source provenance or reviewer status, the pack cannot be marked committee-ready."
+  }
+}

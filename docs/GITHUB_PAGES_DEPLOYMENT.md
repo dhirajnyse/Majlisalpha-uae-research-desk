@@ -63,7 +63,16 @@ After deployment:
 10. Open `Disclosure alerts`.
 11. Open `Mission control`.
 12. Open `Quality lab`.
-13. Open one official source link in a new tab.
-14. Export Markdown or PDF from a generated brief.
+13. Open `Customer signals`.
+14. Open `Pilot KPI`.
+15. Open `Compliance audit`.
+16. Open `Refresh scheduler`.
+17. Open `Corporate actions`.
+18. Open `Ownership pulse`.
+19. Open `Macro radar`.
+20. Open `Scenario lab`.
+21. Open `Committee pack`.
+22. Open one official source link in a new tab.
+23. Export Markdown or PDF from a generated brief.
 
 If the public URL returns 404 after a green Pages build, wait two to five minutes and hard refresh. If it still fails, check repository name casing and Pages branch/root settings.

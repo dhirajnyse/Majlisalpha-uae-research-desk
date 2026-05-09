@@ -1,0 +1,96 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Corporate Action Tracker",
+  "purpose": "Track UAE corporate actions from official disclosures so dividends, board decisions, AGMs, rights issues, capital changes, and trading status events become source-backed research inputs.",
+  "eventPolicy": "No corporate action should be used in a brief unless the event type, official URL, material dates, issuer impact, owner, and reviewer status are captured.",
+  "eventTypes": [
+    {
+      "type": "cash dividend",
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "issuer investor relations"],
+      "requiredDates": ["announcementDate", "recordDate", "exDate", "paymentDate"],
+      "modelImpact": ["dividend yield", "cash return", "income screen", "coverage check"],
+      "escalateTo": ["Catalyst Calendar", "Claim Trace Inspector"]
+    },
+    {
+      "type": "bonus share",
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "issuer investor relations"],
+      "requiredDates": ["announcementDate", "approvalDate", "recordDate", "effectiveDate"],
+      "modelImpact": ["share count", "per-share metrics", "historical comparability"],
+      "escalateTo": ["Peer Benchmark Matrix", "Answer Quality Lab"]
+    },
+    {
+      "type": "rights issue",
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "SCA public notices"],
+      "requiredDates": ["announcementDate", "subscriptionStart", "subscriptionEnd", "allocationDate"],
+      "modelImpact": ["dilution", "capital raise", "balance sheet", "ownership impact"],
+      "escalateTo": ["Portfolio Risk Radar", "Compliance Audit Center"]
+    },
+    {
+      "type": "board or shareholder meeting",
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "issuer investor relations"],
+      "requiredDates": ["meetingDate", "agendaDate", "approvalDate"],
+      "modelImpact": ["governance", "dividend approval", "capital action approval", "management signal"],
+      "escalateTo": ["Analyst Mission Control", "Disclosure Alert Watchtower"]
+    },
+    {
+      "type": "trading halt or resumption",
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "Nasdaq Dubai CANDI"],
+      "requiredDates": ["haltDate", "resumptionDate", "clarificationDate"],
+      "modelImpact": ["liquidity risk", "event risk", "customer alert", "research hold"],
+      "escalateTo": ["Disclosure Alert Watchtower", "Compliance Audit Center"]
+    },
+    {
+      "type": "capital increase or reduction",
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "SCA public notices", "issuer investor relations"],
+      "requiredDates": ["announcementDate", "approvalDate", "effectiveDate"],
+      "modelImpact": ["share capital", "book value", "leverage", "valuation assumptions"],
+      "escalateTo": ["Claim Trace Inspector", "Answer Quality Lab"]
+    }
+  ],
+  "eventStatuses": ["announced", "proposed", "approved", "effective", "paid", "cancelled", "blocked", "needs-review"],
+  "requiredActionFields": [
+    "eventId",
+    "issuer",
+    "ticker",
+    "eventType",
+    "officialUrl",
+    "sourceRoute",
+    "announcementDate",
+    "effectiveDate",
+    "economicImpact",
+    "affectedBriefs",
+    "owner",
+    "reviewerStatus",
+    "nextAction"
+  ],
+  "workflow": [
+    "capture event from official disclosure",
+    "classify event type and material dates",
+    "link source URL and issuer ticker",
+    "record expected model or risk impact",
+    "route to catalyst, alert, claim trace, or quality review",
+    "mark action research-ready only after reviewer approval"
+  ],
+  "escalationRules": [
+    {
+      "condition": "event affects dividend, share count, capital structure, or trading status",
+      "action": "route to Disclosure Alert Watchtower and Catalyst Calendar"
+    },
+    {
+      "condition": "event has missing official URL or incomplete date fields",
+      "action": "mark blocked and assign Source Refresh Scheduler owner"
+    },
+    {
+      "condition": "event changes valuation or peer metrics",
+      "action": "open Answer Quality Lab review before export"
+    },
+    {
+      "condition": "event creates unresolved investment-advice boundary risk",
+      "action": "send to Compliance Audit Center and keep customer export blocked"
+    }
+  ],
+  "launchGate": {
+    "readyRule": "Corporate Action Tracker is pilot-ready when every material action has event type, official URL, dates, ticker, economic impact, owner, and reviewer status.",
+    "blockedRule": "If a corporate action is missing official source path or material dates, it cannot support an exported brief."
+  }
+}

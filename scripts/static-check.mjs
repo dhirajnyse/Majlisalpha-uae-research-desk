@@ -20,7 +20,7 @@ const manifest = read("site.webmanifest");
 assert(index.includes("Content-Security-Policy"), "index.html is missing the CSP meta tag.");
 assert(index.includes("UAE readiness gate v1"), "index.html does not show the UAE readiness gate marker.");
 assert(!/\son[a-z]+\s*=/i.test(index), "index.html contains an inline event handler.");
-assert(app.includes('const DATA_VERSION = "20260509-uae-11";'), "app.js DATA_VERSION is not aligned with UAE v11.");
+assert(app.includes('const DATA_VERSION = "20260509-uae-21";'), "app.js DATA_VERSION is not aligned with UAE v21.");
 assert(app.includes("normalizeExternalUrl"), "app.js is missing source URL normalization.");
 assert(app.includes("MAX_IMPORT_FILE_BYTES"), "app.js is missing import size limits.");
 assert(app.includes("STARTER_PACK_TICKERS"), "app.js is missing the starter pack list.");
@@ -36,6 +36,15 @@ assert(index.includes("claim-trace") && index.includes("Claim Trace Inspector"),
 assert(index.includes("disclosure-alerts") && index.includes("Disclosure Alert Watchtower"), "index.html is missing the Disclosure Alert Watchtower section.");
 assert(index.includes("analyst-mission-control") && index.includes("Analyst Mission Control"), "index.html is missing the Analyst Mission Control section.");
 assert(index.includes("answer-quality-lab") && index.includes("Answer Quality Lab"), "index.html is missing the Answer Quality Lab section.");
+assert(index.includes("customer-signal-room") && index.includes("Customer Signal Room"), "index.html is missing the Customer Signal Room section.");
+assert(index.includes("pilot-kpi-board") && index.includes("Pilot KPI Board"), "index.html is missing the Pilot KPI Board section.");
+assert(index.includes("compliance-audit") && index.includes("Compliance Audit Center"), "index.html is missing the Compliance Audit Center section.");
+assert(index.includes("source-refresh") && index.includes("Source Refresh Scheduler"), "index.html is missing the Source Refresh Scheduler section.");
+assert(index.includes("corporate-actions") && index.includes("Corporate Action Tracker"), "index.html is missing the Corporate Action Tracker section.");
+assert(index.includes("ownership-pulse") && index.includes("Ownership Pulse Monitor"), "index.html is missing the Ownership Pulse Monitor section.");
+assert(index.includes("macro-rates-radar") && index.includes("Macro &amp; Rates Radar"), "index.html is missing the Macro & Rates Radar section.");
+assert(index.includes("aed-scenario-lab") && index.includes("AED Scenario Lab"), "index.html is missing the AED Scenario Lab section.");
+assert(index.includes("committee-pack-builder") && index.includes("Committee Pack Builder"), "index.html is missing the Committee Pack Builder section.");
 assert(index.includes("https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/"), "index.html is missing the case-correct GitHub Pages URL.");
 assert(manifest.includes("/Majlisalpha-uae-research-desk/"), "site.webmanifest start_url is missing the case-correct GitHub Pages path.");
 assert(index.includes("brief-workbench") && app.includes("renderBriefWorkbench"), "app.js or index.html is missing the evidence-to-brief workbench.");
@@ -77,6 +86,15 @@ for (const required of [
   "docs/DISCLOSURE_ALERT_WATCHTOWER.md",
   "docs/ANALYST_MISSION_CONTROL.md",
   "docs/ANSWER_QUALITY_LAB.md",
+  "docs/CUSTOMER_SIGNAL_ROOM.md",
+  "docs/PILOT_KPI_BOARD.md",
+  "docs/COMPLIANCE_AUDIT_CENTER.md",
+  "docs/SOURCE_REFRESH_SCHEDULER.md",
+  "docs/CORPORATE_ACTION_TRACKER.md",
+  "docs/OWNERSHIP_PULSE_MONITOR.md",
+  "docs/MACRO_RATES_RADAR.md",
+  "docs/AED_SCENARIO_LAB.md",
+  "docs/COMMITTEE_PACK_BUILDER.md",
   "docs/GITHUB_PAGES_DEPLOYMENT.md"
 ]) {
   assert(read(required).trim().length > 200, required + " is missing or too short.");

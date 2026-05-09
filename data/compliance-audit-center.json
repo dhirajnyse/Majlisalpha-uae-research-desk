@@ -1,0 +1,78 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Compliance Audit Center",
+  "purpose": "Keep research outputs source-backed, reviewable, non-advisory, and safe for pilot export by tracking disclaimers, source provenance, reviewer approvals, upload safety, and audit trails.",
+  "compliancePolicy": "No exported brief should be shared unless disclaimer, source path, claim trace, answer quality, reviewer status, and unresolved gaps are visible.",
+  "controlAreas": [
+    {
+      "area": "research boundary",
+      "goal": "Make clear that MajlisAlpha is research software, not investment advice.",
+      "checks": [
+        "non-advisory disclaimer visible on exports",
+        "valuation scenarios labelled as assumptions",
+        "no buy, sell, or hold instruction presented as advice"
+      ]
+    },
+    {
+      "area": "source provenance",
+      "goal": "Keep source identity attached to every material output.",
+      "checks": [
+        "official URL recorded",
+        "issuer, period, document type, and source date captured",
+        "synthetic versus REAL status shown"
+      ]
+    },
+    {
+      "area": "review audit trail",
+      "goal": "Record who reviewed the source, claim, answer, and export.",
+      "checks": [
+        "Claim Trace Inspector status captured",
+        "Answer Quality Lab score captured",
+        "reviewer decision and timestamp recorded"
+      ]
+    },
+    {
+      "area": "file and source intake safety",
+      "goal": "Treat uploads and pasted source material like production data.",
+      "checks": [
+        "file size and type limits enforced",
+        "unknown provenance flagged",
+        "duplicate and sensitive-source review required"
+      ]
+    },
+    {
+      "area": "export controls",
+      "goal": "Prevent weak or unsupported research from leaving the desk.",
+      "checks": [
+        "unresolved gaps listed",
+        "source-blocked claims excluded or labelled",
+        "export audit record created"
+      ]
+    }
+  ],
+  "auditEvents": [
+    "source imported",
+    "source marked REAL",
+    "claim reviewed",
+    "answer quality scored",
+    "memo approved",
+    "brief exported",
+    "customer signal recorded",
+    "mission closed"
+  ],
+  "requiredExportFields": [
+    "briefId",
+    "ticker",
+    "sourceList",
+    "claimTraceStatus",
+    "answerQualityScore",
+    "reviewerStatus",
+    "nonAdvisoryDisclaimer",
+    "unresolvedGaps",
+    "exportTimestamp"
+  ],
+  "launchGate": {
+    "readyRule": "Compliance Audit Center is pilot-ready when every exported brief carries source provenance, non-advisory disclaimer, reviewer status, quality score, claim trace status, and export timestamp.",
+    "blockedRule": "If an output contains source-blocked material, missing disclaimer, or unreviewed claims, it must not be marked share-ready."
+  }
+}

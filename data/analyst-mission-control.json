@@ -1,5 +1,5 @@
 {
-  "version": "20260509-uae-11",
+  "version": "20260509-uae-20",
   "name": "MajlisAlpha UAE Analyst Mission Control",
   "purpose": "Convert source alerts, claim gaps, peer checks, portfolio risks, and pilot requests into owner-assigned research tasks with priority, SLA, and publish readiness.",
   "missionPolicy": "No active research task should exist without owner, workflow lane, priority, source state, reviewer state, due window, and next action.",

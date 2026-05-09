@@ -1,5 +1,5 @@
 {
-  "version": "20260509-uae-11",
+  "version": "20260509-uae-20",
   "name": "MajlisAlpha UAE Claim Trace Inspector",
   "purpose": "Create a claim-level audit workflow so each brief can show its claim, source snippet, official URL, reviewer status, and unresolved evidence gap.",
   "tracePolicy": "No material claim should be exported as committee-ready unless it has a trace status and a reviewer can inspect the evidence path.",

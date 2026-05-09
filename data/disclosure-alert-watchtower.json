@@ -1,5 +1,5 @@
 {
-  "version": "20260509-uae-11",
+  "version": "20260509-uae-20",
   "name": "MajlisAlpha UAE Disclosure Alert Watchtower",
   "purpose": "Convert official UAE market notices into assigned research actions with source route, alert type, owner, SLA, and next workflow step.",
   "alertPolicy": "No disclosure alert is actionable unless the official source route, issuer, event type, priority, owner, and next step are recorded.",

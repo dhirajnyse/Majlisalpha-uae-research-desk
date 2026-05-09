@@ -1,5 +1,5 @@
 {
-  "version": "20260509-uae-11",
+  "version": "20260509-uae-20",
   "name": "MajlisAlpha UAE Answer Quality Lab",
   "purpose": "Evaluate each generated research answer before export using source coverage, UAE specificity, claim trace, valuation logic, risk balance, and user value.",
   "qualityPolicy": "An answer should not be exported as pilot-ready unless it clears minimum scores for source coverage, claim trace, math logic, and reviewer readiness.",

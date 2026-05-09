@@ -1,0 +1,89 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Pilot KPI Board",
+  "purpose": "Track whether the UAE pilot is healthy enough to scale by measuring activation, source readiness, answer quality, retention, paid intent, trust friction, and roadmap focus.",
+  "kpiPolicy": "Do not scale the pilot unless usage, trust, source readiness, and paid intent move together.",
+  "healthBands": [
+    {
+      "band": "green",
+      "meaning": "Scale carefully; trust and demand are visible together.",
+      "rule": "Meets activation, answer quality, source readiness, repeat usage, and paid-intent thresholds."
+    },
+    {
+      "band": "yellow",
+      "meaning": "Keep interviewing and fix bottlenecks.",
+      "rule": "Strong interest but weak repeat usage, trust, or paid intent."
+    },
+    {
+      "band": "red",
+      "meaning": "Do not scale.",
+      "rule": "Users praise the demo but do not bring real questions, sources, or payment conversations."
+    }
+  ],
+  "metrics": [
+    {
+      "metric": "pilot users activated",
+      "target": 10,
+      "definition": "Users who ask a real UAE market question and complete at least one answer workflow."
+    },
+    {
+      "metric": "real questions answered",
+      "target": 50,
+      "definition": "Questions tied to an issuer, source need, portfolio decision, or catalyst event."
+    },
+    {
+      "metric": "REAL source packs",
+      "target": 15,
+      "definition": "Uploaded or pasted source records with official URL, issuer, period, date, and text."
+    },
+    {
+      "metric": "publish-ready answer rate",
+      "targetPercent": 70,
+      "definition": "Answers that pass Answer Quality Lab and Claim Trace Inspector thresholds."
+    },
+    {
+      "metric": "repeat usage rate",
+      "targetPercent": 40,
+      "definition": "Activated users who ask a second question, export a brief, or save a watchlist."
+    },
+    {
+      "metric": "paid-intent conversations",
+      "target": 3,
+      "definition": "Users asking about price, access, invoice, team plan, or keeping the pilot."
+    },
+    {
+      "metric": "trust objections resolved",
+      "targetPercent": 80,
+      "definition": "Specific source, trace, or confidence objections resolved with visible workflow changes."
+    }
+  ],
+  "scaleGate": {
+    "green": [
+      "10 activated pilot users",
+      "50 real questions",
+      "15 REAL source packs",
+      "70% publish-ready answer rate",
+      "40% repeat usage",
+      "3 paid-intent conversations",
+      "no unresolved high-severity trust failure"
+    ],
+    "yellow": [
+      "usage without paid intent",
+      "paid interest but weak source readiness",
+      "high praise but low repeat usage",
+      "quality scores below export threshold"
+    ],
+    "red": [
+      "users do not bring real questions",
+      "source uploads are absent",
+      "answers fail trace or quality gates",
+      "pilot feedback is mostly compliments without behavior"
+    ]
+  },
+  "reviewCadence": [
+    "Review KPIs every three pilot days.",
+    "Open Mission Control tasks for any yellow or red metric.",
+    "Do not add new features until trust and usage bottlenecks are explained.",
+    "Use Customer Signal Room evidence before changing pricing or roadmap."
+  ]
+}

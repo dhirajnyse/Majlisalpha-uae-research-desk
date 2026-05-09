@@ -1,5 +1,5 @@
 {
-  "version": "20260509-uae-11",
+  "version": "20260509-uae-20",
   "name": "MajlisAlpha UAE Portfolio Risk Radar",
   "purpose": "Help analysts triage UAE watchlists by concentration, catalyst pressure, evidence freshness, liquidity sensitivity, and required next action.",
   "riskPolicy": "A portfolio alert is actionable only when exposure, source status, catalyst context, and next analyst action are recorded together.",
