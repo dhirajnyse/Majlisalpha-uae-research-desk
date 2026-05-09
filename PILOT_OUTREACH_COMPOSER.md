@@ -1,49 +1,19 @@
-# MajlisAlpha Peer Benchmark Matrix
+# Pilot Demo Script Center
 
-The Peer Benchmark Matrix gives MajlisAlpha a repeatable comparison workflow. The goal is not to produce a simple ranking table. The goal is to show why one UAE issuer looks stronger, weaker, cheaper, riskier, or more durable than another using source-backed evidence.
+The Pilot Demo Script Center gives MajlisAlpha a repeatable way to run live user tests. Instead of improvising every call, the operator can follow one proof path: confirm deployment health, ask a real UAE market question, show the citation trail, prove exports work, capture the trust objection, and end with a concrete paid-intent or follow-up action.
 
-## Peer Groups
+## Demo Flow
 
-The matrix starts with four groups:
+Start every demo by opening Pages Doctor, Live Smoke Test, and Release Handoff. This confirms the live URL, version, JSON packs, embedded style fallback, and browser runtime are healthy before a user sees the desk. Then ask one live question in the main desk, preferably one the user brings themselves. If the user has no question ready, use a simple comparison such as FAB versus ENBD under higher deposit-cost pressure.
 
-- UAE Banks: FAB, ENBD, and DIB.
-- Property Developers: EMAAR and ALDAR.
-- Energy and Utilities: ADNOCGAS and DEWA.
-- Platform and Operating Names: IHC, EAND, and AIRARABIA.
+After the answer appears, move through the citation cards and Brief Workbench. The operator should explain which evidence is starter, imported, or verified REAL source evidence. If the answer is still starter-only, the next action is to collect the relevant annual report, earnings call note, exchange disclosure, or ownership update before treating the demo as validated.
 
-Each group has its own metric set. Banks should not be judged with property-developer metrics, and platform names should not be forced into a clean single-factor ranking.
+## Feedback Capture
 
-## Source-First Ranking Rule
+The most important moment is the trust question: ask what would stop the user from using or sharing the brief. Record the answer in Memo Review Room, Decision Journal, or Pilot Session Command Center. Good objections include missing official links, unclear source date, insufficient issuer coverage, valuation assumptions, export format, or a need for team review.
 
-No peer rank should be published unless the analyst records:
+Close the loop by pre-filling the Pilot Session form from the demo script. Record the user or account, segment, real question, tickers, source status, objection, paid intent, and next step. Then move the account into Follow-Up Board, Outreach Composer, or Conversion Pipeline so the demo becomes an operating record rather than a pleasant conversation.
 
-- Peer group.
-- Ticker.
-- Metric.
-- Reporting period.
-- Official URL.
-- Source snippet.
-- Analyst reason.
-- Review status.
+## Success Standard
 
-This keeps the matrix from becoming a black-box score. Users should always be able to move from the peer conclusion back to the source.
-
-## Output Types
-
-Use the matrix to create:
-
-- Peer comparison briefs.
-- Committee-ready rank tables.
-- Valuation assumption cross-checks.
-- Risk memos across a peer group.
-- Source-gap lists before publishing.
-
-## Daily Use
-
-Start with one question, not a full table. For example: "Which UAE bank handles high deposit rates better?" Then pull the relevant source lines for NIM, funding cost, asset quality, and capital language before assigning any rank.
-
-If the answer cannot cite the source text, mark the cell as source-blocked. A blank or blocked cell is better than a confident unsupported rank.
-
-## Launch Gate
-
-The matrix is ready for pilot users when at least two peer groups have reviewed comparison briefs, each with cited metrics, source snippets, and a clear reviewer decision. If the matrix has attractive cards but no traceable source logic, keep it in demo mode.
+A strong demo has a green smoke test, a real user question, visible citations, a usable export, one trust objection, and one next commercial action. Compliments are useful but not enough. The pilot is learning only when the workflow produces repeat questions, source requests, export needs, pricing reactions, and clear follow-up actions.

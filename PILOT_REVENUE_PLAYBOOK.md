@@ -1,33 +1,31 @@
-# MajlisAlpha Pilot Command Center
+# Pilot Follow-Up Board
 
-The Pilot Command Center is the operating plan for turning MajlisAlpha from a strong static prototype into a UAE research workflow that can be tested with real evidence.
+The Pilot Follow-Up Board turns MajlisAlpha demo conversations into an operating queue for the next user touch. It sits after the Pilot Session Command Center because a session is only useful when it produces a clear next action, source task, pricing test, or conversion blocker.
 
-## Sprint Goal
+## Purpose
 
-Make `FAB`, `EMAAR`, and `ADNOCGAS` credible enough for pilot review. The desk does not need broad coverage yet. It needs a narrow, trusted source base and a repeatable review path.
+The board captures the minimum information needed to keep UAE pilot momentum moving:
 
-## Seven-Day Sprint
+- Account or user who needs the next touch.
+- Stage, from new lead through demo done, source needed, proposal sent, paid pilot, or closed lost.
+- Priority, so source and trust blockers do not get buried.
+- Offer lane, including discovery, AED 199 pilot, AED 399 desk, or team invoice.
+- Next date, blocker, next message, and session note.
 
-1. FAB: collect the annual report, latest results, and one ADX disclosure.
-2. EMAAR: collect the annual report, latest results, and one DFM disclosure.
-3. ADNOCGAS: collect the annual report, latest results, and one dividend or project disclosure.
-4. Run Source Intake Doctor on every pasted record.
-5. Generate one risk memo packet for each priority issuer.
-6. Save a human review and decision journal entry for each memo.
-7. Run the launch gate and GitHub Pages smoke test.
+## Operating Rule
 
-The structured sprint data is stored in `data/pilot-sprint.json`.
+Every meaningful pilot call should produce one follow-up record. If a user asks for official ADX or DFM evidence, the next action should name the required source. If a user shows pricing intent, the offer lane should be explicit. If the user is not a fit, the stage should move to closed lost so the open queue stays honest.
 
-## Launch Gate
+## Readiness Signals
 
-MajlisAlpha should be called pilot-ready only when:
+The summary tiles are designed for fast launch review:
 
-- Static checks pass.
-- Each priority issuer has at least three REAL source records.
-- Each priority issuer has one reviewed memo packet.
-- No memo presents synthetic evidence as production-grade research.
-- The GitHub Pages public URL passes the smoke test.
+- Open follow-ups: active accounts still needing action.
+- Due now: overdue or due-today items.
+- High priority: trust, source, or conversion-sensitive steps.
+- Conversion lane: proposal sent or paid pilot stages.
+- Source needed: blockers caused by missing official UAE evidence.
 
-## Next Product Move
+## Export
 
-After the first sprint, add a small backend only for ingestion and audit storage. Keep the current GitHub Pages shell as the product surface until the source workflow and pricing signal are proven.
+The board can export JSON for a structured pilot archive or copy a Markdown follow-up report for a daily sales/research standup. These records are local browser workflow notes and are not investment advice.

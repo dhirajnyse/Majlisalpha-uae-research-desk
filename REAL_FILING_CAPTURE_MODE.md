@@ -1,31 +1,31 @@
-# Pilot Follow-Up Board
+# Pilot Outreach Composer
 
-The Pilot Follow-Up Board turns MajlisAlpha demo conversations into an operating queue for the next user touch. It sits after the Pilot Session Command Center because a session is only useful when it produces a clear next action, source task, pricing test, or conversion blocker.
+The Pilot Outreach Composer turns MajlisAlpha follow-up records into usable next-touch drafts for WhatsApp, email, LinkedIn, and call scripts. It sits after the Follow-Up Board so the product can move from logged learning to concrete pilot conversion activity.
 
-## Purpose
+## Inputs
 
-The board captures the minimum information needed to keep UAE pilot momentum moving:
+Each draft is built from practical pilot context:
 
-- Account or user who needs the next touch.
-- Stage, from new lead through demo done, source needed, proposal sent, paid pilot, or closed lost.
-- Priority, so source and trust blockers do not get buried.
-- Offer lane, including discovery, AED 199 pilot, AED 399 desk, or team invoice.
-- Next date, blocker, next message, and session note.
+- Account or user name.
+- Outreach channel and tone.
+- Offer lane, such as discovery, AED 199 pilot, AED 399 desk, or team invoice.
+- Evidence hook that explains why MajlisAlpha is useful now.
+- Blocker to resolve before the next conversation.
+- Next action and close.
 
 ## Operating Rule
 
-Every meaningful pilot call should produce one follow-up record. If a user asks for official ADX or DFM evidence, the next action should name the required source. If a user shows pricing intent, the offer lane should be explicit. If the user is not a fit, the stage should move to closed lost so the open queue stays honest.
+Outreach should stay anchored to what the user actually tested. If the blocker is source trust, the message should offer an official-source review. If the signal is paid intent, the close can ask for a paid pilot. If the user only asked one question, the close should ask for a second real UAE market question before pushing price.
 
-## Readiness Signals
+## Channels
 
-The summary tiles are designed for fast launch review:
+The composer supports four formats:
 
-- Open follow-ups: active accounts still needing action.
-- Due now: overdue or due-today items.
-- High priority: trust, source, or conversion-sensitive steps.
-- Conversion lane: proposal sent or paid pilot stages.
-- Source needed: blockers caused by missing official UAE evidence.
+- WhatsApp for short, warm, direct follow-ups.
+- Email for structured source-backed recap and next step.
+- LinkedIn for concise professional reconnects.
+- Call script for a clean spoken agenda.
 
-## Export
+## Review
 
-The board can export JSON for a structured pilot archive or copy a Markdown follow-up report for a daily sales/research standup. These records are local browser workflow notes and are not investment advice.
+Drafts can be copied, exported as JSON, or cleared from local browser storage. These are product and sales workflow notes, not investment advice, and should not imply a recommendation about any UAE security.

@@ -1,7 +1,9 @@
-# MajlisAlpha Launch Control Room
+# MajlisAlpha Launch Roadmap
 
-The Launch Control Room answers one question: what must be true before this UAE desk can be called launch-ready?
+Phase 1 proves that cited UAE-market answers are useful. Replace synthetic records for FAB, EMAAR, and ADNOCGAS with verified annual reports, results, earnings-call or presentation material, ownership updates, and exchange disclosures.
 
-It measures REAL source coverage, starter-company readiness for FAB, EMAAR, and ADNOCGAS, review-log depth, current memo quality, source intake hygiene, and post-upload test completion. It ranks companies by required source readiness and exports a launch audit pack for manual release tracking.
+Phase 2 adds backend ingestion for ADX, DFM, Nasdaq Dubai CANDI, SCA, and company IR pages, plus reviewed source storage and audit logs.
 
-A launch-ready build should have official ADX/DFM/Nasdaq Dubai/company IR sources for the starter pack, a passed static check, at least one reviewed memo packet, and no demo-only evidence presented as investment-grade research.
+Phase 3 adds disclosure refresh jobs, alerts, UAE market data connectors, subscription plans, account management, richer model-backed answers, and portfolio watchlists.
+
+The product promise remains simple: ask a question about a covered UAE issuer and receive a cited answer with source sections, management tone, risk flags, and AED valuation read-through.

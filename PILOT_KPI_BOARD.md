@@ -1,54 +1,49 @@
-# MajlisAlpha Ownership Pulse Monitor
+# MajlisAlpha Peer Benchmark Matrix
 
-Ownership Pulse Monitor tracks who owns the UAE signal before the market story changes. It turns major-holder movement, government-linked ownership, free float, foreign-ownership room, insider activity, and strategic stake changes into source-backed research events.
+The Peer Benchmark Matrix gives MajlisAlpha a repeatable comparison workflow. The goal is not to produce a simple ranking table. The goal is to show why one UAE issuer looks stronger, weaker, cheaper, riskier, or more durable than another using source-backed evidence.
 
-## Purpose
+## Peer Groups
 
-Ownership can change the investment context even when earnings have not changed. A new strategic holder, a stake reduction, foreign-room pressure, free-float change, or insider movement can affect liquidity, governance, index relevance, peer comparison, and risk language.
+The matrix starts with four groups:
 
-The monitor records each ownership signal as an auditable item:
+- UAE Banks: FAB, ENBD, and DIB.
+- Property Developers: EMAAR and ALDAR.
+- Energy and Utilities: ADNOCGAS and DEWA.
+- Platform and Operating Names: IHC, EAND, and AIRARABIA.
 
-- issuer and ticker
-- holder name
-- holder category
-- stake percent
-- change direction
-- effective date
-- official URL
-- source route
-- research impact
-- affected answers
-- owner
-- reviewer status
-- next action
+Each group has its own metric set. Banks should not be judged with property-developer metrics, and platform names should not be forced into a clean single-factor ranking.
 
-## Signal Types
+## Source-First Ranking Rule
 
-- Major holder change: new substantial holders, stake increases, stake reductions, strategic investor entries, and large exits.
-- Government-linked ownership: sovereign, state-linked, strategic sector, or policy-exposed ownership.
-- Foreign ownership room: limits, available room, cap changes, and foreign-investor access signals.
-- Insider or related-party movement: director, executive, related-party, treasury-share, and governance-linked changes.
-- Free float and index relevance: tradable float, share-count changes, index eligibility, and liquidity screen effects.
+No peer rank should be published unless the analyst records:
 
-## Workflow
+- Peer group.
+- Ticker.
+- Metric.
+- Reporting period.
+- Official URL.
+- Source snippet.
+- Analyst reason.
+- Review status.
 
-1. Capture the signal from an official source route.
-2. Classify holder category and change direction.
-3. Record stake level, effective date, and official URL.
-4. Assess free-float, foreign-room, governance, liquidity, valuation, or risk impact.
-5. Route material signals to Disclosure Alert Watchtower, Portfolio Risk Radar, Peer Benchmark Matrix, Claim Trace Inspector, Answer Quality Lab, or Compliance Audit Center.
-6. Mark the ownership claim usable only after reviewer approval.
+This keeps the matrix from becoming a black-box score. Users should always be able to move from the peer conclusion back to the source.
 
-## Escalation Rules
+## Output Types
 
-- Material major-holder changes go to Disclosure Alert Watchtower and Claim Trace Inspector.
-- Foreign ownership room or free-float changes go to Peer Benchmark Matrix and Portfolio Risk Radar.
-- Insider, director, executive, or related-party holding changes go to Compliance Audit Center before customer-facing export.
-- Missing official URL, holder name, stake percent, or effective date routes back to Source Refresh Scheduler.
-- Signals that change valuation, governance, liquidity, or risk language need Answer Quality Lab review before export.
+Use the matrix to create:
+
+- Peer comparison briefs.
+- Committee-ready rank tables.
+- Valuation assumption cross-checks.
+- Risk memos across a peer group.
+- Source-gap lists before publishing.
+
+## Daily Use
+
+Start with one question, not a full table. For example: "Which UAE bank handles high deposit rates better?" Then pull the relevant source lines for NIM, funding cost, asset quality, and capital language before assigning any rank.
+
+If the answer cannot cite the source text, mark the cell as source-blocked. A blank or blocked cell is better than a confident unsupported rank.
 
 ## Launch Gate
 
-Ownership Pulse Monitor is pilot-ready when every material ownership signal has holder identity, stake level, effective date, official URL, ticker, research impact, owner, and reviewer status.
-
-It is not ready when the desk cannot prove who owns the stake, how much changed, when it changed, why it matters, and who reviewed it.
+The matrix is ready for pilot users when at least two peer groups have reviewed comparison briefs, each with cited metrics, source snippets, and a clear reviewer decision. If the matrix has attractive cards but no traceable source logic, keep it in demo mode.

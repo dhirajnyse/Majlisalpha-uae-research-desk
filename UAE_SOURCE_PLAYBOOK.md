@@ -1,15 +1,7 @@
-# MajlisAlpha Real Source Starter Pack
+# MajlisAlpha Repository Operations
 
-The MVP trust layer focuses on three companies first: FAB, EMAAR, and ADNOCGAS. These give the UAE desk bank, property, and energy-infrastructure coverage while testing different source workflows across ADX, DFM, and company IR pages.
+Use this folder as the first GitHub repository body for MajlisAlpha UAE Research Desk. Keep releases small, versioned, and testable.
 
-## Required Source Types
+Before publishing, run node --check app.js and node scripts/static-check.mjs. Confirm index.html, app.js, styles.css, launch.css, assets/, data/, docs/, scripts/, .github/, .nojekyll, robots.txt, site.webmanifest, LICENSE, README.md, and SECURITY.md are all present at the repository root.
 
-- Annual report
-- Earnings call transcript or investor presentation
-- Quarterly results
-- Ownership disclosure
-- Exchange disclosure
-
-## Readiness Levels
-
-Demo only means synthetic or imported evidence is still present. Pilot review ready means at least three REAL source types are verified, including annual report plus earnings call or results. Committee review ready means all required source types are REAL and a human review note exists.
+For GitHub Pages, create the repository, upload or push these files, enable Pages from the main branch root, wait for deployment, and test the production URL with a starter question, source export, PDF export, and static source helper link. Future work should use branches named codex/<feature> and pull requests for review.

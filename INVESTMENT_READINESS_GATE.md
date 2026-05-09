@@ -1,52 +1,44 @@
-# MajlisAlpha Corporate Action Tracker
+# MajlisAlpha Customer Signal Room
 
-Corporate Action Tracker turns UAE issuer events into source-backed research work. It gives the desk a clean way to follow dividends, board decisions, AGMs, rights issues, capital changes, and trading status updates without mixing official evidence with loose market commentary.
+Customer Signal Room turns pilot conversations into product evidence. It helps the team separate compliments from demand, objections from confusion, and real revenue signals from polite interest.
 
-## Purpose
+## What It Tracks
 
-Corporate actions matter because they can change yield screens, share counts, valuation inputs, portfolio risk, liquidity assumptions, and customer alerts.
+The room tracks five signal types:
 
-The tracker records each event as an auditable source item:
+- Real questions from a user's own workflow.
+- Repeat usage such as second questions, exports, source uploads, and saved watchlists.
+- Paid intent such as pricing, team access, invoice, or launch timing.
+- Trust objections around source quality, traceability, freshness, or confidence.
+- Coverage requests for issuers, sectors, alerts, exports, integrations, or regions.
 
-- event type
-- issuer and ticker
-- official URL
-- source route
-- announcement date
-- effective or payment date
-- economic impact
-- affected briefs
-- owner
-- reviewer status
-- next action
+## Required Fields
 
-## Event Types
+Every useful signal needs:
 
-- Cash dividend: proposed, approved, ex-date, record date, payment date, yield and coverage read-through.
-- Bonus share: share-count impact, per-share metric adjustment, and historical comparability.
-- Rights issue: dilution, capital raise, ownership impact, balance-sheet implications, and subscription dates.
-- Board or shareholder meeting: agenda, approvals, dividend decisions, capital actions, and governance signal.
-- Trading halt or resumption: liquidity risk, event risk, clarification needs, and customer alert routing.
-- Capital increase or reduction: share capital, book value, leverage, and valuation assumption updates.
+- Signal ID.
+- User segment.
+- Company or ticker.
+- Question or feedback.
+- Signal type.
+- Evidence.
+- Impact.
+- Frequency.
+- Owner.
+- Next decision.
+- Mission Control task.
 
-## Workflow
+If the signal cannot be tied to evidence and an owner, it should not drive roadmap work.
 
-1. Capture the event from an official disclosure route.
-2. Classify the event type and material dates.
-3. Link the official source URL and issuer ticker.
-4. Record expected model, risk, yield, or governance impact.
-5. Route the event to Catalyst Calendar, Disclosure Alert Watchtower, Claim Trace Inspector, Portfolio Risk Radar, Answer Quality Lab, or Compliance Audit Center.
-6. Mark the action research-ready only after reviewer approval.
+## Decision Rules
 
-## Escalation Rules
+Use four decisions:
 
-- Material dividend, share-count, capital-structure, or trading-status changes go to Disclosure Alert Watchtower and Catalyst Calendar.
-- Missing official URL or incomplete date fields route back to Source Refresh Scheduler.
-- Valuation, peer metric, or portfolio-risk changes require Answer Quality Lab review before export.
-- Any event that risks sounding like investment advice goes to Compliance Audit Center and remains blocked from customer export.
+- Build now: repeated signal from target users with clear revenue or retention impact.
+- Interview more: interesting signal with unclear frequency, buyer, or workflow impact.
+- Log only: single comment, compliment, or vague feature idea.
+- Reject: request would weaken source integrity, compliance posture, or product focus.
 
 ## Launch Gate
 
-Corporate Action Tracker is pilot-ready when every material action has event type, official URL, dates, ticker, economic impact, owner, and reviewer status.
-
-It is not ready when the desk cannot prove where the event came from, when it happened, why it matters, and who reviewed it.
+The room is pilot-ready when every roadmap decision links to user segment, feedback evidence, frequency, owner, and Mission Control task. Do not build from praise alone; require repeated demand, paid intent, or a specific trust objection.

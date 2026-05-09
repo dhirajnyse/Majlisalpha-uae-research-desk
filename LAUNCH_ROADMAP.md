@@ -1,13 +1,49 @@
-# MajlisAlpha Data Provenance
+# MajlisAlpha Disclosure Alert Watchtower
 
-MajlisAlpha should earn trust by showing where every UAE market answer came from. A source is production-ready only when an analyst can identify the issuer, market, source type, period, publication date, official URL, and exact citation sections.
+Disclosure Alert Watchtower converts UAE market notices into assigned research actions. It is the operating layer between official sources and the rest of the MajlisAlpha workflow.
 
-## Source Status
+## Purpose
 
-- synthetic: starter demo evidence written for product testing.
-- imported: user pasted or uploaded text that needs review.
-- real: analyst-verified official source text from company IR, ADX, DFM, Nasdaq Dubai CANDI, SCA, or another approved primary source.
+ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer IR pages can all produce material research events. The watchtower gives each alert a route, event type, owner, priority, SLA, and next workflow step.
 
-## Required Fields
+## Source Routes
 
-Every source record needs ticker, company, type, period, date, sourceStatus, sourceLabel, sourceUrl, and one or more cited sections. REAL source records require https URLs and enough section depth for a reader to check the claim. If MajlisAlpha cannot show the source, period, citation section, and quality label, it should not present the output as investment-grade research.
+Start with four official routes:
+
+- ADX disclosures.
+- DFM market disclosures.
+- Nasdaq Dubai CANDI.
+- SCA and issuer investor-relations pages.
+
+An alert without an official route should stay watch-only or source-blocked.
+
+## Alert Types
+
+The first alert set covers:
+
+- Results releases.
+- Dividend or distribution changes.
+- Board meetings and AGM items.
+- Ownership or related-party updates.
+- Capital actions and trading-status items.
+
+Each alert type should route to the right workflow. A results release should move through Source Intake Doctor, Claim Trace Inspector, and Peer Benchmark Matrix. A capital action may need Portfolio Risk Radar and Decision Journal immediately.
+
+## Required Triage Fields
+
+Each actionable alert needs:
+
+- Official URL.
+- Source route.
+- Issuer and ticker.
+- Event type.
+- Source timestamp.
+- Priority.
+- Owner.
+- SLA.
+- Next workflow step.
+- Review status.
+
+## Launch Gate
+
+The watchtower is pilot-ready when priority alerts have official URLs, owners, SLA, next workflow step, and review status. If the source route is missing, the item should not become an actionable research task.

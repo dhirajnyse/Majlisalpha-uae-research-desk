@@ -1,49 +1,78 @@
-# MajlisAlpha Disclosure Alert Watchtower
+# MajlisAlpha GitHub Pages Deployment
 
-Disclosure Alert Watchtower converts UAE market notices into assigned research actions. It is the operating layer between official sources and the rest of the MajlisAlpha workflow.
+Use this checklist whenever a new MajlisAlpha release is uploaded to GitHub Pages.
 
-## Purpose
+## Repository
 
-ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer IR pages can all produce material research events. The watchtower gives each alert a route, event type, owner, priority, SLA, and next workflow step.
+Recommended repository name: `Majlisalpha-uae-research-desk`
 
-## Source Routes
+Public URL:
 
-Start with four official routes:
+`https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/`
 
-- ADX disclosures.
-- DFM market disclosures.
-- Nasdaq Dubai CANDI.
-- SCA and issuer investor-relations pages.
+The URL path follows the repository name. If the repo name uses capital `M`, keep that casing in the link.
 
-An alert without an official route should stay watch-only or source-blocked.
+## Before Upload
 
-## Alert Types
+Run from the repository root:
 
-The first alert set covers:
+```bash
+node --check app.js
+node --check scripts/serve-static.mjs
+node scripts/static-check.mjs
+```
 
-- Results releases.
-- Dividend or distribution changes.
-- Board meetings and AGM items.
-- Ownership or related-party updates.
-- Capital actions and trading-status items.
+Confirm these paths are at the repository root:
 
-Each alert type should route to the right workflow. A results release should move through Source Intake Doctor, Claim Trace Inspector, and Peer Benchmark Matrix. A capital action may need Portfolio Risk Radar and Decision Journal immediately.
+- `index.html`
+- `app.js`
+- `styles.css`
+- `launch.css`
+- `assets/`
+- `data/`
+- `docs/`
+- `scripts/`
+- `.github/workflows/static-checks.yml`
+- `.nojekyll`
+- `site.webmanifest`
+- `README.md`
+- `SECURITY.md`
 
-## Required Triage Fields
+## Pages Settings
 
-Each actionable alert needs:
+1. Open GitHub repository Settings.
+2. Go to Pages.
+3. Select Deploy from branch.
+4. Select `main`.
+5. Select `/root`.
+6. Wait for the `pages build and deployment` action to turn green.
 
-- Official URL.
-- Source route.
-- Issuer and ticker.
-- Event type.
-- Source timestamp.
-- Priority.
-- Owner.
-- SLA.
-- Next workflow step.
-- Review status.
+## Smoke Test
 
-## Launch Gate
+After deployment:
 
-The watchtower is pilot-ready when priority alerts have official URLs, owners, SLA, next workflow step, and review status. If the source route is missing, the item should not become an actionable research task.
+1. Open the public URL.
+2. Confirm the top bar says `MajlisAlpha`.
+3. Run `What are the risks for $FAB?`.
+4. Open `Source playbook`.
+5. Open `Revenue pilot`.
+6. Open `Catalyst calendar`.
+7. Open `Peer matrix`.
+8. Open `Portfolio radar`.
+9. Open `Claim trace`.
+10. Open `Disclosure alerts`.
+11. Open `Mission control`.
+12. Open `Quality lab`.
+13. Open `Customer signals`.
+14. Open `Pilot KPI`.
+15. Open `Compliance audit`.
+16. Open `Refresh scheduler`.
+17. Open `Corporate actions`.
+18. Open `Ownership pulse`.
+19. Open `Macro radar`.
+20. Open `Scenario lab`.
+21. Open `Committee pack`.
+22. Open one official source link in a new tab.
+23. Export Markdown or PDF from a generated brief.
+
+If the public URL returns 404 after a green Pages build, wait two to five minutes and hard refresh. If it still fails, check repository name casing and Pages branch/root settings.
