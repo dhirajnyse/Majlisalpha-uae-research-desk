@@ -1,0 +1,80 @@
+{
+  "version": "20260509-uae-06",
+  "name": "MajlisAlpha UAE Catalyst Calendar",
+  "asOf": "2026-05-09",
+  "datePolicy": "Do not publish a catalyst date unless it is backed by an official exchange, issuer, regulator, or government source URL.",
+  "coverage": [
+    "earnings windows",
+    "board meetings",
+    "dividend and AGM notices",
+    "ownership updates",
+    "capital actions",
+    "macroeconomic releases",
+    "sector read-throughs"
+  ],
+  "watchStreams": [
+    {
+      "stream": "Bank results and rates",
+      "priorityIssuers": ["FAB", "ENBD", "DIB"],
+      "signals": [
+        "net interest margin commentary",
+        "deposit-cost pressure",
+        "asset-quality movement",
+        "capital and payout language"
+      ],
+      "officialSourceRoute": "ADX, DFM, issuer investor-relations pages, and results presentations"
+    },
+    {
+      "stream": "Property cycle and presales",
+      "priorityIssuers": ["EMAAR", "ALDAR"],
+      "signals": [
+        "presales and backlog",
+        "launch cadence",
+        "handover and revenue recognition",
+        "Dubai transaction data read-through"
+      ],
+      "officialSourceRoute": "DFM/ADX disclosures, issuer IR pages, annual reports, and Dubai market data releases"
+    },
+    {
+      "stream": "Energy, utilities, and dividends",
+      "priorityIssuers": ["ADNOCGAS", "DEWA"],
+      "signals": [
+        "distribution timetable",
+        "gas demand and pricing language",
+        "regulated return commentary",
+        "capex and free-cash-flow conversion"
+      ],
+      "officialSourceRoute": "ADX/DFM disclosures, issuer IR pages, results packs, and official commodity or utility updates"
+    },
+    {
+      "stream": "Market notices and corporate actions",
+      "priorityIssuers": ["IHC", "EAND", "AIRARABIA"],
+      "signals": [
+        "board decisions",
+        "related-party context",
+        "foreign ownership room",
+        "capital actions and trading-status updates"
+      ],
+      "officialSourceRoute": "ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer disclosures"
+    }
+  ],
+  "calendarGate": {
+    "requiredFields": [
+      "issuer",
+      "ticker",
+      "eventType",
+      "officialUrl",
+      "sourceDate",
+      "marketDate",
+      "analystAction",
+      "reviewStatus"
+    ],
+    "readyRule": "A calendar item is REAL only when the official URL, issuer, event type, source date, market date, and analyst action agree."
+  },
+  "starterActions": [
+    "Check ADX and DFM disclosure pages each morning before market-open research.",
+    "Record unverified expected windows as watch items, not dated events.",
+    "Move a watch item to REAL only after official source capture.",
+    "Attach each REAL event to a question template, memo packet, or decision journal entry."
+  ]
+}

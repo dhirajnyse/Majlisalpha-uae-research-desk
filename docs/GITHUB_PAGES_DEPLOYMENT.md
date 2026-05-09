@@ -55,7 +55,10 @@ After deployment:
 2. Confirm the top bar says `MajlisAlpha`.
 3. Run `What are the risks for $FAB?`.
 4. Open `Source playbook`.
-5. Open one official source link in a new tab.
-6. Export Markdown or PDF from a generated brief.
+5. Open `Revenue pilot`.
+6. Open `Catalyst calendar`.
+7. Open `Peer matrix`.
+8. Open one official source link in a new tab.
+9. Export Markdown or PDF from a generated brief.
 
 If the public URL returns 404 after a green Pages build, wait two to five minutes and hard refresh. If it still fails, check repository name casing and Pages branch/root settings.

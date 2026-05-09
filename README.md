@@ -31,6 +31,9 @@ Suggested SaaS packaging:
 - Official-source helper links for ADX, DFM, Nasdaq Dubai CANDI, SCA, and company IR pages.
 - UAE Source Playbook section with direct official-source routes and REAL-evidence rules.
 - Pilot Command Center with a seven-day plan for making FAB, EMAAR, and ADNOCGAS review-ready.
+- Revenue Pilot Console for testing 10 pilot users, 50 real questions, paid intent, and launch readiness.
+- UAE Catalyst Calendar for tracking source-backed earnings windows, board decisions, dividends, ownership updates, and macro read-throughs.
+- Peer Benchmark Matrix for comparing UAE banks, property names, energy/utilities, and platform issuers with cited source logic.
 - Coverage Command Center, Evidence-to-Brief Workbench, Memo Review Room, Decision Journal, Source Intake Doctor, and Launch Control Room.
 - AED valuation lens with revenue growth, FCF margin, terminal multiple, and discount-rate sensitivities.
 - A 3D-style SVG brand mark in assets/majlisalpha-logo.svg plus social preview artwork.
@@ -50,11 +53,17 @@ The application shell is in index.html, styles.css, launch.css, and app.js. The 
 - data/source-pack-template.json: Copyable template for adding real annual reports, results summaries, ownership extracts, and ADX/DFM/Nasdaq Dubai disclosures.
 - data/official-sources.json: Official UAE source index for ADX, DFM, Nasdaq Dubai CANDI, SCA, and company IR workflows.
 - data/pilot-sprint.json: Seven-day pilot sprint plan and launch gate.
+- data/pilot-revenue.json: Revenue pilot targets, ICPs, demo script, pricing hypotheses, conversion signals, and scale gate.
+- data/catalyst-calendar.json: UAE catalyst watch streams, source policy, required fields, and calendar readiness gate.
+- data/peer-benchmark.json: UAE peer groups, benchmark metrics, source routes, matrix gate, and starter outputs.
 
 ## Operating playbooks
 
 - docs/UAE_SOURCE_PLAYBOOK.md: first source-collection sprint and REAL-evidence rules.
 - docs/PILOT_COMMAND_CENTER.md: operational sprint plan for the first three UAE issuers.
+- docs/PILOT_REVENUE_PLAYBOOK.md: 14-day pilot plan for validating users, source usage, and paid intent.
+- docs/CATALYST_CALENDAR.md: source-first operating workflow for monitoring UAE market catalysts.
+- docs/PEER_BENCHMARK_MATRIX.md: source-first peer comparison workflow and launch gate.
 - docs/GITHUB_PAGES_DEPLOYMENT.md: GitHub Pages upload, settings, and smoke-test checklist.
 
 ## Quality checks

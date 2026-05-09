@@ -318,6 +318,9 @@
 .data-section,
 .source-playbook-section,
 .pilot-command-section,
+.revenue-pilot-section,
+.catalyst-calendar-section,
+.peer-benchmark-section,
 .foundation-section,
 .real-starter-section {
   min-height: 246px;
@@ -328,6 +331,9 @@
 .data-section,
 .source-playbook-section,
 .pilot-command-section,
+.revenue-pilot-section,
+.catalyst-calendar-section,
+.peer-benchmark-section,
 .foundation-section {
   display: grid;
   grid-template-columns: minmax(260px, 0.42fr) minmax(620px, 1fr);
@@ -352,6 +358,9 @@
 .data-section .section-heading,
 .source-playbook-section .section-heading,
 .pilot-command-section .section-heading,
+.revenue-pilot-section .section-heading,
+.catalyst-calendar-section .section-heading,
+.peer-benchmark-section .section-heading,
 .foundation-section .section-heading {
   margin-bottom: 0;
   align-self: start;
@@ -970,6 +979,240 @@
   color: rgba(255, 255, 255, 0.74);
 }
 
+.revenue-pilot-section {
+  background:
+    linear-gradient(135deg, rgba(11, 34, 36, 0.08), transparent 48%),
+    linear-gradient(315deg, rgba(20, 118, 111, 0.12), transparent 42%),
+    #fffdf8;
+}
+
+.revenue-pilot-grid {
+  display: grid;
+  grid-template-columns: 1.18fr repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  align-self: stretch;
+}
+
+.revenue-pilot-card {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.revenue-pilot-card.is-lead {
+  background: var(--panel-strong);
+  border-color: rgba(200, 150, 56, 0.34);
+}
+
+.revenue-pilot-card.is-close {
+  color: #ffffff;
+  background: linear-gradient(180deg, #103130, var(--ink));
+  border-color: rgba(16, 40, 41, 0.86);
+}
+
+.revenue-pilot-card span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  width: fit-content;
+  padding: 0 9px;
+  border-radius: 999px;
+  color: var(--teal);
+  background: #ffffff;
+  border: 1px solid rgba(20, 118, 111, 0.22);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.revenue-pilot-card.is-close span {
+  color: #fff2cf;
+  background: rgba(200, 150, 56, 0.18);
+  border-color: rgba(200, 150, 56, 0.34);
+}
+
+.revenue-pilot-card h3 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.18;
+}
+
+.revenue-pilot-card.is-close h3 {
+  color: #ffffff;
+}
+
+.revenue-pilot-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.revenue-pilot-card.is-close p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.catalyst-calendar-section {
+  background:
+    linear-gradient(135deg, rgba(200, 150, 56, 0.14), transparent 38%),
+    linear-gradient(315deg, rgba(14, 107, 95, 0.12), transparent 44%),
+    rgba(255, 255, 255, 0.96);
+}
+
+.catalyst-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  align-self: stretch;
+}
+
+.catalyst-calendar-card {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.catalyst-calendar-card.is-watch {
+  border-color: rgba(20, 118, 111, 0.34);
+  background: var(--teal-soft);
+}
+
+.catalyst-calendar-card.is-gate {
+  color: #ffffff;
+  background: var(--ink);
+  border-color: rgba(16, 40, 41, 0.82);
+}
+
+.catalyst-calendar-card span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  width: fit-content;
+  padding: 0 9px;
+  border-radius: 999px;
+  color: var(--teal);
+  background: #ffffff;
+  border: 1px solid rgba(20, 118, 111, 0.22);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.catalyst-calendar-card.is-gate span {
+  color: #fff2cf;
+  background: rgba(200, 150, 56, 0.18);
+  border-color: rgba(200, 150, 56, 0.34);
+}
+
+.catalyst-calendar-card h3 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.18;
+}
+
+.catalyst-calendar-card.is-gate h3 {
+  color: #ffffff;
+}
+
+.catalyst-calendar-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.catalyst-calendar-card.is-gate p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.peer-benchmark-section {
+  background:
+    linear-gradient(135deg, rgba(20, 118, 111, 0.11), transparent 40%),
+    linear-gradient(315deg, rgba(200, 150, 56, 0.16), transparent 42%),
+    #fffaf0;
+}
+
+.peer-benchmark-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  align-self: stretch;
+}
+
+.peer-benchmark-card {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.peer-benchmark-card.is-core {
+  border-color: rgba(20, 118, 111, 0.34);
+  background: var(--teal-soft);
+}
+
+.peer-benchmark-card.is-gate {
+  color: #ffffff;
+  background: linear-gradient(180deg, #103130, var(--ink));
+  border-color: rgba(16, 40, 41, 0.86);
+}
+
+.peer-benchmark-card span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  width: fit-content;
+  padding: 0 9px;
+  border-radius: 999px;
+  color: var(--teal);
+  background: #ffffff;
+  border: 1px solid rgba(20, 118, 111, 0.22);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.peer-benchmark-card.is-gate span {
+  color: #fff2cf;
+  background: rgba(200, 150, 56, 0.18);
+  border-color: rgba(200, 150, 56, 0.34);
+}
+
+.peer-benchmark-card h3 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.18;
+}
+
+.peer-benchmark-card.is-gate h3 {
+  color: #ffffff;
+}
+
+.peer-benchmark-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.peer-benchmark-card.is-gate p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
 .roadmap-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1077,6 +1320,9 @@
   .data-section,
   .source-playbook-section,
   .pilot-command-section,
+  .revenue-pilot-section,
+  .catalyst-calendar-section,
+  .peer-benchmark-section,
   .foundation-section,
   .real-starter-section {
     grid-template-columns: 1fr;
@@ -1087,6 +1333,9 @@
   .data-section .section-heading,
   .source-playbook-section .section-heading,
   .pilot-command-section .section-heading,
+  .revenue-pilot-section .section-heading,
+  .catalyst-calendar-section .section-heading,
+  .peer-benchmark-section .section-heading,
   .foundation-section .section-heading {
     margin-bottom: 12px;
   }
@@ -1120,6 +1369,18 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .revenue-pilot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .catalyst-calendar-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .peer-benchmark-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .foundation-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1150,6 +1411,9 @@
   .data-section,
   .source-playbook-section,
   .pilot-command-section,
+  .revenue-pilot-section,
+  .catalyst-calendar-section,
+  .peer-benchmark-section,
   .foundation-section,
   .real-starter-section {
     min-height: 0;
@@ -1216,6 +1480,18 @@
   }
 
   .pilot-command-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .revenue-pilot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalyst-calendar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .peer-benchmark-grid {
     grid-template-columns: 1fr;
   }
 
