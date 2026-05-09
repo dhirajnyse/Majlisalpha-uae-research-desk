@@ -35,14 +35,169 @@
       content="Evidence-backed UAE market research across filings, earnings-call notes, exchange disclosures, ownership updates, and AED valuation."
     />
     <meta name="twitter:image" content="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/assets/majlisalpha-social-card.svg" />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #102829;
+        --ink-soft: #264243;
+        --muted: #66706c;
+        --bg: #f4efe3;
+        --panel: #ffffff;
+        --panel-strong: #fbf8ef;
+        --line: #ddd3bd;
+        --teal: #0e6b5f;
+        --teal-soft: #e8f4ef;
+        --shadow: 0 18px 45px rgba(29, 42, 39, 0.12);
+        --radius: 8px;
+        --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        letter-spacing: 0;
+      }
+
+      html {
+        min-width: 320px;
+        background: var(--bg);
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        overflow-x: hidden;
+        color: var(--ink);
+        font-family: var(--sans);
+        background: var(--bg);
+      }
+
+      button,
+      input,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      .app-shell {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .topbar {
+        min-height: 64px;
+        display: grid;
+        grid-template-columns: minmax(250px, 360px) 1fr auto;
+        align-items: center;
+        gap: 14px;
+        padding: 9px 16px;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.94);
+        position: sticky;
+        top: 0;
+        z-index: 20;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        display: block;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(18, 24, 23, 0.18);
+        flex: 0 0 auto;
+      }
+
+      .brand h1 {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.15;
+      }
+
+      .brand p {
+        margin: 2px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .status-strip,
+      .top-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .status-strip {
+        justify-content: center;
+      }
+
+      .status-pill {
+        min-height: 28px;
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--line);
+        background: var(--panel-strong);
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 0 10px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      .status-pill.is-live {
+        color: var(--teal);
+        background: var(--teal-soft);
+        border-color: rgba(20, 118, 111, 0.25);
+      }
+
+      .icon-button {
+        min-width: 44px;
+        min-height: 34px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        color: var(--ink-soft);
+        padding: 0 10px;
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .launch-hero,
+      .launch-section {
+        width: calc(100% - 16px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 900px) {
+        .topbar {
+          grid-template-columns: 1fr;
+        }
+
+        .status-strip {
+          justify-content: flex-start;
+        }
+      }
+    </style>
     <link rel="stylesheet" href="styles.css?v=20260509-uae-20-stylefix" />
     <link rel="stylesheet" href="launch.css?v=20260509-uae-20-stylefix" />
   </head>
   <body>
     <div class="app-shell">
-      <header class="topbar">
-        <div class="brand">
-          <img class="brand-mark" src="assets/majlisalpha-logo.svg" alt="" aria-hidden="true" />
+      <header class="topbar" style="min-height:64px;display:grid;grid-template-columns:minmax(250px,360px) 1fr auto;align-items:center;gap:14px;padding:9px 16px;border-bottom:1px solid #ddd3bd;background:rgba(255,255,255,.94);position:sticky;top:0;z-index:20;">
+        <div class="brand" style="display:flex;align-items:center;gap:10px;min-width:0;">
+          <img class="brand-mark" src="assets/majlisalpha-logo.svg" alt="" aria-hidden="true" style="width:36px;height:36px;display:block;object-fit:contain;border-radius:8px;box-shadow:0 8px 20px rgba(18,24,23,.18);flex:0 0 auto;" />
           <div>
             <h1>MajlisAlpha</h1>
             <p>UAE market research desk</p>
