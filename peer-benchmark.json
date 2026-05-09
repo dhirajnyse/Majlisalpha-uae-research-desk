@@ -1,0 +1,523 @@
+[
+  {
+    "id": "IHC-annual-2026",
+    "ticker": "IHC",
+    "company": "International Holding Company",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "International Holding Company operates a diversified UAE portfolio across healthcare, real estate, financial services, industrials, energy, food, and technology platforms. FY2026 synthetic revenue was AED 86000 million, up 16%, with acquisition contribution, organic expansion, and portfolio rebalancing all affecting reported growth."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 22.5%. Management highlighted disciplined capital allocation, portfolio simplification, and stronger recurring cash conversion as priorities."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risk factors include portfolio complexity, acquisition valuation, related-party exposure, funding cost, disclosure quality, and execution timing across subsidiaries."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Free cash flow conversion was 12% of revenue. Net debt was AED 18500 million after investment activity and portfolio funding."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "IHC-earnings-call-q4-2026",
+    "ticker": "IHC",
+    "company": "International Holding Company",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said portfolio performance is becoming more balanced across operating verticals, but acknowledged that investors need clearer look-through cash conversion."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked whether acquisitions are being measured against return hurdles. The CFO said capital allocation will prioritize recurring earnings, liquidity, and strategic control."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "FAB-annual-2026",
+    "ticker": "FAB",
+    "company": "First Abu Dhabi Bank",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "First Abu Dhabi Bank is a leading UAE bank with wholesale, global markets, retail, private banking, and treasury franchises. FY2026 synthetic operating income was AED 34500 million, up 9%, supported by deposit scale and corporate client activity."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 38.5% as rate benefits partly offset funding-cost pressure. Management said liquidity, credit discipline, and capital efficiency remain central."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include deposit competition, credit concentration, real estate exposure, regional macro volatility, sanctions compliance, and cyber resilience."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Capital ratios remained strong and management maintained capacity for dividends while supporting measured loan growth."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "FAB-earnings-call-q4-2026",
+    "ticker": "FAB",
+    "company": "First Abu Dhabi Bank",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said the deposit franchise remains a competitive advantage, but funding cost repricing is still being monitored."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about loan growth and impairment. The CFO said underwriting remains disciplined and provision coverage is adequate for the base scenario."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ADNOCGAS-annual-2026",
+    "ticker": "ADNOCGAS",
+    "company": "ADNOC Gas",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "ADNOC Gas processes, transports, and markets natural gas, LNG, and related products for domestic and export customers. FY2026 synthetic revenue was AED 92000 million, up 8%, with volume reliability and pricing mix driving results."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 28.2%. Management highlighted contracted demand, LNG opportunities, and staged growth projects."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include commodity price movement, project commissioning, operational reliability, customer concentration, and dividend coverage under capex cycles."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Free cash flow was supported by contracted operations, with net debt of AED 9800 million and a dividend-led capital return profile."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ADNOCGAS-earnings-call-q4-2026",
+    "ticker": "ADNOCGAS",
+    "company": "ADNOC Gas",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said domestic demand and export contracts support volume visibility, while pricing mix can move with LNG and liquids markets."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about dividends and expansion capex. Management said dividend coverage will be tested against project timing and free cash flow."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ALDAR-annual-2026",
+    "ticker": "ALDAR",
+    "company": "Aldar Properties",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "Aldar Properties develops and manages residential, commercial, retail, hospitality, and logistics assets in Abu Dhabi and selected regional markets. FY2026 synthetic revenue was AED 18000 million, up 14%, helped by launches and project handovers."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 26.4%. Management highlighted presales visibility, recurring income growth, and disciplined land-bank deployment."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include construction inflation, handover timing, buyer concentration, interest-rate pressure, and asset-yield compression."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Free cash flow was affected by development working capital. Net debt stood at AED 12500 million as the company invested in growth assets."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ALDAR-earnings-call-q4-2026",
+    "ticker": "ALDAR",
+    "company": "Aldar Properties",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said presales visibility remains strong, but launches will stay disciplined and tied to construction capacity."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about affordability and handovers. Management said buyer demand is broad, yet rate sensitivity and delivery timing are the main swing factors."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EAND-annual-2026",
+    "ticker": "EAND",
+    "company": "e&",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "e& provides telecom, connectivity, digital, enterprise, and international services. FY2026 synthetic revenue was AED 57000 million, up 6%, supported by enterprise connectivity and digital-services growth."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 25.6%. Management said the UAE telecom base remains defensive while digital services and international platforms provide optionality."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include ARPU maturity, capex intensity, acquisition integration, currency exposure, and technology disruption."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Free cash flow was resilient at 18% of revenue. Net debt was AED 21000 million after network and portfolio investments."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EAND-earnings-call-q4-2026",
+    "ticker": "EAND",
+    "company": "e&",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said UAE telecom cash generation remains resilient while enterprise digital services continue to scale."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about international expansion. The CEO said portfolio discipline and integration will matter more than headline subscriber growth."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EMAAR-annual-2026",
+    "ticker": "EMAAR",
+    "company": "Emaar Properties",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "Emaar Properties develops Dubai residential communities and operates malls, hospitality, retail, and recurring-income assets. FY2026 synthetic revenue was AED 36000 million, up 13%, with presales and tourism-linked assets supporting growth."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 31.1%. Management highlighted backlog visibility, disciplined launches, and healthy hospitality occupancy."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include Dubai property-cycle normalisation, buyer-mix shifts, construction execution, tourism demand, and financing conditions."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Free cash flow benefited from collections but remains sensitive to handover schedules. Net debt was AED 8200 million."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EMAAR-earnings-call-q4-2026",
+    "ticker": "EMAAR",
+    "company": "Emaar Properties",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said Dubai property demand remains healthy, with backlog and hospitality supporting near-term visibility."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about cycle risk. The CFO said launch discipline, collections, and inventory absorption will be monitored closely."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "DEWA-annual-2026",
+    "ticker": "DEWA",
+    "company": "Dubai Electricity and Water Authority",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "Dubai Electricity and Water Authority provides regulated electricity, water, district cooling, and renewable-energy infrastructure. FY2026 synthetic revenue was AED 31000 million, up 5%, reflecting demand growth and regulated asset expansion."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 29.8%. Management emphasized service reliability, grid investment, clean-energy capacity, and dividend visibility."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include tariff assumptions, fuel cost recovery, energy-transition capex, demand cyclicality, and regulatory framework changes."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Free cash flow remained stable, with net debt of AED 18500 million and dividend coverage tied to operating cash flow."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "DEWA-earnings-call-q4-2026",
+    "ticker": "DEWA",
+    "company": "Dubai Electricity and Water Authority",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said regulated demand growth and service reliability underpin the base case."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about capex and dividends. Management said clean-energy investment should remain compatible with dividend visibility under the current plan."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "DIB-annual-2026",
+    "ticker": "DIB",
+    "company": "Dubai Islamic Bank",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "Dubai Islamic Bank is a large Islamic banking franchise with retail, corporate, treasury, and wealth businesses. FY2026 synthetic operating income was AED 21000 million, up 10%, supported by financing growth and fee income."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 33.4%. Management highlighted deposit discipline, asset quality, and digital customer acquisition."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include asset-quality seasoning, real estate exposure, funding-cost pressure, Sharia-compliant product competition, and operational resilience."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Capital remained above regulatory buffers, while dividend capacity depends on credit costs and growth discipline."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "DIB-earnings-call-q4-2026",
+    "ticker": "DIB",
+    "company": "Dubai Islamic Bank",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said financing growth is selective and deposit quality remains a priority."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about asset quality. The CFO said early indicators are stable, but real estate and SME exposure require continued monitoring."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ENBD-annual-2026",
+    "ticker": "ENBD",
+    "company": "Emirates NBD",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "Emirates NBD is a Dubai-based banking group with retail, corporate, private banking, cards, payments, and regional operations. FY2026 synthetic operating income was AED 43000 million, up 11%."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 37.8%. Management highlighted rate leverage, fee growth, digital productivity, and regional diversification."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include deposit beta, credit cost normalisation, international currency translation, technology execution, and real estate concentration."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Capital and liquidity stayed strong, supporting dividends and selective regional growth."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ENBD-earnings-call-q4-2026",
+    "ticker": "ENBD",
+    "company": "Emirates NBD",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said rate leverage and fee growth support earnings, while deposit competition is rising."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about international volatility. Management said capital buffers and provisioning should absorb normal macro swings."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "AIRARABIA-annual-2026",
+    "ticker": "AIRARABIA",
+    "company": "Air Arabia",
+    "type": "Annual report",
+    "period": "FY2026",
+    "date": "2026-04-28",
+    "sections": [
+      {
+        "title": "Business overview",
+        "text": "Air Arabia operates a regional low-cost airline network from UAE and other hubs. FY2026 synthetic revenue was AED 7200 million, up 12%, supported by passenger growth, load factor, and ancillary revenue."
+      },
+      {
+        "title": "Management discussion and analysis",
+        "text": "Operating margin was 17.2%. Management highlighted disciplined capacity growth, fleet planning, and route profitability."
+      },
+      {
+        "title": "Risk factors",
+        "text": "Risks include fuel cost, fare yields, fleet delivery timing, geopolitical disruption, airport constraints, and tourism demand."
+      },
+      {
+        "title": "Liquidity and capital resources",
+        "text": "Free cash flow was positive but sensitive to aircraft capex and working-capital timing. Net debt was AED 1800 million."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "AIRARABIA-earnings-call-q4-2026",
+    "ticker": "AIRARABIA",
+    "company": "Air Arabia",
+    "type": "Earnings call transcript",
+    "period": "Q4 FY2026",
+    "date": "2026-04-29",
+    "sections": [
+      {
+        "title": "Prepared remarks",
+        "text": "Management said travel demand is constructive and ancillary revenue remains an important margin lever."
+      },
+      {
+        "title": "Analyst Q&A",
+        "text": "Analysts asked about fuel and fleet timing. Management said hedging, route discipline, and delivery schedules will drive free cash flow."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  },
+  {
+    "id": "UAE-cross-sector-model-note-2026",
+    "ticker": "FAB",
+    "company": "UAE cross-sector model note",
+    "type": "Valuation model",
+    "period": "2026 base case",
+    "date": "2026-05-09",
+    "sections": [
+      {
+        "title": "Scenario assumptions",
+        "text": "A UAE-market quality screen favours companies with visible cash conversion, strong anchor-shareholder alignment, resilient dividends, high disclosure quality, and earnings durability through rate, property, tourism, and commodity cycles. FAB and ENBD score well on deposit scale. EMAAR and ALDAR need property-cycle checks. ADNOCGAS and DEWA need dividend coverage sensitivity. IHC needs look-through transparency."
+      },
+      {
+        "title": "Valuation bridge",
+        "text": "For a higher-rate scenario, the model penalises leveraged property exposure, weak deposit growth, external funding needs, and capex programmes where returns are back-ended. The committee should flex terminal multiples only after testing FCF margin, credit cost, capex intensity, dividend coverage, and ownership disclosures."
+      }
+    ],
+    "sourceStatus": "synthetic",
+    "sourceLabel": "Synthetic starter evidence",
+    "sourceUrl": ""
+  }
+]

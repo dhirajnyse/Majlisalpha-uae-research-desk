@@ -1,0 +1,50 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Pilot Sprint",
+  "durationDays": 7,
+  "priorityTickers": ["FAB", "EMAAR", "ADNOCGAS"],
+  "dailyPlan": [
+    {
+      "day": 1,
+      "focus": "Collect FAB official evidence",
+      "outputs": ["annual report extract", "latest results extract", "one ADX disclosure"]
+    },
+    {
+      "day": 2,
+      "focus": "Collect EMAAR official evidence",
+      "outputs": ["annual report extract", "latest results extract", "one DFM disclosure"]
+    },
+    {
+      "day": 3,
+      "focus": "Collect ADNOCGAS official evidence",
+      "outputs": ["annual report extract", "latest results extract", "one dividend or project disclosure"]
+    },
+    {
+      "day": 4,
+      "focus": "Run source intake checks",
+      "outputs": ["URL checks", "issuer checks", "period/date checks", "citation-depth checks"]
+    },
+    {
+      "day": 5,
+      "focus": "Create memo packets",
+      "outputs": ["FAB risk memo packet", "EMAAR risk memo packet", "ADNOCGAS risk memo packet"]
+    },
+    {
+      "day": 6,
+      "focus": "Human review",
+      "outputs": ["review log", "decision journal entries", "open source gaps"]
+    },
+    {
+      "day": 7,
+      "focus": "Launch gate",
+      "outputs": ["static checks", "source provenance review", "GitHub Pages smoke test"]
+    }
+  ],
+  "launchGate": [
+    "Static checks pass",
+    "Each priority issuer has at least three REAL source records",
+    "Each priority issuer has one reviewed memo packet",
+    "No memo presents synthetic evidence as production-grade research",
+    "GitHub Pages public URL passes the smoke test"
+  ]
+}

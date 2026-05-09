@@ -1,0 +1,77 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Customer Signal Room",
+  "purpose": "Convert pilot conversations into product evidence by tracking real questions, repeat usage, objections, paid intent, coverage demand, and roadmap decisions.",
+  "signalPolicy": "No feedback item should become roadmap work unless user segment, evidence, impact, frequency, and next decision are recorded.",
+  "signalTypes": [
+    {
+      "type": "real question",
+      "description": "A user brings a UAE market question from their own workflow.",
+      "strongSignal": "Question includes ticker, source need, decision context, and follow-up request."
+    },
+    {
+      "type": "repeat usage",
+      "description": "A user asks additional questions, uploads sources, exports briefs, or saves watchlists.",
+      "strongSignal": "User returns without prompting or asks how to keep access."
+    },
+    {
+      "type": "paid intent",
+      "description": "A user asks about price, plan, team access, invoice, or launch timing.",
+      "strongSignal": "User accepts a pilot price or introduces another decision maker."
+    },
+    {
+      "type": "trust objection",
+      "description": "A user questions source quality, traceability, freshness, or model confidence.",
+      "strongSignal": "Objection points to a specific missing source, claim, or audit workflow."
+    },
+    {
+      "type": "coverage request",
+      "description": "A user requests new issuer, sector, alert, export, integration, or region support.",
+      "strongSignal": "Multiple users request the same coverage with clear use case."
+    }
+  ],
+  "requiredSignalFields": [
+    "signalId",
+    "userSegment",
+    "companyOrTicker",
+    "questionOrFeedback",
+    "signalType",
+    "evidence",
+    "impact",
+    "frequency",
+    "owner",
+    "nextDecision",
+    "missionControlTask"
+  ],
+  "decisionRules": [
+    {
+      "decision": "build now",
+      "criteria": "Repeated signal from target users with clear revenue or retention impact."
+    },
+    {
+      "decision": "interview more",
+      "criteria": "Interesting signal with unclear frequency, buyer, or workflow impact."
+    },
+    {
+      "decision": "log only",
+      "criteria": "Single comment, compliment, or vague feature idea without evidence."
+    },
+    {
+      "decision": "reject",
+      "criteria": "Request would weaken source integrity, compliance posture, or product focus."
+    }
+  ],
+  "metrics": [
+    "real questions per pilot user",
+    "repeat questions",
+    "source uploads",
+    "exports",
+    "paid-intent conversations",
+    "trust objections resolved",
+    "roadmap items backed by repeated demand"
+  ],
+  "launchGate": {
+    "readyRule": "Customer Signal Room is pilot-ready when every roadmap decision links to user segment, feedback evidence, frequency, owner, and mission-control task.",
+    "blockedRule": "Do not build from praise alone; require repeated demand, paid intent, or a specific trust objection."
+  }
+}

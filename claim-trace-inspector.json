@@ -1,0 +1,91 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE AED Scenario Lab",
+  "purpose": "Convert UAE disclosures, macro drivers, ownership signals, corporate actions, and source-backed company evidence into auditable AED valuation scenarios.",
+  "scenarioPolicy": "No scenario should be exported unless each material assumption has source provenance, date, sensitivity range, affected ticker, owner, reviewer status, and unresolved gap handling.",
+  "scenarioTypes": [
+    {
+      "type": "base case",
+      "sourceRoutes": ["annual report", "earnings call transcript", "results presentation", "Macro & Rates Radar"],
+      "requiredAssumptions": ["revenue growth", "margin path", "cash conversion", "discount rate", "terminal multiple", "dividend policy"],
+      "researchImpact": ["fair value range", "committee brief", "portfolio sizing", "peer comparison"],
+      "escalateTo": ["Answer Quality Lab", "Claim Trace Inspector"]
+    },
+    {
+      "type": "rate shock",
+      "sourceRoutes": ["Macro & Rates Radar", "bank results presentation", "property earnings call", "rating note"],
+      "requiredAssumptions": ["deposit cost", "loan growth", "mortgage demand", "cap rate", "refinancing cost", "discount-rate spread"],
+      "researchImpact": ["bank margin sensitivity", "property valuation pressure", "debt service risk", "downside range"],
+      "escalateTo": ["Portfolio Risk Radar", "Peer Benchmark Matrix"]
+    },
+    {
+      "type": "upside case",
+      "sourceRoutes": ["Catalyst Calendar", "Corporate Action Tracker", "Ownership Pulse Monitor", "issuer presentation"],
+      "requiredAssumptions": ["volume growth", "pricing power", "project pipeline", "capital return", "ownership catalyst", "margin expansion"],
+      "researchImpact": ["upside range", "catalyst map", "watchlist priority", "pilot question response"],
+      "escalateTo": ["Catalyst Calendar", "Analyst Mission Control"]
+    },
+    {
+      "type": "downside case",
+      "sourceRoutes": ["Portfolio Risk Radar", "Answer Quality Lab", "Macro & Rates Radar", "Claim Trace Inspector"],
+      "requiredAssumptions": ["margin compression", "funding stress", "execution delay", "liquidity weakness", "governance risk", "stale evidence"],
+      "researchImpact": ["risk memo", "valuation floor", "export warning", "unresolved gap list"],
+      "escalateTo": ["Compliance Audit Center", "Claim Trace Inspector"]
+    },
+    {
+      "type": "corporate action adjustment",
+      "sourceRoutes": ["Corporate Action Tracker", "exchange disclosure", "issuer investor relations"],
+      "requiredAssumptions": ["share count", "dividend adjustment", "rights issue dilution", "buyback impact", "capital change", "effective date"],
+      "researchImpact": ["per-share metrics", "dividend yield", "valuation comparability", "model restatement"],
+      "escalateTo": ["Corporate Action Tracker", "Answer Quality Lab"]
+    }
+  ],
+  "scenarioStatuses": ["draft", "sourced", "needs-review", "blocked", "committee-ready", "export-ready"],
+  "requiredScenarioFields": [
+    "scenarioId",
+    "ticker",
+    "scenarioType",
+    "assumptionName",
+    "assumptionValue",
+    "sensitivityRange",
+    "sourceRoute",
+    "officialUrl",
+    "evidenceDate",
+    "affectedMetrics",
+    "affectedBriefs",
+    "owner",
+    "reviewerStatus",
+    "unresolvedGaps",
+    "nextAction"
+  ],
+  "workflow": [
+    "select ticker and scenario type",
+    "pull evidence from disclosures, macro, ownership, corporate action, and peer modules",
+    "record each material assumption with source URL and evidence date",
+    "run sensitivity range and affected metric mapping",
+    "route weak assumptions to claim trace, quality, portfolio, or compliance workflow",
+    "mark scenario export-ready only after reviewer approval"
+  ],
+  "escalationRules": [
+    {
+      "condition": "assumption lacks official source URL or evidence date",
+      "action": "mark blocked and assign Source Refresh Scheduler owner"
+    },
+    {
+      "condition": "scenario changes valuation range or committee recommendation language",
+      "action": "route to Answer Quality Lab and Claim Trace Inspector"
+    },
+    {
+      "condition": "scenario depends on a corporate action, ownership change, or macro driver",
+      "action": "link back to the relevant tracker before export"
+    },
+    {
+      "condition": "scenario may sound like investment advice",
+      "action": "send to Compliance Audit Center and keep export not share-ready"
+    }
+  ],
+  "launchGate": {
+    "readyRule": "AED Scenario Lab is pilot-ready when every exported scenario has ticker, scenario type, assumption provenance, official URL, evidence date, sensitivity range, affected metrics, owner, reviewer status, and unresolved gaps.",
+    "blockedRule": "If a material assumption is unsourced, stale, unreviewed, or missing sensitivity range, the valuation scenario cannot be marked export-ready."
+  }
+}

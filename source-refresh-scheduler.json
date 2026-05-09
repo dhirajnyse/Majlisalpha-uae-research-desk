@@ -1,0 +1,83 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Portfolio Risk Radar",
+  "purpose": "Help analysts triage UAE watchlists by concentration, catalyst pressure, evidence freshness, liquidity sensitivity, and required next action.",
+  "riskPolicy": "A portfolio alert is actionable only when exposure, source status, catalyst context, and next analyst action are recorded together.",
+  "exposureBuckets": [
+    {
+      "bucket": "Financials",
+      "tickers": ["FAB", "ENBD", "DIB"],
+      "watchDrivers": [
+        "deposit-cost pressure",
+        "net interest margin direction",
+        "asset-quality movement",
+        "capital and payout flexibility"
+      ],
+      "radarQuestion": "Does the portfolio carry too much banking risk into a higher-for-longer rate environment?"
+    },
+    {
+      "bucket": "Property and development",
+      "tickers": ["EMAAR", "ALDAR"],
+      "watchDrivers": [
+        "presales momentum",
+        "handover and revenue recognition",
+        "rental yield and occupancy",
+        "cash conversion and leverage"
+      ],
+      "radarQuestion": "Is property exposure supported by current cash-flow evidence or only by cycle optimism?"
+    },
+    {
+      "bucket": "Energy and utilities",
+      "tickers": ["ADNOCGAS", "DEWA"],
+      "watchDrivers": [
+        "dividend durability",
+        "gas demand and pricing",
+        "regulated return language",
+        "capex and free-cash-flow pressure"
+      ],
+      "radarQuestion": "Are yield assumptions backed by latest official distribution and cash-flow evidence?"
+    },
+    {
+      "bucket": "Platforms, telecom, and travel",
+      "tickers": ["IHC", "EAND", "AIRARABIA"],
+      "watchDrivers": [
+        "portfolio complexity",
+        "governance explainability",
+        "telecom cash generation",
+        "travel demand and fuel sensitivity"
+      ],
+      "radarQuestion": "Which holding has the biggest gap between headline confidence and source-backed clarity?"
+    }
+  ],
+  "radarSignals": [
+    {
+      "signal": "Evidence freshness",
+      "green": "Latest official result or disclosure is imported, labelled REAL, and reviewed.",
+      "yellow": "Source exists but period, date, or reviewer status is incomplete.",
+      "red": "Only synthetic, stale, or unverified evidence supports the portfolio view."
+    },
+    {
+      "signal": "Catalyst pressure",
+      "green": "Upcoming event has official source route and assigned analyst action.",
+      "yellow": "Expected window exists but no official dated source is captured.",
+      "red": "Portfolio exposure has event risk but no source path or review owner."
+    },
+    {
+      "signal": "Concentration",
+      "green": "Sector and issuer exposure are intentional and supported by current thesis notes.",
+      "yellow": "Multiple holdings share one macro driver without a fresh peer check.",
+      "red": "One risk driver controls several positions and no decision-journal entry explains it."
+    }
+  ],
+  "nextActions": [
+    "Run peer benchmark before increasing exposure.",
+    "Refresh source pack before using the latest brief.",
+    "Create risk memo for catalyst-sensitive holdings.",
+    "Move unsupported holdings to source-blocked until evidence is reviewed.",
+    "Record hold, review, trim, or watch decision in the decision journal."
+  ],
+  "launchGate": {
+    "readyRule": "Portfolio Risk Radar is pilot-ready when each watchlist bucket has a current source status, catalyst status, concentration note, and next action.",
+    "blockedRule": "If a holding has no official source route, the radar must show it as source-blocked rather than actionable."
+  }
+}

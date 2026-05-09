@@ -1,0 +1,82 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Analyst Mission Control",
+  "purpose": "Convert source alerts, claim gaps, peer checks, portfolio risks, and pilot requests into owner-assigned research tasks with priority, SLA, and publish readiness.",
+  "missionPolicy": "No active research task should exist without owner, workflow lane, priority, source state, reviewer state, due window, and next action.",
+  "workflowLanes": [
+    {
+      "lane": "Source intake",
+      "routesFrom": ["Disclosure Alert Watchtower", "Source Studio", "Source Queue"],
+      "completionSignal": "Official URL, issuer, period, date, source text, and source label are verified."
+    },
+    {
+      "lane": "Claim trace",
+      "routesFrom": ["Evidence-to-Brief Workbench", "Claim Trace Inspector", "Memo Review Room"],
+      "completionSignal": "Material claims are supported, inferred with reason, rejected, or source-blocked."
+    },
+    {
+      "lane": "Peer and portfolio review",
+      "routesFrom": ["Peer Benchmark Matrix", "Portfolio Risk Radar", "Catalyst Calendar"],
+      "completionSignal": "Peer or portfolio conclusion has source path, reviewer decision, and decision-journal action."
+    },
+    {
+      "lane": "Pilot customer work",
+      "routesFrom": ["Revenue Pilot Console", "Join Pilot", "Customer demo"],
+      "completionSignal": "Pilot question, proof shown, feedback, and paid-intent signal are recorded."
+    },
+    {
+      "lane": "Publish readiness",
+      "routesFrom": ["Memo Review Room", "Decision Journal", "Claim Trace Inspector"],
+      "completionSignal": "Sources, claims, memo status, and decision record agree before export."
+    }
+  ],
+  "priorities": [
+    {
+      "priority": "urgent",
+      "slaHours": 2,
+      "useWhen": "Trading status, capital action, material dividend change, or high-impact source correction."
+    },
+    {
+      "priority": "high",
+      "slaHours": 8,
+      "useWhen": "Results release, ownership update, claim-blocking evidence gap, or pilot customer request."
+    },
+    {
+      "priority": "normal",
+      "slaHours": 24,
+      "useWhen": "Routine source refresh, peer update, catalyst watch item, or memo polish."
+    },
+    {
+      "priority": "blocked",
+      "slaHours": null,
+      "useWhen": "Missing official source route, unresolved reviewer conflict, or insufficient evidence."
+    }
+  ],
+  "taskStatuses": [
+    "new",
+    "assigned",
+    "in-review",
+    "source-blocked",
+    "customer-waiting",
+    "ready-to-publish",
+    "decision-recorded",
+    "closed"
+  ],
+  "requiredTaskFields": [
+    "taskId",
+    "workflowLane",
+    "ticker",
+    "sourceRoute",
+    "priority",
+    "owner",
+    "dueWindow",
+    "sourceState",
+    "reviewerState",
+    "nextAction",
+    "publishReadiness"
+  ],
+  "launchGate": {
+    "readyRule": "Mission Control is pilot-ready when every high-priority alert, claim gap, and portfolio risk has owner, SLA, next action, and review status.",
+    "blockedRule": "If owner, source state, or next action is missing, the task cannot be marked ready-to-publish."
+  }
+}

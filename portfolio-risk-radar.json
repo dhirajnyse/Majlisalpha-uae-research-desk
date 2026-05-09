@@ -1,0 +1,96 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Peer Benchmark Matrix",
+  "purpose": "Give analysts a source-first framework for comparing UAE issuers by sector, metric quality, risk, and valuation sensitivity.",
+  "rankPolicy": "Do not publish a peer rank unless the metric, period, official source URL, and analyst reason are recorded together.",
+  "peerGroups": [
+    {
+      "group": "UAE Banks",
+      "tickers": ["FAB", "ENBD", "DIB"],
+      "coreQuestions": [
+        "Which bank is better positioned if deposits stay expensive?",
+        "Which bank has the cleanest asset-quality signal?",
+        "Which bank can protect payout while funding growth?"
+      ],
+      "benchmarkMetrics": [
+        "net interest margin direction",
+        "deposit cost and CASA mix",
+        "cost of risk",
+        "NPL and coverage movement",
+        "CET1 and payout language"
+      ],
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "issuer results packs", "annual reports", "investor presentations"]
+    },
+    {
+      "group": "Property Developers",
+      "tickers": ["EMAAR", "ALDAR"],
+      "coreQuestions": [
+        "Which developer has more durable presales and backlog?",
+        "Which company converts launches into free cash flow faster?",
+        "Which balance sheet can handle a slower property cycle?"
+      ],
+      "benchmarkMetrics": [
+        "presales",
+        "development backlog",
+        "handover cadence",
+        "gross margin and cash conversion",
+        "net debt and dividend capacity"
+      ],
+      "sourceRoutes": ["DFM disclosures", "ADX disclosures", "issuer annual reports", "results presentations", "Dubai market data releases"]
+    },
+    {
+      "group": "Energy and Utilities",
+      "tickers": ["ADNOCGAS", "DEWA"],
+      "coreQuestions": [
+        "Which dividend stream has stronger visibility?",
+        "Which cash-flow profile is more resilient to macro changes?",
+        "Which issuer has clearer capex and regulated-return language?"
+      ],
+      "benchmarkMetrics": [
+        "dividend policy and timetable",
+        "free cash flow",
+        "capex intensity",
+        "regulated return or contract visibility",
+        "macro sensitivity"
+      ],
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "issuer IR pages", "results packs", "annual reports"]
+    },
+    {
+      "group": "Platform and Operating Names",
+      "tickers": ["IHC", "EAND", "AIRARABIA"],
+      "coreQuestions": [
+        "Which company has the cleanest explainability?",
+        "Which business has the most repeatable cash generation?",
+        "Which risk is most likely to be missed by headline screens?"
+      ],
+      "benchmarkMetrics": [
+        "segment transparency",
+        "related-party context",
+        "operating cash generation",
+        "capital allocation",
+        "governance and ownership clarity"
+      ],
+      "sourceRoutes": ["ADX disclosures", "issuer annual reports", "board reports", "results presentations", "SCA context"]
+    }
+  ],
+  "matrixGate": {
+    "requiredFields": [
+      "peerGroup",
+      "ticker",
+      "metric",
+      "period",
+      "officialUrl",
+      "sourceSnippet",
+      "analystReason",
+      "reviewStatus"
+    ],
+    "readyRule": "A peer comparison is ready only when every ranked claim has a cited reason and a reviewer can trace it back to source text."
+  },
+  "starterOutputs": [
+    "Peer comparison brief",
+    "Committee-ready rank table",
+    "Valuation assumption cross-check",
+    "Risk memo across peer group",
+    "Source-gap list before publishing"
+  ]
+}

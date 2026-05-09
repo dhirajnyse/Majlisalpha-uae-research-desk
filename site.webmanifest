@@ -1,17 +1,1784 @@
-{
-  "name": "MajlisAlpha",
-  "short_name": "MajlisAlpha",
-  "description": "Evidence-backed UAE market research across annual reports, ADX/DFM disclosures, earnings calls, ownership updates, and AED valuation scenarios.",
-  "start_url": "/Majlisalpha-uae-research-desk/",
-  "display": "standalone",
-  "background_color": "#f4efe3",
-  "theme_color": "#073238",
-  "icons": [
-    {
-      "src": "assets/majlisalpha-logo.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
-}
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://formsubmit.co; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests"
+    />
+    <title>MajlisAlpha | Evidence-Backed UAE Market Research</title>
+    <meta
+      name="description"
+      content="Evidence-backed UAE market research across annual reports, ADX/DFM disclosures, Nasdaq Dubai CANDI records, earnings-call notes, ownership updates, and AED valuation scenarios."
+    />
+    <meta name="theme-color" content="#111815" />
+    <meta name="application-name" content="MajlisAlpha" />
+    <meta name="apple-mobile-web-app-title" content="MajlisAlpha" />
+    <link rel="canonical" href="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/majlisalpha-logo.svg" />
+    <link rel="manifest" href="site.webmanifest?v=20260509-uae-20" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MajlisAlpha" />
+    <meta property="og:title" content="MajlisAlpha | Ask UAE disclosures. See the signal." />
+    <meta
+      property="og:description"
+      content="Research UAE issuers through annual reports, exchange disclosures, earnings-call notes, ownership updates, and AED valuation scenarios."
+    />
+    <meta property="og:url" content="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/" />
+    <meta property="og:image" content="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/assets/majlisalpha-social-card.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MajlisAlpha | Ask UAE disclosures. See the signal." />
+    <meta
+      name="twitter:description"
+      content="Evidence-backed UAE market research across filings, earnings-call notes, exchange disclosures, ownership updates, and AED valuation."
+    />
+    <meta name="twitter:image" content="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/assets/majlisalpha-social-card.svg" />
+    <link rel="stylesheet" href="styles.css?v=20260509-uae-20" />
+    <link rel="stylesheet" href="launch.css?v=20260509-uae-20" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <img class="brand-mark" src="assets/majlisalpha-logo.svg" alt="" aria-hidden="true" />
+          <div>
+            <h1>MajlisAlpha</h1>
+            <p>UAE market research desk</p>
+          </div>
+        </div>
+        <div class="status-strip" aria-label="Research status">
+          <span class="status-pill is-live">Desk ready</span>
+          <span class="status-pill">ADX/DFM</span>
+          <span class="status-pill">Earnings call tone</span>
+          <span class="status-pill">AED valuation</span>
+          <span class="status-pill">UAE readiness gate v1</span>
+          <span class="status-pill">Revenue pilot v1</span>
+          <span class="status-pill">Catalyst calendar v1</span>
+          <span class="status-pill">Peer matrix v1</span>
+          <span class="status-pill">Portfolio radar v1</span>
+          <span class="status-pill">Claim trace v1</span>
+          <span class="status-pill">Disclosure alerts v1</span>
+          <span class="status-pill">Mission control v1</span>
+          <span class="status-pill">Answer quality v1</span>
+          <span class="status-pill">Customer signals v1</span>
+          <span class="status-pill">Pilot KPI v1</span>
+          <span class="status-pill">Compliance audit v1</span>
+          <span class="status-pill">Refresh scheduler v1</span>
+          <span class="status-pill">Corporate actions v1</span>
+          <span class="status-pill">Ownership pulse v1</span>
+          <span class="status-pill">Macro radar v1</span>
+          <span class="status-pill">Scenario lab v1</span>
+          <span class="status-pill">Committee pack v1</span>
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" id="copyBrief" type="button" title="Copy current brief" aria-label="Copy current brief">
+            <span aria-hidden="true">Copy</span>
+          </button>
+          <button class="icon-button" id="saveBrief" type="button" title="Save current brief" aria-label="Save current brief">
+            <span aria-hidden="true">Save</span>
+          </button>
+          <button class="icon-button" id="exportPdfBrief" type="button" title="Export current brief as PDF" aria-label="Export current brief as PDF">
+            <span aria-hidden="true">PDF</span>
+          </button>
+          <button class="icon-button" id="exportBrief" type="button" title="Export current brief as Markdown" aria-label="Export current brief as Markdown">
+            <span aria-hidden="true">MD</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="launch-hero" aria-labelledby="launchTitle">
+        <div class="launch-copy">
+          <div class="hero-brand-lockup">
+            <img class="hero-logo" src="assets/majlisalpha-logo.svg" alt="" aria-hidden="true" />
+            <span>MajlisAlpha</span>
+          </div>
+          <span class="launch-kicker">UAE equities, source-first</span>
+          <h2 id="launchTitle">Ask UAE disclosures. See the signal.</h2>
+          <p>
+            MajlisAlpha turns annual reports, exchange disclosures, earnings-call notes, ownership updates, and AED valuation scenarios into cited research briefs.
+          </p>
+          <div class="launch-actions">
+            <a class="primary-link" href="#desk">Open the desk</a>
+            <a class="secondary-link" href="#brief-workbench">Brief workbench</a>
+            <a class="secondary-link" href="#investment-gate">Readiness gate</a>
+            <a class="secondary-link" href="#memo-review-room">Review room</a>
+            <a class="secondary-link" href="#decision-journal">Decision journal</a>
+            <a class="secondary-link" href="#launch-control-room">Launch control</a>
+            <a class="secondary-link" href="#source-builder">Source studio</a>
+            <a class="secondary-link" href="#source-intake-doctor">Intake doctor</a>
+            <a class="secondary-link" href="#real-starter">Starter pack</a>
+            <a class="secondary-link" href="#coverage-command">Coverage map</a>
+            <a class="secondary-link" href="#source-queue">Source queue</a>
+            <a class="secondary-link" href="#source-hub">Acquisition hub</a>
+            <a class="secondary-link" href="#source-workspace">Workspace</a>
+            <a class="secondary-link" href="#pilot-command">Pilot command</a>
+            <a class="secondary-link" href="#revenue-pilot">Revenue pilot</a>
+            <a class="secondary-link" href="#catalyst-calendar">Catalyst calendar</a>
+            <a class="secondary-link" href="#peer-benchmark">Peer matrix</a>
+            <a class="secondary-link" href="#portfolio-risk-radar">Portfolio radar</a>
+            <a class="secondary-link" href="#claim-trace">Claim trace</a>
+            <a class="secondary-link" href="#disclosure-alerts">Disclosure alerts</a>
+            <a class="secondary-link" href="#analyst-mission-control">Mission control</a>
+            <a class="secondary-link" href="#answer-quality-lab">Quality lab</a>
+            <a class="secondary-link" href="#customer-signal-room">Customer signals</a>
+            <a class="secondary-link" href="#pilot-kpi-board">Pilot KPI</a>
+            <a class="secondary-link" href="#compliance-audit">Compliance audit</a>
+            <a class="secondary-link" href="#source-refresh">Refresh scheduler</a>
+            <a class="secondary-link" href="#corporate-actions">Corporate actions</a>
+            <a class="secondary-link" href="#ownership-pulse">Ownership pulse</a>
+            <a class="secondary-link" href="#macro-rates-radar">Macro radar</a>
+            <a class="secondary-link" href="#aed-scenario-lab">Scenario lab</a>
+            <a class="secondary-link" href="#committee-pack-builder">Committee pack</a>
+            <a class="secondary-link" href="#source-playbook">Source playbook</a>
+            <a class="secondary-link" href="#foundation">Launch plan</a>
+            <a class="secondary-link" href="#waitlist">Join pilot</a>
+          </div>
+          <div class="workflow-strip" aria-label="MajlisAlpha workflow">
+            <span>Disclose</span>
+            <span>Ask</span>
+            <span>Verify</span>
+            <span>Model</span>
+          </div>
+        </div>
+        <div class="hero-insights" aria-label="MajlisAlpha product signals">
+          <div>
+            <span>Built For</span>
+            <strong>Investors who read beyond headlines and tips</strong>
+          </div>
+          <div>
+            <span>Sources</span>
+            <strong>Annual reports, earnings calls, ADX/DFM updates</strong>
+          </div>
+          <div>
+            <span>Output</span>
+            <strong>Cited briefs with AED valuation read-through</strong>
+          </div>
+        </div>
+        <div class="research-preview" aria-label="Example research brief preview">
+          <div class="preview-topline">
+            <span>Brief Preview</span>
+            <strong>88%</strong>
+          </div>
+          <h3>Which company handles high rates better if deposits stay expensive?</h3>
+          <p>FAB leads on deposit scale and capital depth, while EMAAR needs property-cycle and handover timing checks.</p>
+          <div class="preview-evidence">
+            <div>
+              <span>C1</span>
+              <strong>Annual report</strong>
+              <em>Free cash flow was AED 23500 million.</em>
+            </div>
+            <div>
+              <span>C2</span>
+              <strong>Earnings call transcript</strong>
+              <em>Management is not assuming a sharp recovery.</em>
+            </div>
+          </div>
+          <div class="preview-stats">
+            <span>AED 79+</span>
+            <span>Source-linked</span>
+            <span>ADX/DFM</span>
+          </div>
+        </div>
+      </section>
+
+      <main class="terminal-layout" id="desk">
+        <aside class="left-rail" aria-label="Research setup">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Question Templates</h2>
+              <span id="questionCount">7</span>
+            </div>
+            <div class="template-stack" id="templateStack"></div>
+            <div class="demo-proxy-note">
+              <strong>Starter watchlist</strong>
+            <span>IHC, FAB, ADNOCGAS, ALDAR, EAND, EMAAR, DEWA, DIB, ENBD, and AIRARABIA. Starter data now lives in JSON source-pack files.</span>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Coverage</h2>
+              <button class="text-button" id="selectAllTickers" type="button">All</button>
+            </div>
+            <div class="coverage-list" id="coverageList"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Library</h2>
+              <span id="documentCount">0 docs</span>
+            </div>
+            <div class="library-list" id="libraryList"></div>
+          </section>
+
+          <section class="panel upload-panel">
+            <div class="panel-heading">
+              <h2>Import</h2>
+              <button class="text-button danger" id="clearUploads" type="button">Clear uploads</button>
+            </div>
+            <label class="file-drop" for="fileInput">
+              <span class="file-drop-icon" aria-hidden="true">DOC</span>
+              <span>Drop in annual report text, earnings call notes, exchange filings, ownership extracts, rating notes, model notes, or text-based PDFs.</span>
+              <input id="fileInput" type="file" accept=".txt,.md,.csv,.html,.json,.pdf" multiple />
+            </label>
+            <div class="import-summary" id="importSummary" aria-live="polite">
+              <strong>Import status</strong>
+              <span>Paste or upload source text to build a private browser corpus for this session.</span>
+            </div>
+            <form class="paste-form" id="pasteForm">
+              <div class="field-row">
+                <label>
+                  <span>Company</span>
+                  <select id="importTickerSelect" aria-label="Import company"></select>
+                </label>
+                <label>
+                  <span>Ticker</span>
+                  <input id="pasteTicker" type="text" maxlength="12" value="CUSTOM" />
+                </label>
+                <label>
+                  <span>Type</span>
+                  <select id="pasteType">
+                    <option>Annual report</option>
+                    <option>Quarterly results</option>
+                    <option>Earnings call transcript</option>
+                    <option>Exchange announcement</option>
+                    <option>Ownership pattern</option>
+                    <option>Credit rating note</option>
+                    <option>Valuation model</option>
+                    <option>Research note</option>
+                  </select>
+                </label>
+              </div>
+              <label>
+                <span>Title</span>
+                <input id="pasteTitle" type="text" value="Imported UAE market document" />
+              </label>
+              <label>
+                <span>Text</span>
+                <textarea id="pasteText" rows="4" placeholder="Paste disclosure, earnings call, or model text"></textarea>
+              </label>
+              <button class="primary-button small" type="submit">Add to corpus</button>
+            </form>
+          </section>
+        </aside>
+
+        <section class="workbench" aria-label="Research answer desk">
+          <section class="query-panel">
+            <div class="context-band" id="contextBand"></div>
+            <form id="queryForm" class="query-form">
+              <label for="queryInput">Ask the desk</label>
+              <textarea
+                id="queryInput"
+                rows="4"
+                placeholder="Example: Compare $EMAAR and $ALDAR on property-cycle durability and cash conversion."
+              ></textarea>
+              <div class="memo-shortcuts" aria-label="Research output shortcuts">
+                <button type="button" data-memo="risk">Risk memo</button>
+                <button type="button" data-memo="tone">Earnings call tone</button>
+                <button type="button" data-memo="valuation">Valuation assumptions</button>
+                <button type="button" data-memo="peer">Peer compare</button>
+                <button type="button" data-memo="committee">Committee brief</button>
+              </div>
+              <label class="evidence-guard-toggle">
+                <input id="onlySelectedTicker" type="checkbox" checked />
+                <span>Only selected ticker</span>
+                <em>Single-company answers stay anchored unless the question is explicitly comparative.</em>
+              </label>
+              <div class="query-actions">
+                <div class="segmented" role="group" aria-label="Answer depth">
+                  <button type="button" class="segment is-active" data-depth="brief">Brief</button>
+                  <button type="button" class="segment" data-depth="desk">Desk</button>
+                  <button type="button" class="segment" data-depth="committee">Committee</button>
+                </div>
+                <div class="query-run-actions">
+                  <button class="secondary-button scan-button" id="scanFilingButton" type="button">Scan disclosure</button>
+                  <button class="primary-button" id="runAnalysisButton" type="button">Run analysis</button>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="investment-gate-panel" id="investment-gate" aria-labelledby="investmentGateTitle">
+            <div class="investment-gate-head">
+              <div>
+                <span>Investment Readiness Gate</span>
+                <h2 id="investmentGateTitle">Know whether the answer is demo, review, or committee-ready.</h2>
+              </div>
+              <strong id="investmentGateStatus">No brief yet</strong>
+            </div>
+            <div class="investment-gate-summary" id="investmentGateSummary"></div>
+            <div class="investment-gate-checks" id="investmentGateChecks"></div>
+            <div class="investment-gate-actions">
+              <button class="primary-button small" id="runInvestmentGate" type="button">Run gate</button>
+              <button class="secondary-button small" id="openInvestmentGateGap" type="button">Open next evidence gap</button>
+              <button class="secondary-button small" id="copyInvestmentGateNote" type="button">Copy readiness note</button>
+            </div>
+            <div class="builder-result" id="investmentGateResult" aria-live="polite"></div>
+          </section>
+
+          <section class="answer-panel" id="answerPanel">
+            <div class="empty-state">
+              <div class="empty-kicker">Ready</div>
+              <h2>Ask across disclosures, earnings calls, and imported notes.</h2>
+              <p>
+                The desk retrieves source passages, weighs management tone against disclosed risks, and drafts a cited answer with valuation read-through.
+              </p>
+            </div>
+          </section>
+
+          <section class="panel brief-workbench-panel" id="brief-workbench" aria-labelledby="briefWorkbenchTitle">
+            <div class="panel-heading">
+              <h2 id="briefWorkbenchTitle">Brief Workbench</h2>
+              <span id="briefWorkbenchStatus">No brief yet</span>
+            </div>
+            <div class="brief-workbench-summary" id="briefWorkbenchSummary"></div>
+            <div class="brief-readiness-grid" id="briefReadinessGrid"></div>
+            <div class="brief-source-map" id="briefSourceMap"></div>
+            <div class="builder-actions brief-workbench-actions">
+              <button class="primary-button" id="copyBriefPacket" type="button">Copy memo packet</button>
+              <button class="secondary-button" id="exportBriefPacketJson" type="button">Export packet JSON</button>
+              <button class="secondary-button" id="openBriefNextGap" type="button">Open next source gap</button>
+            </div>
+            <div class="builder-result" id="briefWorkbenchResult" aria-live="polite"></div>
+          </section>
+
+          <section class="panel memo-review-panel" id="memo-review-room" aria-labelledby="memoReviewTitle">
+            <div class="panel-heading">
+              <h2 id="memoReviewTitle">Memo Review Room</h2>
+              <span id="memoReviewCount">0 reviews</span>
+            </div>
+            <form class="memo-review-form" id="memoReviewForm">
+              <div class="memo-review-context" id="memoReviewContext"></div>
+              <div class="builder-grid">
+                <label>
+                  <span>Decision</span>
+                  <select id="memoReviewDecision">
+                    <option value="needs-source-work">Needs source work</option>
+                    <option value="pilot-ready">Pilot memo ready</option>
+                    <option value="committee-ready">Committee review ready</option>
+                    <option value="watchlist-only">Watchlist only</option>
+                    <option value="reject-thesis">Reject thesis</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Conviction</span>
+                  <select id="memoReviewConviction">
+                    <option>Low</option>
+                    <option selected>Medium</option>
+                    <option>High</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Next owner</span>
+                  <input id="memoReviewOwner" type="text" value="Research desk" maxlength="60" />
+                </label>
+              </div>
+              <label>
+                <span>Review note</span>
+                <textarea id="memoReviewNote" rows="4" placeholder="Write the reason for the decision, what is credible, and what still needs verification."></textarea>
+              </label>
+              <label>
+                <span>Open risk or next action</span>
+                <textarea id="memoReviewRisk" rows="3" placeholder="Example: Replace SYN results citation with ADX/DFM results disclosure, then rerun risk memo."></textarea>
+              </label>
+              <div class="builder-actions memo-review-actions">
+                <button class="primary-button" id="saveMemoReview" type="submit">Save review</button>
+                <button class="secondary-button" id="exportMemoReviews" type="button">Export review log</button>
+                <button class="secondary-button" id="copyMemoReviews" type="button">Copy review log</button>
+                <button class="text-button danger" id="clearMemoReviews" type="button">Clear reviews</button>
+              </div>
+              <div class="builder-result" id="memoReviewResult" aria-live="polite"></div>
+            </form>
+            <div class="memo-review-list" id="memoReviewList"></div>
+          </section>
+
+          <section class="panel decision-journal-panel" id="decision-journal" aria-labelledby="decisionJournalTitle">
+            <div class="panel-heading">
+              <h2 id="decisionJournalTitle">Decision Journal</h2>
+              <span id="decisionJournalCount">0 decisions</span>
+            </div>
+            <form class="decision-journal-form" id="decisionJournalForm">
+              <div class="decision-journal-context" id="decisionJournalContext"></div>
+              <div class="builder-grid">
+                <label>
+                  <span>Research decision</span>
+                  <select id="decisionJournalDecision">
+                    <option value="needs-source-work">Needs source work</option>
+                    <option value="watchlist-candidate">Watchlist candidate</option>
+                    <option value="committee-candidate">Committee candidate</option>
+                    <option value="monitor-only">Monitor only</option>
+                    <option value="reject-thesis">Reject thesis</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Thesis strength</span>
+                  <select id="decisionJournalStrength">
+                    <option>Low</option>
+                    <option selected>Medium</option>
+                    <option>High</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Review horizon</span>
+                  <select id="decisionJournalHorizon">
+                    <option>Next disclosure</option>
+                    <option selected>Quarterly review</option>
+                    <option>30 days</option>
+                    <option>Event-driven</option>
+                    <option>Archive</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Next review date</span>
+                  <input id="decisionJournalDate" type="date" />
+                </label>
+                <label>
+                  <span>Owner</span>
+                  <input id="decisionJournalOwner" type="text" value="Research desk" maxlength="60" />
+                </label>
+              </div>
+              <label>
+                <span>Decision note</span>
+                <textarea id="decisionJournalNote" rows="4" placeholder="Record why this memo is being advanced, monitored, rejected, or sent back for source work."></textarea>
+              </label>
+              <div class="builder-grid two-col">
+                <label>
+                  <span>Trigger or kill criteria</span>
+                  <textarea id="decisionJournalTrigger" rows="3" placeholder="Example: thesis weakens if deposit costs stay elevated for two quarters or FCF conversion deteriorates."></textarea>
+                </label>
+                <label>
+                  <span>Next evidence task</span>
+                  <textarea id="decisionJournalEvidenceTask" rows="3" placeholder="Example: replace SYN results citation with ADX/DFM Q4 results disclosure and rerun the gate."></textarea>
+                </label>
+              </div>
+              <div class="builder-actions decision-journal-actions">
+                <button class="primary-button" id="saveDecisionJournalEntry" type="submit">Save decision</button>
+                <button class="secondary-button" id="exportDecisionJournal" type="button">Export journal</button>
+                <button class="secondary-button" id="copyDecisionJournal" type="button">Copy journal</button>
+                <button class="text-button danger" id="clearDecisionJournal" type="button">Clear journal</button>
+              </div>
+              <div class="builder-result" id="decisionJournalResult" aria-live="polite"></div>
+            </form>
+            <div class="decision-journal-list" id="decisionJournalList"></div>
+          </section>
+
+          <section class="panel launch-control-panel" id="launch-control-room" aria-labelledby="launchControlTitle">
+            <div class="panel-heading">
+              <h2 id="launchControlTitle">Launch Control Room</h2>
+              <span id="launchControlStatus">Checking</span>
+            </div>
+            <div class="launch-control-summary" id="launchControlSummary"></div>
+            <div class="launch-control-stats" id="launchControlStats"></div>
+            <div class="launch-control-grid">
+              <div class="launch-control-card">
+                <div class="launch-control-card-head">
+                  <span>Launch blockers</span>
+                  <strong id="launchBlockerCount">0 open</strong>
+                </div>
+                <div class="launch-blocker-list" id="launchBlockerList"></div>
+              </div>
+              <div class="launch-control-card">
+                <div class="launch-control-card-head">
+                  <span>Closest companies</span>
+                  <strong>Research readiness</strong>
+                </div>
+                <div class="launch-company-list" id="launchCompanyList"></div>
+              </div>
+            </div>
+            <div class="launch-test-plan" id="launchTestPlan"></div>
+            <div class="builder-actions launch-control-actions">
+              <button class="primary-button" id="openLaunchBlocker" type="button">Open next blocker</button>
+              <button class="secondary-button" id="exportLaunchAudit" type="button">Export audit pack</button>
+              <button class="secondary-button" id="copyLaunchChecklist" type="button">Copy upload checklist</button>
+            </div>
+            <div class="builder-result" id="launchControlResult" aria-live="polite"></div>
+          </section>
+
+          <section class="panel notebook-panel">
+            <div class="panel-heading">
+              <h2>Saved Briefs</h2>
+              <button class="text-button" id="clearNotes" type="button">Clear</button>
+            </div>
+            <div class="notebook-list" id="notebookList"></div>
+          </section>
+        </section>
+
+        <aside class="right-rail" aria-label="Evidence and valuation">
+          <section class="panel dossier-panel">
+            <div class="panel-heading">
+              <h2>Company Dossier</h2>
+              <span>Live workspace</span>
+            </div>
+            <div id="companyDossier"></div>
+          </section>
+
+          <section class="panel market-panel">
+            <div class="panel-heading">
+              <h2>Signal Map</h2>
+              <span id="signalStamp">Now</span>
+            </div>
+            <canvas id="signalCanvas" width="640" height="320" aria-label="Signal map"></canvas>
+            <div class="signal-legend">
+              <span><i class="legend-dot growth"></i> Growth</span>
+              <span><i class="legend-dot margin"></i> Margin</span>
+              <span><i class="legend-dot risk"></i> Risk</span>
+            </div>
+          </section>
+
+          <section class="panel valuation-panel">
+            <div class="panel-heading">
+              <h2>AED Valuation Lens</h2>
+              <select id="valuationTicker" aria-label="Valuation company"></select>
+            </div>
+            <div class="valuation-output">
+              <div>
+                <span>Implied value</span>
+                <strong id="valuePerShare">AED 0</strong>
+              </div>
+              <div>
+                <span>Equity value</span>
+                <strong id="equityValue">AED 0 m</strong>
+              </div>
+            </div>
+            <div class="slider-grid">
+              <label>
+                <span>Revenue CAGR <b id="growthValue">0%</b></span>
+                <input id="growthSlider" type="range" min="-5" max="35" value="12" />
+              </label>
+              <label>
+                <span>FCF margin <b id="marginValue">0%</b></span>
+                <input id="marginSlider" type="range" min="0" max="35" value="16" />
+              </label>
+              <label>
+                <span>Terminal multiple <b id="multipleValue">0x</b></span>
+                <input id="multipleSlider" type="range" min="6" max="35" value="18" />
+              </label>
+              <label>
+                <span>Discount rate <b id="discountValue">0%</b></span>
+                <input id="discountSlider" type="range" min="6" max="16" value="10" />
+              </label>
+            </div>
+            <div class="valuation-footnote" id="valuationFootnote"></div>
+            <button class="secondary-button save-case-button" id="saveValuationCase" type="button">Save valuation case</button>
+            <div class="case-list" id="valuationCaseList"></div>
+          </section>
+
+          <section class="panel evidence-panel">
+            <div class="panel-heading">
+              <h2>Evidence Stack</h2>
+              <span id="evidenceCount">0</span>
+            </div>
+            <div class="evidence-list" id="evidenceList"></div>
+          </section>
+        </aside>
+      </main>
+
+      <section class="launch-section source-builder-section" aria-labelledby="sourceBuilderTitle" id="source-builder">
+        <div class="section-heading">
+          <span>Source Pack Studio</span>
+          <h2 id="sourceBuilderTitle">Build real source records without touching JSON by hand.</h2>
+          <p>
+            Create annual report, earnings call, results, ownership, and ADX/DFM disclosure records, add them to the live corpus, then export clean source-pack JSON for the repository.
+          </p>
+        </div>
+        <div class="real-data-workflow" aria-label="How to add real data">
+          <article>
+            <span>1</span>
+            <strong>Collect</strong>
+            <p>Open the company annual report, earnings call, results note, ownership pattern, or exchange disclosure.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <strong>Paste</strong>
+            <p>Use the source-type template below and paste only the sections you want the desk to cite.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <strong>Verify</strong>
+            <p>Mark reviewed records as REAL, add the source URL, and run a desk question against the evidence.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <strong>Ship</strong>
+            <p>Export the builder pack or full documents file and upload it to the repository data folder.</p>
+          </article>
+        </div>
+        <div class="source-builder-layout">
+          <form class="source-builder-form" id="sourcePackForm">
+            <div class="active-source-task" id="activeSourceTask" hidden></div>
+            <div class="source-assistant-card" aria-label="Real source paste assistant">
+              <div>
+                <span>Real Source Paste Assistant</span>
+                <strong>Paste once, then fill the source record.</strong>
+                <p>Detects source type, period, title, and useful citation sections from annual reports, earnings calls, results, ownership notes, or exchange disclosures.</p>
+              </div>
+              <textarea id="sourceAssistantText" rows="6" placeholder="Paste raw source text here. Example: annual report risk factors, earnings call prepared remarks, results commentary, ownership extract, or exchange disclosure text."></textarea>
+              <div class="source-assistant-actions">
+                <button class="primary-button" id="applySourceAssistant" type="button">Detect and fill builder</button>
+                <button class="secondary-button" id="loadSampleFiling" type="button">Load sample filing</button>
+                <button class="secondary-button" id="runSourceIntakeDoctor" type="button">Check intake</button>
+                <button class="secondary-button" id="copySourceCitationNote" type="button">Copy citation note</button>
+                <button class="secondary-button" id="clearSourceAssistant" type="button">Clear paste</button>
+              </div>
+              <div class="filing-capture-preview" id="filingCapturePreview" aria-live="polite"></div>
+              <div class="source-intake-doctor" id="source-intake-doctor" aria-live="polite"></div>
+              <div class="source-url-helper" id="sourceAssistantLinks" aria-live="polite"></div>
+              <div class="builder-result" id="sourceAssistantResult" aria-live="polite"></div>
+            </div>
+            <div class="builder-grid">
+              <label>
+                <span>Company</span>
+                <select id="sourceBuilderTicker"></select>
+              </label>
+              <label>
+                <span>Source type</span>
+                <select id="sourceBuilderType">
+                  <option>Annual report</option>
+                  <option>Earnings call transcript</option>
+                  <option>Quarterly results</option>
+                  <option>Ownership pattern</option>
+                  <option>Exchange announcement</option>
+                  <option>Credit rating note</option>
+                  <option>Valuation model</option>
+                  <option>Research note</option>
+                </select>
+              </label>
+              <label>
+                <span>Quality</span>
+                <select id="sourceBuilderStatus">
+                  <option value="real">REAL - verified source</option>
+                  <option value="imported">IMP - imported draft</option>
+                  <option value="synthetic">SYN - synthetic placeholder</option>
+                </select>
+              </label>
+              <label>
+                <span>Period</span>
+                <input id="sourceBuilderPeriod" type="text" value="FY2025" />
+              </label>
+              <label>
+                <span>Date</span>
+                <input id="sourceBuilderDate" type="date" />
+              </label>
+              <label>
+                <span>Source URL</span>
+                <input id="sourceBuilderUrl" type="url" placeholder="https://..." />
+              </label>
+            </div>
+            <label>
+              <span>Record title</span>
+              <input id="sourceBuilderTitleInput" type="text" value="Verified source record" />
+            </label>
+            <div class="builder-section-editor" id="sourceBuilderSections"></div>
+            <div class="source-confidence-checklist" id="sourceConfidenceChecklist" aria-label="REAL source confidence checklist">
+              <div>
+                <span>REAL source confidence</span>
+                <strong>Confirm before adding verified evidence.</strong>
+              </div>
+              <label><input type="checkbox" data-source-check="url" /> Official source URL verified</label>
+              <label><input type="checkbox" data-source-check="text" /> Text copied from the same document</label>
+              <label><input type="checkbox" data-source-check="period" /> Period and date checked</label>
+            </div>
+            <div class="builder-actions">
+              <button class="primary-button" id="addSourcePackDoc" type="submit">Add to live corpus</button>
+              <button class="secondary-button" id="exportSourcePack" type="button">Export source pack</button>
+              <button class="secondary-button" id="exportMergedDocuments" type="button">Export full documents.json</button>
+              <button class="secondary-button" id="returnToDossier" type="button">Return to dossier</button>
+              <label class="json-import-button">
+                <span>Import source-pack JSON</span>
+                <input id="sourcePackJsonInput" type="file" accept=".json,application/json" />
+              </label>
+              <button class="text-button danger" id="clearSourcePack" type="button">Clear builder pack</button>
+            </div>
+            <div class="builder-result" id="sourceBuilderResult" aria-live="polite"></div>
+          </form>
+          <aside class="source-pack-preview" aria-label="Source pack preview">
+            <div class="panel-heading">
+              <h2>Builder Pack</h2>
+              <span id="sourcePackCount">0 records</span>
+            </div>
+            <div class="export-readiness" id="exportReadiness"></div>
+            <div class="source-pack-list" id="sourcePackList"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="launch-section source-matrix-section" aria-labelledby="sourceMatrixTitle" id="coverage-command">
+        <div class="section-heading">
+          <span>Coverage Command Center</span>
+          <h2 id="sourceMatrixTitle">See every evidence gap before research starts.</h2>
+          <p>
+            Scan each company against the five source types the desk needs, then open the next missing source directly in Source Pack Studio.
+          </p>
+        </div>
+        <div class="source-matrix-toolbar" aria-label="Coverage command filters">
+          <label>
+            <span>Company</span>
+            <select id="matrixTickerFilter"></select>
+          </label>
+          <label>
+            <span>View</span>
+            <select id="matrixStatusFilter">
+              <option value="priority">Only gaps</option>
+              <option value="missing">Missing only</option>
+              <option value="synthetic">SYN starter</option>
+              <option value="imported">IMP review</option>
+              <option value="real">REAL ready</option>
+              <option value="all">All coverage</option>
+            </select>
+          </label>
+          <button class="primary-button" id="matrixNextGap" type="button">Open next gap</button>
+          <button class="secondary-button" id="copyCoverageMatrix" type="button">Copy matrix CSV</button>
+          <button class="secondary-button" id="downloadCoverageMatrix" type="button">Download CSV</button>
+        </div>
+        <div class="source-matrix-summary" id="sourceMatrixSummary" aria-live="polite"></div>
+        <div class="source-matrix-wrap">
+          <table class="source-matrix" id="sourceMatrix"></table>
+        </div>
+        <div class="builder-result" id="sourceMatrixResult" aria-live="polite"></div>
+        <div class="source-matrix-export" id="sourceMatrixExport" hidden></div>
+      </section>
+
+      <section class="launch-section real-starter-section" aria-labelledby="realStarterTitle" id="real-starter">
+        <div class="section-heading">
+          <span>Real source starter pack</span>
+          <h2 id="realStarterTitle">Make the first three companies research-ready.</h2>
+          <p>The starter pack focuses the product on FAB, EMAAR, and ADNOCGAS. Each company needs annual report, earnings call, results, ownership, and disclosure evidence before the desk can call it investment-use ready.</p>
+        </div>
+        <div class="real-starter-summary" id="realStarterSummary" aria-label="Starter pack summary"></div>
+        <div class="real-starter-grid" id="realStarterGrid" aria-label="Priority real-source companies"></div>
+        <div class="builder-result" id="realStarterResult" aria-live="polite"></div>
+      </section>
+
+      <section class="launch-section source-queue-section" aria-labelledby="sourceQueueTitle" id="source-queue">
+        <div class="section-heading">
+          <span>Real Source Queue</span>
+          <h2 id="sourceQueueTitle">First real sources to collect.</h2>
+          <p>
+            Track which company records are real, imported, synthetic, or missing, then push the next collection task straight into Source Pack Studio.
+          </p>
+        </div>
+        <div class="source-queue-toolbar" aria-label="Real source collection filters">
+          <label>
+            <span>Company</span>
+            <select id="queueTickerFilter"></select>
+          </label>
+          <label>
+            <span>Status</span>
+            <select id="queueStatusFilter">
+              <option value="priority">Missing or SYN</option>
+              <option value="missing">Missing only</option>
+              <option value="synthetic">SYN starter</option>
+              <option value="imported">IMP review</option>
+              <option value="real">REAL ready</option>
+              <option value="all">All source types</option>
+            </select>
+          </label>
+          <button class="primary-button" id="generateSourceTasks" type="button">Generate tasks</button>
+          <button class="secondary-button" id="exportChecklistCsv" type="button">Export CSV</button>
+          <button class="secondary-button" id="copyChecklistCsv" type="button">Copy CSV</button>
+        </div>
+        <div class="source-queue-summary" id="sourceQueueSummary" aria-live="polite"></div>
+        <div class="source-queue-list" id="sourceQueueList"></div>
+        <div class="builder-result" id="sourceQueueResult" aria-live="polite"></div>
+      </section>
+
+      <section class="launch-section source-hub-section" aria-labelledby="sourceHubTitle" id="source-hub">
+        <div class="section-heading">
+          <span>Source Acquisition Hub</span>
+          <h2 id="sourceHubTitle">Open the right source, capture the right text.</h2>
+          <p>
+            Pick a ticker and document type to get official exchange links, company IR links, and a clean task brief for replacing starter evidence.
+          </p>
+        </div>
+        <div class="source-hub-layout">
+          <div class="source-hub-card">
+            <div class="builder-grid">
+              <label>
+                <span>Company</span>
+                <select id="hubTickerSelect"></select>
+              </label>
+              <label>
+                <span>Document type</span>
+                <select id="hubRequirementSelect"></select>
+              </label>
+            </div>
+            <div class="source-hub-task" id="sourceHubTask"></div>
+            <div class="builder-actions">
+              <button class="primary-button" id="loadHubTask" type="button">Open in studio</button>
+              <button class="secondary-button" id="copyHubTask" type="button">Copy task</button>
+              <button class="secondary-button" id="exportAssistantTasks" type="button">Export task list</button>
+            </div>
+            <div class="builder-result" id="sourceHubResult" aria-live="polite"></div>
+          </div>
+          <aside class="source-link-panel" id="sourceLinkPanel" aria-label="Source acquisition links"></aside>
+        </div>
+      </section>
+
+      <section class="launch-section source-workspace-section" aria-labelledby="sourceWorkspaceTitle" id="source-workspace">
+        <div class="section-heading">
+          <span>Real Data Workspace</span>
+          <h2 id="sourceWorkspaceTitle">Today&apos;s collection batch.</h2>
+          <p>
+            Run a focused source-collection session, mark each task as it moves from queued to verified, and export the progress record.
+          </p>
+        </div>
+        <div class="source-workspace-toolbar" aria-label="Source workspace controls">
+          <label>
+            <span>Task view</span>
+            <select id="workspaceFilter">
+              <option value="pending">Pending tasks</option>
+              <option value="active">Queued / collected / pasted</option>
+              <option value="verified">Verified tasks</option>
+              <option value="all">All tasks</option>
+            </select>
+          </label>
+          <label>
+            <span>Batch size</span>
+            <select id="workspaceBatchSize">
+              <option value="6">6 tasks</option>
+              <option value="9">9 tasks</option>
+              <option value="12">12 tasks</option>
+              <option value="20">20 tasks</option>
+            </select>
+          </label>
+          <button class="primary-button" id="buildWorkspaceBatch" type="button">Build batch</button>
+          <button class="secondary-button" id="exportWorkspaceProgress" type="button">Export progress</button>
+          <button class="secondary-button" id="exportWorkspacePack" type="button">Export workspace JSON</button>
+        </div>
+        <div class="source-workspace-summary" id="sourceWorkspaceSummary"></div>
+        <div class="source-workspace-list" id="sourceWorkspaceList"></div>
+        <div class="builder-result" id="sourceWorkspaceResult" aria-live="polite"></div>
+      </section>
+
+      <section class="launch-section data-section" aria-labelledby="dataTitle" id="data">
+        <div class="section-heading">
+          <span>Data Roadmap</span>
+          <h2 id="dataTitle">Built as a prototype. Designed for live UAE market data.</h2>
+          <p>
+            The current desk loads its watchlist, questions, companies, and starter evidence from JSON files. Synthetic, imported, and real documents are labelled separately so the research workflow stays honest.
+          </p>
+        </div>
+        <div class="data-grid" aria-label="MajlisAlpha live data roadmap">
+          <article>
+            <span>Now</span>
+            <h3>JSON source pack</h3>
+            <p>Ten UAE tickers ship with company dossiers. Annual reports, results notes, earnings-call snippets, ownership extracts, rating notes, and analyst model text now live in editable data files.</p>
+            <ul>
+              <li>Runs fully static on GitHub Pages</li>
+              <li>Answers cite retrieved source passages</li>
+              <li>Synthetic, imported, and real labels</li>
+            </ul>
+          </article>
+          <article>
+            <span>Next</span>
+            <h3>Disclosure connectors</h3>
+            <p>Connect corporate announcements, annual reports, quarterly results, earnings call notes, and ownership updates into one refreshable company library.</p>
+            <ul>
+              <li>ADX/DFM disclosure queue</li>
+              <li>Company document timelines</li>
+              <li>Anchor-shareholder exposure and ownership watch</li>
+            </ul>
+          </article>
+          <article>
+            <span>MVP</span>
+            <h3>Market and model context</h3>
+            <p>Add price snapshots, peer multiples, historical margins, debt metrics, and saved valuation cases so answers can link narrative evidence to numbers.</p>
+            <ul>
+              <li>Watchlist-level refreshes</li>
+              <li>Peer tables and AED scenarios</li>
+              <li>Exportable research briefs</li>
+            </ul>
+          </article>
+          <article class="data-callout">
+            <span>Pilot Rule</span>
+            <h3>No black-box recommendations.</h3>
+            <p>MajlisAlpha should explain what changed, cite where it changed, and show which assumption matters before suggesting any conclusion.</p>
+            <a class="plan-link" href="#waitlist">Help choose live sources</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section source-playbook-section" aria-labelledby="sourcePlaybookTitle" id="source-playbook">
+        <div class="section-heading">
+          <span>UAE Source Playbook</span>
+          <h2 id="sourcePlaybookTitle">Collect official evidence before trusting any answer.</h2>
+          <p>
+            MajlisAlpha v2 gives the desk a practical source map for the first real-data sprint: where to open, what to capture, and what has to be true before a record becomes REAL evidence.
+          </p>
+        </div>
+        <div class="source-playbook-grid" aria-label="UAE official source playbook">
+          <article>
+            <span>Annual reports</span>
+            <h3>Company IR first.</h3>
+            <p>Use issuer investor-relations pages for annual reports, presentations, board reports, and capital-allocation language.</p>
+            <a href="https://www.bankfab.com/en-ae/about-fab/investor-relations" target="_blank" rel="noopener noreferrer">Open FAB IR</a>
+          </article>
+          <article>
+            <span>Market disclosures</span>
+            <h3>ADX, DFM, and CANDI.</h3>
+            <p>Use exchange pages for material events, board decisions, dividends, results releases, and issuer announcements.</p>
+            <a href="https://www.adx.ae/english/Pages/Market-Information/Disclosures.aspx" target="_blank" rel="noopener noreferrer">Open ADX disclosures</a>
+          </article>
+          <article>
+            <span>Results</span>
+            <h3>Capture the numbers and the wording.</h3>
+            <p>Pull revenue, profit, margin, segment, balance-sheet, and outlook text from the official results pack.</p>
+            <a href="https://www.dfm.ae/market-information/market-disclosures" target="_blank" rel="noopener noreferrer">Open DFM disclosures</a>
+          </article>
+          <article>
+            <span>Ownership</span>
+            <h3>Check free float and anchor holders.</h3>
+            <p>Track ownership changes, foreign ownership room, related-party context, and governance flags before scoring trust.</p>
+            <a href="https://www.sca.gov.ae" target="_blank" rel="noopener noreferrer">Open SCA</a>
+          </article>
+          <article class="source-playbook-callout">
+            <span>REAL rule</span>
+            <h3>URL, text, period, date.</h3>
+            <p>A source becomes REAL only when the official URL, pasted text, issuer, period, and date all agree.</p>
+            <a href="#source-builder">Open Source Studio</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section pilot-command-section" aria-labelledby="pilotCommandTitle" id="pilot-command">
+        <div class="section-heading">
+          <span>Pilot Command Center</span>
+          <h2 id="pilotCommandTitle">Turn the UAE desk into a real source sprint.</h2>
+          <p>
+            The first sprint is narrow on purpose: make three UAE issuers evidence-ready, review one memo per issuer, and prove that the workflow can survive real disclosures.
+          </p>
+        </div>
+        <div class="pilot-command-grid" aria-label="MajlisAlpha pilot command center">
+          <article class="pilot-command-card is-priority">
+            <span>First 72 hours</span>
+            <h3>FAB, EMAAR, ADNOCGAS.</h3>
+            <p>Collect annual report, latest results, and one material market disclosure for each priority company.</p>
+          </article>
+          <article class="pilot-command-card">
+            <span>Day 4</span>
+            <h3>Run the intake doctor.</h3>
+            <p>Every source must pass URL, issuer, period, date, and citation-depth checks before it becomes REAL.</p>
+          </article>
+          <article class="pilot-command-card">
+            <span>Day 5</span>
+            <h3>Create three memo packets.</h3>
+            <p>Run one risk memo per priority issuer and export the Evidence-to-Brief packet for human review.</p>
+          </article>
+          <article class="pilot-command-card">
+            <span>Day 6</span>
+            <h3>Review and decide.</h3>
+            <p>Use Memo Review Room and Decision Journal to record whether each issuer is pilot-ready or source-blocked.</p>
+          </article>
+          <article class="pilot-command-card is-launch">
+            <span>Day 7 gate</span>
+            <h3>Publish only if trust is visible.</h3>
+            <p>Launch-ready means green checks, source provenance, reviewed memos, and no synthetic evidence sold as real research.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section revenue-pilot-section" aria-labelledby="revenuePilotTitle" id="revenue-pilot">
+        <div class="section-heading">
+          <span>Revenue Pilot Console</span>
+          <h2 id="revenuePilotTitle">Find ten serious UAE research users.</h2>
+          <p>
+            This layer turns MajlisAlpha from a live desk into a testable pilot offer: who to invite, what proof to show, what price signal to measure, and when to scale.
+          </p>
+        </div>
+        <div class="revenue-pilot-grid" aria-label="MajlisAlpha revenue pilot console">
+          <article class="revenue-pilot-card is-lead">
+            <span>Target</span>
+            <h3>10 pilot users, 50 real questions.</h3>
+            <p>Start with active UAE public-market investors, GCC family-office analysts, finance creators, and operators who already read ADX/DFM disclosures.</p>
+          </article>
+          <article class="revenue-pilot-card">
+            <span>Proof demo</span>
+            <h3>One answer, full evidence trail.</h3>
+            <p>Show the question, cited source cards, intake diagnosis, readiness score, and memo review status in one clean walkthrough.</p>
+          </article>
+          <article class="revenue-pilot-card">
+            <span>Offer</span>
+            <h3>AED 199 pilot, AED 399 desk eval.</h3>
+            <p>Use the pilot to learn willingness to pay for saved briefs, real-source imports, watchlists, and committee-ready exports.</p>
+          </article>
+          <article class="revenue-pilot-card">
+            <span>Signal</span>
+            <h3>Paid intent beats polite praise.</h3>
+            <p>Track repeat questions, uploaded source files, export usage, referral names, and three users asking how to keep access.</p>
+          </article>
+          <article class="revenue-pilot-card is-close">
+            <span>Gate</span>
+            <h3>Scale only after trust survives review.</h3>
+            <p>Move to the next build only when real sources, reviewed memos, and customer demand are all visible in the same sprint.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section catalyst-calendar-section" aria-labelledby="catalystCalendarTitle" id="catalyst-calendar">
+        <div class="section-heading">
+          <span>UAE Catalyst Calendar</span>
+          <h2 id="catalystCalendarTitle">Know what to watch before the market cares.</h2>
+          <p>
+            The desk now has a source-first calendar for earnings windows, board decisions, dividends, ownership updates, and macro events without inventing unverified dates.
+          </p>
+        </div>
+        <div class="catalyst-calendar-grid" aria-label="MajlisAlpha UAE catalyst calendar">
+          <article class="catalyst-calendar-card is-watch">
+            <span>Results watch</span>
+            <h3>FAB, ENBD, DIB, DEWA.</h3>
+            <p>Track quarterly results windows, board-meeting notices, management tone, NIM direction, asset quality, and cash-flow conversion.</p>
+          </article>
+          <article class="catalyst-calendar-card">
+            <span>Property pulse</span>
+            <h3>EMAAR, ALDAR, DFM real estate.</h3>
+            <p>Watch presales, launches, handover commentary, rental yield signals, escrow disclosures, and Dubai transaction data read-throughs.</p>
+          </article>
+          <article class="catalyst-calendar-card">
+            <span>Energy and yield</span>
+            <h3>ADNOCGAS, DEWA, dividends.</h3>
+            <p>Monitor distribution policy, gas demand, regulated returns, capex language, oil and LNG indicators, and dividend timetable updates.</p>
+          </article>
+          <article class="catalyst-calendar-card">
+            <span>Market notices</span>
+            <h3>ADX, DFM, CANDI queue.</h3>
+            <p>Flag board decisions, related-party items, ownership changes, capital actions, sukuk notes, and trading-status updates from official sources.</p>
+          </article>
+          <article class="catalyst-calendar-card is-gate">
+            <span>REAL gate</span>
+            <h3>No source, no calendar date.</h3>
+            <p>A catalyst becomes usable only when the official source URL, issuer, event type, date, and analyst action are recorded together.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section peer-benchmark-section" aria-labelledby="peerBenchmarkTitle" id="peer-benchmark">
+        <div class="section-heading">
+          <span>Peer Benchmark Matrix</span>
+          <h2 id="peerBenchmarkTitle">Compare UAE issuers without losing the source trail.</h2>
+          <p>
+            The peer lens covers banks, property, energy/utilities, and platform names so each comparison starts with the right metrics, risks, and official evidence routes.
+          </p>
+        </div>
+        <div class="peer-benchmark-grid" aria-label="MajlisAlpha UAE peer benchmark matrix">
+          <article class="peer-benchmark-card is-core">
+            <span>Banks</span>
+            <h3>FAB, ENBD, DIB.</h3>
+            <p>Compare NIM direction, deposit-cost pressure, cost of risk, capital strength, payout language, and loan-growth quality.</p>
+          </article>
+          <article class="peer-benchmark-card">
+            <span>Property</span>
+            <h3>EMAAR, ALDAR.</h3>
+            <p>Benchmark presales, backlog, handovers, cash conversion, development margin, rental yield exposure, and leverage discipline.</p>
+          </article>
+          <article class="peer-benchmark-card">
+            <span>Energy and utility</span>
+            <h3>ADNOCGAS, DEWA.</h3>
+            <p>Track dividend durability, regulated return, capex path, gas demand, cash-flow visibility, and sensitivity to macro assumptions.</p>
+          </article>
+          <article class="peer-benchmark-card">
+            <span>Platforms</span>
+            <h3>IHC, EAND, AIRARABIA.</h3>
+            <p>Separate portfolio complexity, telecom cash generation, travel demand, related-party context, and governance explainability.</p>
+          </article>
+          <article class="peer-benchmark-card is-gate">
+            <span>Matrix gate</span>
+            <h3>Every rank needs a cited reason.</h3>
+            <p>No peer score should ship unless the metric, period, source URL, and analyst judgment are visible together.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section portfolio-risk-section" aria-labelledby="portfolioRiskTitle" id="portfolio-risk-radar">
+        <div class="section-heading">
+          <span>Portfolio Risk Radar</span>
+          <h2 id="portfolioRiskTitle">See which UAE exposure deserves attention first.</h2>
+          <p>
+            The portfolio layer tracks concentration, catalyst pressure, evidence freshness, liquidity sensitivity, and the next analyst action across a UAE watchlist.
+          </p>
+        </div>
+        <div class="portfolio-risk-grid" aria-label="MajlisAlpha portfolio risk radar">
+          <article class="portfolio-risk-card is-focus">
+            <span>Concentration</span>
+            <h3>Banks, property, energy, platforms.</h3>
+            <p>Map exposure by sector, issuer, catalyst cluster, and risk driver before a single company view becomes a portfolio blind spot.</p>
+          </article>
+          <article class="portfolio-risk-card">
+            <span>Evidence freshness</span>
+            <h3>Stale sources get flagged.</h3>
+            <p>Prioritize holdings where the latest source is old, synthetic, unreviewed, or missing a current results or disclosure update.</p>
+          </article>
+          <article class="portfolio-risk-card">
+            <span>Catalyst pressure</span>
+            <h3>Events drive review order.</h3>
+            <p>Use earnings windows, dividend decisions, board meetings, ownership updates, and macro releases to rank what needs review today.</p>
+          </article>
+          <article class="portfolio-risk-card">
+            <span>Decision action</span>
+            <h3>Hold, review, source-blocked.</h3>
+            <p>Every portfolio signal should become an action in the decision journal, not just a colored dashboard tile.</p>
+          </article>
+          <article class="portfolio-risk-card is-gate">
+            <span>Radar gate</span>
+            <h3>No alert without a source path.</h3>
+            <p>A portfolio risk is actionable only when the exposure, event, source status, and next analyst step are visible together.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section claim-trace-section" aria-labelledby="claimTraceTitle" id="claim-trace">
+        <div class="section-heading">
+          <span>Claim Trace Inspector</span>
+          <h2 id="claimTraceTitle">Make every answer defensible before it leaves the desk.</h2>
+          <p>
+            The claim-level audit layer lets each brief show the claim, source snippet, official URL, confidence status, reviewer decision, and unresolved gap.
+          </p>
+        </div>
+        <div class="claim-trace-grid" aria-label="MajlisAlpha claim trace inspector">
+          <article class="claim-trace-card is-primary">
+            <span>Claim map</span>
+            <h3>Break the brief into checkable claims.</h3>
+            <p>Separate valuation assumptions, risk statements, management-tone reads, peer rankings, and portfolio alerts before review.</p>
+          </article>
+          <article class="claim-trace-card">
+            <span>Source snippet</span>
+            <h3>Quote the evidence, not the vibe.</h3>
+            <p>Each supported claim needs a source excerpt, official URL, issuer, period, and document type that a reviewer can inspect.</p>
+          </article>
+          <article class="claim-trace-card">
+            <span>Status</span>
+            <h3>Supported, inferred, or blocked.</h3>
+            <p>Mark claims as supported when cited, inferred when judgement is involved, and source-blocked when evidence is missing.</p>
+          </article>
+          <article class="claim-trace-card">
+            <span>Reviewer loop</span>
+            <h3>Push weak claims back to research.</h3>
+            <p>Unsupported claims should return to Source Studio, Intake Doctor, or Memo Review Room before a PDF or committee memo ships.</p>
+          </article>
+          <article class="claim-trace-card is-gate">
+            <span>Trace gate</span>
+            <h3>No trace, no publish.</h3>
+            <p>A brief is publish-ready only when material claims have source paths, reviewer status, and no synthetic evidence presented as real.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section disclosure-alert-section" aria-labelledby="disclosureAlertTitle" id="disclosure-alerts">
+        <div class="section-heading">
+          <span>Disclosure Alert Watchtower</span>
+          <h2 id="disclosureAlertTitle">Turn market notices into assigned research actions.</h2>
+          <p>
+            The alert workflow routes ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer IR updates from raw notice to triaged memo work.
+          </p>
+        </div>
+        <div class="disclosure-alert-grid" aria-label="MajlisAlpha disclosure alert watchtower">
+          <article class="disclosure-alert-card is-lead">
+            <span>Ingest</span>
+            <h3>Capture official notices first.</h3>
+            <p>Track source route, issuer, disclosure type, source timestamp, and whether the notice is official, duplicate, or watch-only.</p>
+          </article>
+          <article class="disclosure-alert-card">
+            <span>Classify</span>
+            <h3>Results, board, dividend, ownership.</h3>
+            <p>Sort alerts by event type, affected ticker, source confidence, expected impact, and whether a brief or memo is required.</p>
+          </article>
+          <article class="disclosure-alert-card">
+            <span>Assign</span>
+            <h3>Every alert needs an owner.</h3>
+            <p>Route high-priority notices to Source Intake Doctor, Claim Trace Inspector, Portfolio Risk Radar, or Decision Journal.</p>
+          </article>
+          <article class="disclosure-alert-card">
+            <span>SLA</span>
+            <h3>Review fast, publish carefully.</h3>
+            <p>Use urgency windows for material results, dividend changes, governance items, capital actions, and trading-status updates.</p>
+          </article>
+          <article class="disclosure-alert-card is-gate">
+            <span>Alert gate</span>
+            <h3>No alert without official route.</h3>
+            <p>An alert becomes actionable only when source URL, event type, issuer, owner, priority, and next step are recorded.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section analyst-mission-section" aria-labelledby="analystMissionTitle" id="analyst-mission-control">
+        <div class="section-heading">
+          <span>Analyst Mission Control</span>
+          <h2 id="analystMissionTitle">Convert research signals into owned work.</h2>
+          <p>
+            The command queue turns alerts, claim gaps, portfolio risks, peer checks, and source blockers into owner-assigned tasks with SLA and publish readiness.
+          </p>
+        </div>
+        <div class="analyst-mission-grid" aria-label="MajlisAlpha analyst mission control">
+          <article class="analyst-mission-card is-lead">
+            <span>Queue</span>
+            <h3>One lane for every task.</h3>
+            <p>Unify source intake, memo review, claim trace, portfolio review, peer check, and decision-journal work into a single operating view.</p>
+          </article>
+          <article class="analyst-mission-card">
+            <span>Priority</span>
+            <h3>Urgent, high, normal, blocked.</h3>
+            <p>Rank work by disclosure materiality, stale evidence, catalyst pressure, customer pilot need, and publish dependency.</p>
+          </article>
+          <article class="analyst-mission-card">
+            <span>Owner</span>
+            <h3>No orphan research work.</h3>
+            <p>Each task needs owner, workflow lane, due window, source state, reviewer state, and next action before it counts as active.</p>
+          </article>
+          <article class="analyst-mission-card">
+            <span>Handoff</span>
+            <h3>From source to memo to decision.</h3>
+            <p>Move tasks across Source Studio, Intake Doctor, Claim Trace, Memo Review Room, Portfolio Radar, and Decision Journal.</p>
+          </article>
+          <article class="analyst-mission-card is-gate">
+            <span>Publish gate</span>
+            <h3>Done means reviewed, not just drafted.</h3>
+            <p>A mission is complete only when sources, claims, memo status, and decision record all agree.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section answer-quality-section" aria-labelledby="answerQualityTitle" id="answer-quality-lab">
+        <div class="section-heading">
+          <span>Answer Quality Lab</span>
+          <h2 id="answerQualityTitle">Score answers before users trust them.</h2>
+          <p>
+            The evaluation layer scores source coverage, UAE specificity, claim trace, valuation math, risk balance, and publish readiness.
+          </p>
+        </div>
+        <div class="answer-quality-grid" aria-label="MajlisAlpha answer quality lab">
+          <article class="answer-quality-card is-lead">
+            <span>Source coverage</span>
+            <h3>Every answer needs enough evidence.</h3>
+            <p>Check whether the brief cites the right official sources, current periods, source snippets, and issuer-specific documents.</p>
+          </article>
+          <article class="answer-quality-card">
+            <span>UAE specificity</span>
+            <h3>No generic market filler.</h3>
+            <p>Score whether the answer understands ADX, DFM, Nasdaq Dubai, AED valuation, ownership rules, dividends, and issuer context.</p>
+          </article>
+          <article class="answer-quality-card">
+            <span>Math and logic</span>
+            <h3>Assumptions must tie out.</h3>
+            <p>Validate valuation inputs, risk labels, peer rankings, portfolio alerts, and whether the conclusion follows from the evidence.</p>
+          </article>
+          <article class="answer-quality-card">
+            <span>User value</span>
+            <h3>Useful, concise, decision-ready.</h3>
+            <p>Measure whether the answer gives a clear memo, next action, unresolved gaps, and a reason to keep using the desk.</p>
+          </article>
+          <article class="answer-quality-card is-gate">
+            <span>Quality gate</span>
+            <h3>Low score stays internal.</h3>
+            <p>An answer should not be exported unless it clears source, trace, math, and reviewer thresholds.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section customer-signal-section" aria-labelledby="customerSignalTitle" id="customer-signal-room">
+        <div class="section-heading">
+          <span>Customer Signal Room</span>
+          <h2 id="customerSignalTitle">Turn pilot conversations into product evidence.</h2>
+          <p>
+            The feedback loop captures real questions, repeat usage, objections, paid intent, requested coverage, and roadmap decisions from UAE pilot users.
+          </p>
+        </div>
+        <div class="customer-signal-grid" aria-label="MajlisAlpha customer signal room">
+          <article class="customer-signal-card is-lead">
+            <span>Questions</span>
+            <h3>Track what users actually ask.</h3>
+            <p>Log real UAE market questions, tickers, source material shared, and whether the answer changed the user's next action.</p>
+          </article>
+          <article class="customer-signal-card">
+            <span>Usage</span>
+            <h3>Repeat behavior beats praise.</h3>
+            <p>Measure second questions, exports, source uploads, saved briefs, watchlist requests, and users asking to keep access.</p>
+          </article>
+          <article class="customer-signal-card">
+            <span>Objections</span>
+            <h3>Capture friction honestly.</h3>
+            <p>Record trust gaps, missing coverage, unclear pricing, source concerns, workflow confusion, and unsupported data requests.</p>
+          </article>
+          <article class="customer-signal-card">
+            <span>Roadmap</span>
+            <h3>Build from repeated demand.</h3>
+            <p>Promote feedback only when multiple pilot users ask for the same workflow, issuer coverage, alert, export, or integration.</p>
+          </article>
+          <article class="customer-signal-card is-gate">
+            <span>Signal gate</span>
+            <h3>No roadmap from one compliment.</h3>
+            <p>A customer signal becomes product work only when user segment, evidence, impact, and next decision are recorded.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section pilot-kpi-section" aria-labelledby="pilotKpiTitle" id="pilot-kpi-board">
+        <div class="section-heading">
+          <span>Pilot KPI Board</span>
+          <h2 id="pilotKpiTitle">Know when the UAE pilot deserves to scale.</h2>
+          <p>
+            The operator scorecard tracks activation, repeat usage, source readiness, answer quality, paid intent, trust friction, and roadmap focus.
+          </p>
+        </div>
+        <div class="pilot-kpi-grid" aria-label="MajlisAlpha pilot KPI board">
+          <article class="pilot-kpi-card is-lead">
+            <span>Activation</span>
+            <h3>10 users, 50 real questions.</h3>
+            <p>Track pilot users who ask real UAE market questions, select tickers, upload sources, and complete at least one answer workflow.</p>
+          </article>
+          <article class="pilot-kpi-card">
+            <span>Readiness</span>
+            <h3>Sources and answers must pass.</h3>
+            <p>Measure REAL source packs, publish-ready answers, claim-trace pass rate, and quality-lab scores before scaling usage.</p>
+          </article>
+          <article class="pilot-kpi-card">
+            <span>Retention</span>
+            <h3>Return behavior matters most.</h3>
+            <p>Watch second questions, repeat exports, saved briefs, watchlist creation, and users asking to keep access after demo.</p>
+          </article>
+          <article class="pilot-kpi-card">
+            <span>Revenue</span>
+            <h3>Paid intent over compliments.</h3>
+            <p>Track pricing questions, AED 199 pilot acceptance, AED 399 desk interest, team access, invoice asks, and referrals.</p>
+          </article>
+          <article class="pilot-kpi-card is-gate">
+            <span>Scale gate</span>
+            <h3>Green only when trust and demand agree.</h3>
+            <p>Scale when usage, source readiness, answer quality, paid intent, and low trust friction move together.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section compliance-audit-section" aria-labelledby="complianceAuditTitle" id="compliance-audit">
+        <div class="section-heading">
+          <span>Compliance Audit Center</span>
+          <h2 id="complianceAuditTitle">Keep the UAE desk clear, reviewable, and non-advisory.</h2>
+          <p>
+            The control layer adds research disclaimers, source provenance, reviewer approvals, export audit trails, upload safety, and investment-advice boundaries.
+          </p>
+        </div>
+        <div class="compliance-audit-grid" aria-label="MajlisAlpha compliance audit center">
+          <article class="compliance-audit-card is-lead">
+            <span>Boundary</span>
+            <h3>Research software, not investment advice.</h3>
+            <p>Every export should separate source-backed analysis, analyst judgment, valuation scenarios, and user decisions.</p>
+          </article>
+          <article class="compliance-audit-card">
+            <span>Audit trail</span>
+            <h3>Record who reviewed what.</h3>
+            <p>Track source imports, claim trace status, answer-quality score, reviewer decision, export time, and unresolved gaps.</p>
+          </article>
+          <article class="compliance-audit-card">
+            <span>Source rights</span>
+            <h3>Official links stay visible.</h3>
+            <p>Keep official URLs, document labels, source dates, and synthetic-vs-REAL status attached to every cited output.</p>
+          </article>
+          <article class="compliance-audit-card">
+            <span>Upload safety</span>
+            <h3>Handle files like production data.</h3>
+            <p>Flag oversized files, unknown provenance, sensitive material, duplicate uploads, and source packs that need reviewer clearance.</p>
+          </article>
+          <article class="compliance-audit-card is-gate">
+            <span>Audit gate</span>
+            <h3>No export without controls.</h3>
+            <p>A brief is safe to share only when disclaimer, source path, reviewer status, and traceability checks are complete.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section source-refresh-section" aria-labelledby="sourceRefreshTitle" id="source-refresh">
+        <div class="section-heading">
+          <span>Source Refresh Scheduler</span>
+          <h2 id="sourceRefreshTitle">Keep official UAE evidence fresh before users ask.</h2>
+          <p>
+            The freshness layer keeps ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer IR sources on a clear cadence so stale evidence becomes assigned refresh work.
+          </p>
+        </div>
+        <div class="source-refresh-grid" aria-label="MajlisAlpha source refresh scheduler">
+          <article class="source-refresh-card is-lead">
+            <span>Daily</span>
+            <h3>Exchange disclosures first.</h3>
+            <p>Check ADX, DFM, and Nasdaq Dubai notices for results, board decisions, dividends, trading status, and corporate actions.</p>
+          </article>
+          <article class="source-refresh-card">
+            <span>Weekly</span>
+            <h3>Issuer IR and source packs.</h3>
+            <p>Refresh priority issuer pages, presentations, annual reports, ownership notes, and pending source-pack gaps.</p>
+          </article>
+          <article class="source-refresh-card">
+            <span>Monthly</span>
+            <h3>Coverage and stale evidence review.</h3>
+            <p>Score source freshness by ticker, document type, catalyst pressure, pilot demand, and answer-quality failures.</p>
+          </article>
+          <article class="source-refresh-card">
+            <span>Escalate</span>
+            <h3>Stale sources become missions.</h3>
+            <p>Route overdue refreshes to Mission Control, Disclosure Alerts, Source Intake Doctor, or Compliance Audit when evidence is blocking export.</p>
+          </article>
+          <article class="source-refresh-card is-gate">
+            <span>Freshness gate</span>
+            <h3>No current source, no current claim.</h3>
+            <p>A refresh is complete only when URL, timestamp, source label, reviewer status, and affected answers are updated.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section corporate-action-section" aria-labelledby="corporateActionTitle" id="corporate-actions">
+        <div class="section-heading">
+          <span>Corporate Action Tracker</span>
+          <h2 id="corporateActionTitle">Turn UAE market actions into source-backed research events.</h2>
+          <p>
+            The action layer tracks dividends, board decisions, AGMs, rights issues, capital changes, and trading status so material actions become brief-ready evidence.
+          </p>
+        </div>
+        <div class="corporate-action-grid" aria-label="MajlisAlpha corporate action tracker">
+          <article class="corporate-action-card is-lead">
+            <span>Dividends</span>
+            <h3>Cash and bonus actions get their own trail.</h3>
+            <p>Capture proposed, approved, record-date, ex-date, payment-date, yield read-through, and source status before a dividend claim is exported.</p>
+          </article>
+          <article class="corporate-action-card">
+            <span>Board and AGM</span>
+            <h3>Decisions need meeting context.</h3>
+            <p>Track board meetings, AGM/EGM outcomes, approvals, agenda items, quorum signals, and follow-up disclosures.</p>
+          </article>
+          <article class="corporate-action-card">
+            <span>Capital events</span>
+            <h3>Rights, buybacks, and capital changes affect models.</h3>
+            <p>Flag rights issues, share buybacks, treasury shares, capital increases, capital reductions, and dilution checks.</p>
+          </article>
+          <article class="corporate-action-card">
+            <span>Trading status</span>
+            <h3>Halts and resumptions become priority alerts.</h3>
+            <p>Route suspensions, resumptions, material clarifications, and pending announcements into alerts, missions, and claim trace.</p>
+          </article>
+          <article class="corporate-action-card is-gate">
+            <span>Action gate</span>
+            <h3>No event without dates and source path.</h3>
+            <p>A corporate action is research-ready only when official URL, date fields, issuer impact, owner, and review status are complete.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section ownership-pulse-section" aria-labelledby="ownershipPulseTitle" id="ownership-pulse">
+        <div class="section-heading">
+          <span>Ownership Pulse Monitor</span>
+          <h2 id="ownershipPulseTitle">Track who owns the UAE signal before the market story changes.</h2>
+          <p>
+            The ownership layer monitors major holders, government-linked ownership, free float, foreign-ownership room, insider moves, and strategic stake changes as source-backed research events.
+          </p>
+        </div>
+        <div class="ownership-pulse-grid" aria-label="MajlisAlpha ownership pulse monitor">
+          <article class="ownership-pulse-card is-lead">
+            <span>Major holders</span>
+            <h3>Ownership concentration changes the thesis.</h3>
+            <p>Track government, founder, strategic, institutional, and top-shareholder movements with official source paths and effective dates.</p>
+          </article>
+          <article class="ownership-pulse-card">
+            <span>Foreign room</span>
+            <h3>Room, limits, and free float matter.</h3>
+            <p>Capture foreign-ownership limits, available room, free-float changes, index relevance, and liquidity read-throughs before ranking peers.</p>
+          </article>
+          <article class="ownership-pulse-card">
+            <span>Insider moves</span>
+            <h3>Director and related-party signals need review.</h3>
+            <p>Route board, executive, related-party, treasury, and substantial-shareholder changes into claim trace and compliance checks.</p>
+          </article>
+          <article class="ownership-pulse-card">
+            <span>Strategic shifts</span>
+            <h3>Stake changes can reshape catalysts.</h3>
+            <p>Link acquisitions, disposals, pledges, strategic investor entries, and ownership restructuring to catalyst calendar and portfolio risk.</p>
+          </article>
+          <article class="ownership-pulse-card is-gate">
+            <span>Ownership gate</span>
+            <h3>No ownership claim without source and date.</h3>
+            <p>An ownership signal is usable only when source URL, holder name, stake level, effective date, reviewer status, and affected answers are captured.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section macro-rates-section" aria-labelledby="macroRatesTitle" id="macro-rates-radar">
+        <div class="section-heading">
+          <span>Macro &amp; Rates Radar</span>
+          <h2 id="macroRatesTitle">Connect company answers to the UAE macro tape.</h2>
+          <p>
+            The macro layer tracks rates, oil, AED/USD peg context, real estate liquidity, bank funding, inflation pressure, and government spending as source-backed market drivers.
+          </p>
+        </div>
+        <div class="macro-rates-grid" aria-label="MajlisAlpha macro and rates radar">
+          <article class="macro-rates-card is-lead">
+            <span>Rates</span>
+            <h3>Funding costs shape banks and property.</h3>
+            <p>Track policy-rate pressure, deposit cost language, mortgage sensitivity, cap rates, discount rates, and refinancing risk.</p>
+          </article>
+          <article class="macro-rates-card">
+            <span>Oil and spending</span>
+            <h3>Hydrocarbon strength feeds confidence.</h3>
+            <p>Link oil-price regime, fiscal spending, project awards, tourism demand, and infrastructure activity to sector read-throughs.</p>
+          </article>
+          <article class="macro-rates-card">
+            <span>AED peg</span>
+            <h3>USD strength changes the lens.</h3>
+            <p>Frame imported inflation, dollar funding, travel flows, trade exposure, and valuation discount-rate assumptions around the peg context.</p>
+          </article>
+          <article class="macro-rates-card">
+            <span>Sector pressure</span>
+            <h3>Macro drivers should route to tickers.</h3>
+            <p>Map rates, oil, liquidity, real estate, population growth, and credit cycle pressure into banks, property, energy, utilities, and platforms.</p>
+          </article>
+          <article class="macro-rates-card is-gate">
+            <span>Macro gate</span>
+            <h3>No macro claim without driver and source.</h3>
+            <p>A macro read-through is usable only when driver, date, source route, affected tickers, assumption impact, and reviewer status are captured.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section aed-scenario-section" aria-labelledby="aedScenarioTitle" id="aed-scenario-lab">
+        <div class="section-heading">
+          <span>AED Scenario Lab</span>
+          <h2 id="aedScenarioTitle">Turn UAE evidence into auditable valuation cases.</h2>
+          <p>
+            The scenario layer converts disclosures, macro drivers, ownership signals, and corporate actions into base, upside, downside, and rate-shock scenarios with source-backed assumptions.
+          </p>
+        </div>
+        <div class="aed-scenario-grid" aria-label="MajlisAlpha AED scenario lab">
+          <article class="aed-scenario-card is-lead">
+            <span>Base case</span>
+            <h3>Every model starts with cited assumptions.</h3>
+            <p>Anchor revenue growth, margins, cash conversion, discount rate, terminal multiple, and dividend assumptions to source-backed evidence.</p>
+          </article>
+          <article class="aed-scenario-card">
+            <span>Rate shock</span>
+            <h3>Show sensitivity before conviction.</h3>
+            <p>Stress deposit costs, mortgage demand, cap rates, refinancing risk, and valuation discount rates against the Macro &amp; Rates Radar.</p>
+          </article>
+          <article class="aed-scenario-card">
+            <span>Upside path</span>
+            <h3>Optimism needs a source trail.</h3>
+            <p>Use catalysts, corporate actions, ownership shifts, backlog, pricing power, and sector momentum only when the evidence supports the case.</p>
+          </article>
+          <article class="aed-scenario-card">
+            <span>Downside guardrail</span>
+            <h3>Risk cases keep answers honest.</h3>
+            <p>Map margin pressure, funding stress, execution delays, liquidity weakness, governance risk, and stale evidence into the downside case.</p>
+          </article>
+          <article class="aed-scenario-card is-gate">
+            <span>Scenario gate</span>
+            <h3>No valuation case without assumption provenance.</h3>
+            <p>A scenario is export-ready only when assumptions, sources, dates, sensitivity range, affected tickers, reviewer status, and unresolved gaps are captured.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section committee-pack-section" aria-labelledby="committeePackTitle" id="committee-pack-builder">
+        <div class="section-heading">
+          <span>Committee Pack Builder</span>
+          <h2 id="committeePackTitle">Package UAE research into a review-ready decision packet.</h2>
+          <p>
+            v20 turns briefs, sources, risks, scenarios, corporate actions, ownership signals, macro drivers, and review status into an auditable committee pack.
+          </p>
+        </div>
+        <div class="committee-pack-grid" aria-label="MajlisAlpha committee pack builder">
+          <article class="committee-pack-card is-lead">
+            <span>Thesis</span>
+            <h3>One clear decision narrative.</h3>
+            <p>Summarize the company view, key evidence, unresolved questions, and why the brief matters now without turning it into investment advice.</p>
+          </article>
+          <article class="committee-pack-card">
+            <span>Evidence deck</span>
+            <h3>Sources travel with the pack.</h3>
+            <p>Attach citation cards, official URLs, source dates, claim trace status, REAL-vs-synthetic labels, and refresh status to every material claim.</p>
+          </article>
+          <article class="committee-pack-card">
+            <span>Scenario table</span>
+            <h3>Valuation cases need provenance.</h3>
+            <p>Include base, upside, downside, rate-shock, and corporate-action adjustments from the AED Scenario Lab with assumption sensitivity ranges.</p>
+          </article>
+          <article class="committee-pack-card">
+            <span>Risk register</span>
+            <h3>Weakness belongs in the packet.</h3>
+            <p>Show portfolio risks, macro pressure, ownership concerns, corporate-action gaps, stale evidence, and answer-quality failures before export.</p>
+          </article>
+          <article class="committee-pack-card is-gate">
+            <span>Pack gate</span>
+            <h3>No committee pack without review status.</h3>
+            <p>A pack is share-ready only when sources, scenarios, risks, reviewer status, compliance disclaimer, and unresolved gaps are complete.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section foundation-section" aria-labelledby="foundationTitle" id="foundation">
+        <div class="section-heading">
+          <span>Production foundation</span>
+          <h2 id="foundationTitle">Build it like a research product, not a demo.</h2>
+          <p>v20 turns the current desk into a clearer product system: evidence provenance, source-first catalyst monitoring, peer comparison discipline, portfolio risk triage, claim-level audit, disclosure alert routing, analyst work ownership, answer-quality scoring, customer-signal learning, pilot KPI discipline, compliance audit controls, source-refresh discipline, corporate-action tracking, ownership-pulse monitoring, macro-rate context, AED scenario discipline, committee-pack packaging, repo checks, pilot revenue gates, and a backend path for accounts, ingestion, and audit logs.</p>
+        </div>
+        <div class="foundation-grid" aria-label="MajlisAlpha production foundation">
+          <article>
+            <span>Architecture</span>
+            <h3>Static shell today, service layer next.</h3>
+            <p>Keep the GitHub Pages app as the product surface while moving ingestion, user data, scheduled refresh, and future AI calls behind server-side controls.</p>
+          </article>
+          <article>
+            <span>Evidence</span>
+            <h3>Every answer needs provenance.</h3>
+            <p>Source records should carry document type, period, URL, quality, citation sections, import date, and reviewer status before they become production evidence.</p>
+          </article>
+          <article>
+            <span>Quality</span>
+            <h3>Ship with checks before features.</h3>
+            <p>The repository now includes a static-check script and GitHub Actions workflow for syntax, JSON validity, CSP presence, and accidental inline handler detection.</p>
+          </article>
+          <article>
+            <span>Launch</span>
+            <h3>Security stays part of the build.</h3>
+            <p>The roadmap separates prototype controls from production requirements: auth, RBAC, file scanning, rate limits, audit logs, dependency scans, and vulnerability handling.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section pricing-section" aria-labelledby="pricingTitle" id="pricing">
+        <div class="section-heading">
+          <span>Pricing</span>
+          <h2 id="pricingTitle">Plans for the UAE pilot.</h2>
+          <p>Monthly access for cited disclosure answers, company comparison work, watchlists, and valuation read-throughs.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <span class="plan-label">Starter</span>
+            <h3>AED 79<span>/mo</span></h3>
+            <p>For testing cited disclosure analysis.</p>
+            <ul>
+              <li>Sample research desk</li>
+              <li>Limited document imports</li>
+              <li>Saved briefs</li>
+            </ul>
+            <a class="plan-link" href="#waitlist">Join Starter</a>
+          </article>
+          <article class="pricing-card is-featured">
+            <span class="plan-label">Pro</span>
+            <h3>AED 199<span>/mo</span></h3>
+            <p>For company and scenario work.</p>
+            <ul>
+              <li>Expanded UAE coverage library</li>
+              <li>Multi-source answer stack</li>
+              <li>Valuation scenario exports</li>
+            </ul>
+            <a class="plan-link" href="#waitlist">Join Pro</a>
+          </article>
+          <article class="pricing-card">
+            <span class="plan-label">Desk</span>
+            <h3>AED 399<span>/mo</span></h3>
+            <p>For repeatable coverage workflows.</p>
+            <ul>
+              <li>Alerts and watchlists</li>
+              <li>Priority disclosure refresh</li>
+              <li>Portfolio research queue</li>
+            </ul>
+            <a class="plan-link" href="#waitlist">Join Desk</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section waitlist-section" aria-labelledby="waitlistTitle" id="waitlist">
+        <div class="waitlist-copy">
+          <div class="section-heading">
+            <span>Waitlist</span>
+            <h2 id="waitlistTitle">Join the pilot queue.</h2>
+            <p>Tell us the tickers, disclosures, and questions you want prioritised for the first live data release.</p>
+          </div>
+          <div class="pilot-note">
+            <strong>Early pilot goal</strong>
+            <span>10 serious testers, 50 UAE market questions, one workflow worth charging for.</span>
+          </div>
+        </div>
+        <form class="waitlist-form" id="waitlistForm" action="https://formsubmit.co/ajax/dhirajnyse@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New MajlisAlpha waitlist lead" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <label>
+            <span>Email</span>
+            <input id="waitlistEmail" name="email" type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Investor style</span>
+            <select id="waitlistProfile" name="profile">
+              <option>Retail investor</option>
+              <option>Active trader</option>
+              <option>Finance professional</option>
+              <option>Founder / operator</option>
+            </select>
+          </label>
+          <label>
+            <span>Plan interest</span>
+            <select id="waitlistPlan" name="plan">
+              <option>Pro - AED 199/month</option>
+              <option>Starter - AED 79/month</option>
+              <option>Desk - AED 399/month</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label>
+            <span>Most valuable feature</span>
+            <select id="waitlistNeed" name="need">
+              <option>Cited annual report answers</option>
+              <option>Earnings call tone analysis</option>
+              <option>ADX/DFM disclosure tracker</option>
+              <option>Ownership and ownership change monitor</option>
+              <option>Live data connectors</option>
+              <option>Valuation model export</option>
+              <option>Watchlist alerts</option>
+            </select>
+          </label>
+          <label class="wide-field">
+            <span>Top tickers you follow</span>
+            <input id="waitlistTickers" name="tickers" type="text" placeholder="Example: FAB, EMAAR, ADNOCGAS" />
+          </label>
+          <label class="wide-field">
+            <span>First ticker or question</span>
+            <input id="waitlistQuestion" name="question" type="text" placeholder="Example: FAB margin durability if UAE rates stay high" />
+          </label>
+          <button class="primary-button" type="submit">Join waitlist</button>
+        </form>
+        <div class="waitlist-result" id="waitlistResult" aria-live="polite"></div>
+      </section>
+
+      <section class="launch-section roadmap-section" aria-labelledby="roadmapTitle" id="roadmap">
+        <div class="section-heading">
+          <span>Roadmap</span>
+          <h2 id="roadmapTitle">Roadmap to launch.</h2>
+          <p>A compact path from static proof of concept to paid UAE-market research workflow.</p>
+        </div>
+        <div class="roadmap-grid">
+          <article>
+            <span>Now</span>
+            <h3>Interactive proof of concept</h3>
+            <p>Sample disclosures, cited answer flow, valuation lens, and live waitlist capture.</p>
+          </article>
+          <article>
+            <span>Next</span>
+            <h3>Real document ingestion</h3>
+            <p>Upload annual reports, results, earnings calls, exchange updates, and ownership updates into a searchable library.</p>
+          </article>
+          <article>
+            <span>MVP</span>
+            <h3>Accounts and saved coverage</h3>
+            <p>Login, watchlists, saved briefs, peer comparisons, and exports.</p>
+          </article>
+          <article>
+            <span>Launch</span>
+            <h3>Subscription research desk</h3>
+            <p>Disclosure refresh jobs, alerts, UAE-market data connectors, payment plans, and richer model-backed answers.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="disclosure">
+        Synthetic sample corpus for product prototyping. Treat every SYN citation as demo-only until replaced with a REAL annual report, earnings call, result, ownership, or exchange source. MajlisAlpha is research software, not investment advice.
+      </footer>
+    </div>
+
+    <script src="app.js?v=20260509-uae-20"></script>
+  </body>
+</html>

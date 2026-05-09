@@ -1,95 +1,65 @@
-# MajlisAlpha
-
-Evidence-backed UAE market research for investors who want cited answers instead of headline summaries. MajlisAlpha lets users ask complex questions across annual reports, ADX/DFM disclosures, Nasdaq Dubai CANDI records, earnings-call notes, ownership updates, and AED valuation scenarios.
-
-## Product positioning
-
-Name: MajlisAlpha
-
-Tagline: Ask UAE disclosures. See the signal.
-
-Audience: UAE retail investors, GCC family offices, active market participants, and finance professionals who want a repeatable research workflow for ADX, DFM, and Nasdaq Dubai issuers.
-
-Brand feel: premium UAE boardroom, source-first research, emerald glass, warm gold, sand-stone neutrals, and precise institutional typography.
-
-Suggested SaaS packaging:
-
-- Starter: AED 79/month for saved briefs and limited imports.
-- Pro: AED 199/month for broader coverage and scenario exports.
-- Desk: AED 399/month for alerts, watchlists, review logs, and repeatable coverage workflows.
-
-## What is included
-
-- Client-side retrieval over a synthetic UAE-market disclosure corpus.
-- Starter watchlist: IHC, FAB, ADNOCGAS, ALDAR, EAND, EMAAR, DEWA, DIB, ENBD, and AIRARABIA.
-- Source-ranked answers with citation cards, confidence scoring, and management-tone read-throughs.
-- Risk questions return exactly three cited risk factors with severity labels.
-- UAE-style ticker aliases such as $FAB, $EMAAR, $ADNOCGAS, $ALDAR, and $DEWA.
-- Company filters, document toggles, text/file import, saved briefs, copy-to-clipboard, Markdown export, and PDF export.
-- Company dossier with KPI summary, document timeline, source mix, risk checklist, and one-click research questions.
-- Source Pack Studio for building verified source records in the browser and exporting source-pack JSON.
-- Official-source helper links for ADX, DFM, Nasdaq Dubai CANDI, SCA, and company IR pages.
-- UAE Source Playbook section with direct official-source routes and REAL-evidence rules.
-- Pilot Command Center with a seven-day plan for making FAB, EMAAR, and ADNOCGAS review-ready.
-- Revenue Pilot Console for testing 10 pilot users, 50 real questions, paid intent, and launch readiness.
-- UAE Catalyst Calendar for tracking source-backed earnings windows, board decisions, dividends, ownership updates, and macro read-throughs.
-- Peer Benchmark Matrix for comparing UAE banks, property names, energy/utilities, and platform issuers with cited source logic.
-- Portfolio Risk Radar for triaging UAE watchlists by concentration, catalyst pressure, evidence freshness, and next analyst action.
-- Claim Trace Inspector for auditing brief claims against source snippets, official URLs, reviewer status, and unresolved evidence gaps.
-- Disclosure Alert Watchtower for routing ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer IR updates into assigned research actions.
-- Analyst Mission Control for converting alerts, claim gaps, portfolio risks, peer checks, and pilot requests into owner-assigned tasks.
-- Answer Quality Lab for scoring source coverage, claim trace, UAE specificity, valuation logic, user value, and review readiness before export.
-- Coverage Command Center, Evidence-to-Brief Workbench, Memo Review Room, Decision Journal, Source Intake Doctor, and Launch Control Room.
-- AED valuation lens with revenue growth, FCF margin, terminal multiple, and discount-rate sensitivities.
-- A 3D-style SVG brand mark in assets/majlisalpha-logo.svg plus social preview artwork.
-
-## Open the app
-
-Open the deployed GitHub Pages URL. Because the app loads JSON from the data folder, local file:// opening may be blocked by browser fetch rules. For local testing, use any small static web server from the project root.
-
-## Data architecture
-
-The application shell is in index.html, styles.css, launch.css, and app.js. The research universe lives in data/:
-
-- data/companies.json: UAE companies, model assumptions, thesis text, and risk-factor templates.
-- data/documents.json: Starter synthetic source sections used by retrieval.
-- data/questions.json: Left-rail question templates.
-- data/watchlists.json: Watchlist definitions and ticker aliases.
-- data/source-pack-template.json: Copyable template for adding real annual reports, results summaries, ownership extracts, and ADX/DFM/Nasdaq Dubai disclosures.
-- data/official-sources.json: Official UAE source index for ADX, DFM, Nasdaq Dubai CANDI, SCA, and company IR workflows.
-- data/pilot-sprint.json: Seven-day pilot sprint plan and launch gate.
-- data/pilot-revenue.json: Revenue pilot targets, ICPs, demo script, pricing hypotheses, conversion signals, and scale gate.
-- data/catalyst-calendar.json: UAE catalyst watch streams, source policy, required fields, and calendar readiness gate.
-- data/peer-benchmark.json: UAE peer groups, benchmark metrics, source routes, matrix gate, and starter outputs.
-- data/portfolio-risk-radar.json: portfolio exposure buckets, risk signals, next actions, and radar launch gate.
-- data/claim-trace-inspector.json: claim types, trace statuses, review workflow, and export readiness gate.
-- data/disclosure-alert-watchtower.json: official source routes, alert types, SLA rules, triage fields, and review statuses.
-- data/analyst-mission-control.json: workflow lanes, task priorities, statuses, required fields, and publish-readiness gate.
-- data/answer-quality-lab.json: answer score bands, evaluation dimensions, failure reasons, and export quality gate.
-
-## Operating playbooks
-
-- docs/UAE_SOURCE_PLAYBOOK.md: first source-collection sprint and REAL-evidence rules.
-- docs/PILOT_COMMAND_CENTER.md: operational sprint plan for the first three UAE issuers.
-- docs/PILOT_REVENUE_PLAYBOOK.md: 14-day pilot plan for validating users, source usage, and paid intent.
-- docs/CATALYST_CALENDAR.md: source-first operating workflow for monitoring UAE market catalysts.
-- docs/PEER_BENCHMARK_MATRIX.md: source-first peer comparison workflow and launch gate.
-- docs/PORTFOLIO_RISK_RADAR.md: portfolio triage workflow for concentration, catalysts, evidence freshness, and action tracking.
-- docs/CLAIM_TRACE_INSPECTOR.md: claim-level audit workflow for supported, inferred, source-blocked, and rejected claims.
-- docs/DISCLOSURE_ALERT_WATCHTOWER.md: official-disclosure alert routing workflow for source-first research actions.
-- docs/ANALYST_MISSION_CONTROL.md: operating queue for owned analyst tasks, priorities, lanes, and publish readiness.
-- docs/ANSWER_QUALITY_LAB.md: repeatable answer-evaluation rubric and publish-readiness quality gate.
-- docs/GITHUB_PAGES_DEPLOYMENT.md: GitHub Pages upload, settings, and smoke-test checklist.
-
-## Quality checks
-
-Run these before uploading a release ZIP or pushing to GitHub Pages:
-
-```bash
-node --check app.js
-node scripts/static-check.mjs
-```
-
-## Important note
-
-The bundled companies use real UAE listed-company tickers, but the starter disclosures and fundamentals are synthetic so the prototype is safe to evaluate. Import real annual reports, exchange disclosures, earnings-call transcripts, ownership updates, rating notes, or model notes before using the workflow for live research. MajlisAlpha is research software, not investment advice. The valuation panel is a scenario lens, not a price target.
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Revenue Pilot",
+  "objective": "Validate whether serious UAE market users will pay for cited disclosure answers, source-pack imports, watchlists, and committee-ready exports.",
+  "pilotWindowDays": 14,
+  "targets": {
+    "pilotUsers": 10,
+    "realQuestions": 50,
+    "uploadedSourcePacks": 15,
+    "paidIntentConversations": 3
+  },
+  "idealCustomerProfiles": [
+    {
+      "segment": "Active UAE retail investor",
+      "trigger": "Already compares ADX and DFM issuers and wants less rumor-driven research.",
+      "proofToShow": "One cited answer with source cards, valuation assumptions, and risk memo export."
+    },
+    {
+      "segment": "GCC family-office analyst",
+      "trigger": "Needs a fast first-pass read on UAE names before deeper diligence.",
+      "proofToShow": "Company dossier, source readiness gate, and memo review trail."
+    },
+    {
+      "segment": "Finance creator or newsletter operator",
+      "trigger": "Publishes UAE market commentary and needs source-backed question workflows.",
+      "proofToShow": "Evidence-to-brief workbench and clean export flow."
+    },
+    {
+      "segment": "IR, advisory, or capital-markets operator",
+      "trigger": "Tracks listed-company disclosures, ownership updates, and messaging tone.",
+      "proofToShow": "Source intake doctor, official-source links, and disclosure queue."
+    }
+  ],
+  "pilotOffer": [
+    {
+      "name": "Pro Pilot",
+      "priceAEDMonthly": 199,
+      "promise": "Saved briefs, real-source imports, watchlists, and cited UAE disclosure answers."
+    },
+    {
+      "name": "Desk Evaluation",
+      "priceAEDMonthly": 399,
+      "promise": "Review logs, committee-ready exports, source packs, and repeatable issuer coverage."
+    }
+  ],
+  "demoScript": [
+    "Ask one real UAE market question from the user's own workflow.",
+    "Open the cited source cards and show which evidence is synthetic versus REAL.",
+    "Run the source intake doctor on one official URL or pasted source note.",
+    "Export a brief and record the decision in the review trail.",
+    "Ask whether this saves enough research time to justify paid access."
+  ],
+  "conversionSignals": [
+    "User asks a second question without prompting.",
+    "User uploads or pastes a real source pack.",
+    "User asks for a saved watchlist or recurring coverage flow.",
+    "User requests export, PDF, or committee-ready wording.",
+    "User asks price, team access, or launch timing."
+  ],
+  "launchGate": {
+    "green": "At least 3 paid-intent users, 50 real questions, 15 uploaded source packs, and no trust failure in reviewed memo output.",
+    "yellow": "High usage but weak payment signal; keep the pilot narrow and interview users.",
+    "red": "Users like the UI but do not bring real questions or real source material."
+  }
+}

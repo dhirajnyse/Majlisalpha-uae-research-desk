@@ -1,0 +1,95 @@
+{
+  "version": "20260509-uae-20",
+  "name": "MajlisAlpha UAE Ownership Pulse Monitor",
+  "purpose": "Track UAE ownership signals from official disclosures so major-holder movement, government-linked ownership, free float, foreign-ownership room, insider activity, and strategic stake changes become source-backed research inputs.",
+  "ownershipPolicy": "No ownership claim should be used in a brief unless holder name, stake level, effective date, official URL, source route, owner, and reviewer status are captured.",
+  "signalTypes": [
+    {
+      "type": "major holder change",
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "issuer investor relations", "annual report"],
+      "watchFor": ["new substantial holder", "stake increase", "stake reduction", "strategic investor entry", "large shareholder exit"],
+      "researchImpact": ["control premium", "liquidity", "governance signal", "portfolio concentration"],
+      "escalateTo": ["Disclosure Alert Watchtower", "Claim Trace Inspector"]
+    },
+    {
+      "type": "government-linked ownership",
+      "sourceRoutes": ["annual report", "issuer investor relations", "official ownership disclosure"],
+      "watchFor": ["sovereign or government entity stake", "related government ownership", "strategic sector ownership", "state-linked mandate"],
+      "researchImpact": ["strategic support", "policy exposure", "governance context", "risk memo"],
+      "escalateTo": ["Portfolio Risk Radar", "Answer Quality Lab"]
+    },
+    {
+      "type": "foreign ownership room",
+      "sourceRoutes": ["ADX disclosures", "DFM disclosures", "exchange ownership data", "issuer investor relations"],
+      "watchFor": ["foreign ownership limit", "available room", "foreign ownership cap change", "index inclusion relevance"],
+      "researchImpact": ["liquidity", "index flow sensitivity", "foreign investor access", "peer comparison"],
+      "escalateTo": ["Peer Benchmark Matrix", "Catalyst Calendar"]
+    },
+    {
+      "type": "insider or related-party movement",
+      "sourceRoutes": ["exchange disclosure", "annual report", "board report", "governance report"],
+      "watchFor": ["director holding change", "executive holding change", "related-party stake", "treasury share change"],
+      "researchImpact": ["governance signal", "compliance review", "claim trace", "confidence adjustment"],
+      "escalateTo": ["Compliance Audit Center", "Claim Trace Inspector"]
+    },
+    {
+      "type": "free float and index relevance",
+      "sourceRoutes": ["exchange disclosure", "annual report", "index notice", "issuer investor relations"],
+      "watchFor": ["free-float change", "index eligibility", "tradable float", "share-count change"],
+      "researchImpact": ["liquidity screen", "index flow risk", "valuation comparability", "portfolio sizing"],
+      "escalateTo": ["Portfolio Risk Radar", "Peer Benchmark Matrix"]
+    }
+  ],
+  "signalStatuses": ["new", "confirmed", "needs-review", "stale", "blocked", "escalated", "reviewed"],
+  "requiredOwnershipFields": [
+    "signalId",
+    "issuer",
+    "ticker",
+    "holderName",
+    "holderCategory",
+    "stakePercent",
+    "changeDirection",
+    "effectiveDate",
+    "officialUrl",
+    "sourceRoute",
+    "researchImpact",
+    "affectedAnswers",
+    "owner",
+    "reviewerStatus",
+    "nextAction"
+  ],
+  "workflow": [
+    "capture ownership signal from official source",
+    "classify holder category and change direction",
+    "record stake level, effective date, and official URL",
+    "assess free-float, foreign-room, governance, or liquidity impact",
+    "route material signal to alert, portfolio, peer, quality, claim trace, or compliance workflow",
+    "mark ownership claim usable only after reviewer approval"
+  ],
+  "escalationRules": [
+    {
+      "condition": "major holder stake changes by a material amount",
+      "action": "route to Disclosure Alert Watchtower and Claim Trace Inspector"
+    },
+    {
+      "condition": "foreign ownership room or free float changes materially",
+      "action": "send to Peer Benchmark Matrix and Portfolio Risk Radar"
+    },
+    {
+      "condition": "insider, director, executive, or related-party holding changes",
+      "action": "send to Compliance Audit Center before customer-facing export"
+    },
+    {
+      "condition": "official URL, holder name, stake percent, or effective date is missing",
+      "action": "mark blocked and assign Source Refresh Scheduler owner"
+    },
+    {
+      "condition": "ownership signal changes valuation, governance, liquidity, or risk language",
+      "action": "open Answer Quality Lab review before export"
+    }
+  ],
+  "launchGate": {
+    "readyRule": "Ownership Pulse Monitor is pilot-ready when every material ownership signal has holder identity, stake level, effective date, official URL, ticker, research impact, owner, and reviewer status.",
+    "blockedRule": "If an ownership claim is missing source path, holder identity, stake level, or effective date, it cannot support an exported brief."
+  }
+}
