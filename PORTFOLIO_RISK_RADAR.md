@@ -1,54 +1,25 @@
-# MajlisAlpha Ownership Pulse Monitor
+# Pilot Conversion Pipeline
 
-Ownership Pulse Monitor tracks who owns the UAE signal before the market story changes. It turns major-holder movement, government-linked ownership, free float, foreign-ownership room, insider activity, and strategic stake changes into source-backed research events.
+The Pilot Conversion Pipeline turns outreach replies into a measurable launch board. It completes the pilot loop after session logging, follow-up capture, and outreach drafting by showing which accounts are moving toward paid use and which blockers still need work.
 
-## Purpose
+## Inputs
 
-Ownership can change the investment context even when earnings have not changed. A new strategic holder, a stake reduction, foreign-room pressure, free-float change, or insider movement can affect liquidity, governance, index relevance, peer comparison, and risk language.
+Each conversion record captures:
 
-The monitor records each ownership signal as an auditable item:
+- Account or user.
+- Stage, from new reply through interested, source review, proposal, paid pilot, won, or lost.
+- Plan lane, including discovery, AED 199 pilot, AED 399 desk, or team invoice.
+- Close probability and expected AED monthly recurring revenue.
+- Next date, reply type, blocker, close action, and note.
 
-- issuer and ticker
-- holder name
-- holder category
-- stake percent
-- change direction
-- effective date
-- official URL
-- source route
-- research impact
-- affected answers
-- owner
-- reviewer status
-- next action
+## Operating Rule
 
-## Signal Types
+A conversion record should be created only when there is an observable signal: a reply, a pricing question, a request for a source review, a proposal ask, a paid-pilot step, or a clear lost reason. Compliments without a next action should remain in the follow-up board until they become real pipeline evidence.
 
-- Major holder change: new substantial holders, stake increases, stake reductions, strategic investor entries, and large exits.
-- Government-linked ownership: sovereign, state-linked, strategic sector, or policy-exposed ownership.
-- Foreign ownership room: limits, available room, cap changes, and foreign-investor access signals.
-- Insider or related-party movement: director, executive, related-party, treasury-share, and governance-linked changes.
-- Free float and index relevance: tradable float, share-count changes, index eligibility, and liquidity screen effects.
+## Metrics
 
-## Workflow
+The board tracks open deals, weighted monthly recurring revenue, warm replies, paid or won accounts, and blockers. Weighted MRR is calculated from expected monthly revenue times close probability, so the launch view stays conservative.
 
-1. Capture the signal from an official source route.
-2. Classify holder category and change direction.
-3. Record stake level, effective date, and official URL.
-4. Assess free-float, foreign-room, governance, liquidity, valuation, or risk impact.
-5. Route material signals to Disclosure Alert Watchtower, Portfolio Risk Radar, Peer Benchmark Matrix, Claim Trace Inspector, Answer Quality Lab, or Compliance Audit Center.
-6. Mark the ownership claim usable only after reviewer approval.
+## Review
 
-## Escalation Rules
-
-- Material major-holder changes go to Disclosure Alert Watchtower and Claim Trace Inspector.
-- Foreign ownership room or free-float changes go to Peer Benchmark Matrix and Portfolio Risk Radar.
-- Insider, director, executive, or related-party holding changes go to Compliance Audit Center before customer-facing export.
-- Missing official URL, holder name, stake percent, or effective date routes back to Source Refresh Scheduler.
-- Signals that change valuation, governance, liquidity, or risk language need Answer Quality Lab review before export.
-
-## Launch Gate
-
-Ownership Pulse Monitor is pilot-ready when every material ownership signal has holder identity, stake level, effective date, official URL, ticker, research impact, owner, and reviewer status.
-
-It is not ready when the desk cannot prove who owns the stake, how much changed, when it changed, why it matters, and who reviewed it.
+The pipeline can be exported as JSON or copied as a Markdown report. These are product and sales workflow notes for MajlisAlpha pilot operations and are not investment advice.

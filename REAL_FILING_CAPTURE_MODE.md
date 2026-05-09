@@ -1,49 +1,31 @@
-# MajlisAlpha Peer Benchmark Matrix
+# Pilot Follow-Up Board
 
-The Peer Benchmark Matrix gives MajlisAlpha a repeatable comparison workflow. The goal is not to produce a simple ranking table. The goal is to show why one UAE issuer looks stronger, weaker, cheaper, riskier, or more durable than another using source-backed evidence.
+The Pilot Follow-Up Board turns MajlisAlpha demo conversations into an operating queue for the next user touch. It sits after the Pilot Session Command Center because a session is only useful when it produces a clear next action, source task, pricing test, or conversion blocker.
 
-## Peer Groups
+## Purpose
 
-The matrix starts with four groups:
+The board captures the minimum information needed to keep UAE pilot momentum moving:
 
-- UAE Banks: FAB, ENBD, and DIB.
-- Property Developers: EMAAR and ALDAR.
-- Energy and Utilities: ADNOCGAS and DEWA.
-- Platform and Operating Names: IHC, EAND, and AIRARABIA.
+- Account or user who needs the next touch.
+- Stage, from new lead through demo done, source needed, proposal sent, paid pilot, or closed lost.
+- Priority, so source and trust blockers do not get buried.
+- Offer lane, including discovery, AED 199 pilot, AED 399 desk, or team invoice.
+- Next date, blocker, next message, and session note.
 
-Each group has its own metric set. Banks should not be judged with property-developer metrics, and platform names should not be forced into a clean single-factor ranking.
+## Operating Rule
 
-## Source-First Ranking Rule
+Every meaningful pilot call should produce one follow-up record. If a user asks for official ADX or DFM evidence, the next action should name the required source. If a user shows pricing intent, the offer lane should be explicit. If the user is not a fit, the stage should move to closed lost so the open queue stays honest.
 
-No peer rank should be published unless the analyst records:
+## Readiness Signals
 
-- Peer group.
-- Ticker.
-- Metric.
-- Reporting period.
-- Official URL.
-- Source snippet.
-- Analyst reason.
-- Review status.
+The summary tiles are designed for fast launch review:
 
-This keeps the matrix from becoming a black-box score. Users should always be able to move from the peer conclusion back to the source.
+- Open follow-ups: active accounts still needing action.
+- Due now: overdue or due-today items.
+- High priority: trust, source, or conversion-sensitive steps.
+- Conversion lane: proposal sent or paid pilot stages.
+- Source needed: blockers caused by missing official UAE evidence.
 
-## Output Types
+## Export
 
-Use the matrix to create:
-
-- Peer comparison briefs.
-- Committee-ready rank tables.
-- Valuation assumption cross-checks.
-- Risk memos across a peer group.
-- Source-gap lists before publishing.
-
-## Daily Use
-
-Start with one question, not a full table. For example: "Which UAE bank handles high deposit rates better?" Then pull the relevant source lines for NIM, funding cost, asset quality, and capital language before assigning any rank.
-
-If the answer cannot cite the source text, mark the cell as source-blocked. A blank or blocked cell is better than a confident unsupported rank.
-
-## Launch Gate
-
-The matrix is ready for pilot users when at least two peer groups have reviewed comparison briefs, each with cited metrics, source snippets, and a clear reviewer decision. If the matrix has attractive cards but no traceable source logic, keep it in demo mode.
+The board can export JSON for a structured pilot archive or copy a Markdown follow-up report for a daily sales/research standup. These records are local browser workflow notes and are not investment advice.
