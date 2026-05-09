@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -18,7 +18,7 @@
     <link rel="canonical" href="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/majlisalpha-logo.svg" />
-    <link rel="manifest" href="site.webmanifest?v=20260509-uae-21-pages-recovery" />
+    <link rel="manifest" href="site.webmanifest?v=20260509-uae-27-pilot-conversion-pipeline" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MajlisAlpha" />
     <meta property="og:title" content="MajlisAlpha | Ask UAE disclosures. See the signal." />
@@ -361,6 +361,7 @@ button:disabled {
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.94);
   box-shadow: var(--shadow);
+  scroll-margin-top: 92px;
 }
 
 .launch-hero {
@@ -3537,6 +3538,937 @@ input[type="range"] {
   font-weight: 700;
 }
 
+.decision-journal-panel {
+  scroll-margin-top: 88px;
+}
+
+.decision-journal-form {
+  display: grid;
+  gap: 10px;
+}
+
+.decision-journal-form textarea {
+  min-height: 86px;
+}
+
+.decision-journal-context-card,
+.decision-journal-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+}
+
+.decision-journal-context-card {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+}
+
+.decision-journal-context-card.is-ready,
+.decision-journal-card.committee-candidate {
+  border-color: rgba(47, 133, 77, 0.24);
+  background: var(--green-soft);
+}
+
+.decision-journal-card.watchlist-candidate,
+.decision-journal-card.monitor-only {
+  border-color: rgba(164, 92, 24, 0.24);
+  background: var(--amber-soft);
+}
+
+.decision-journal-context-card.is-blocked,
+.decision-journal-card.needs-source-work,
+.decision-journal-card.reject-thesis {
+  border-color: rgba(179, 38, 30, 0.18);
+  background: var(--red-soft);
+}
+
+.decision-journal-context-card span,
+.decision-journal-card span,
+.decision-journal-card-grid span {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.decision-journal-context-card strong,
+.decision-journal-card-head strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.decision-journal-context-card p,
+.decision-journal-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.decision-journal-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.decision-journal-card {
+  display: grid;
+  gap: 9px;
+  padding: 11px;
+}
+
+.decision-journal-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.decision-journal-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.decision-journal-card-grid div {
+  min-height: 58px;
+  display: grid;
+  align-content: center;
+  gap: 3px;
+  padding: 8px;
+  border: 1px solid rgba(17, 24, 21, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.decision-journal-card-grid strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.decision-journal-risk {
+  padding-top: 8px;
+  border-top: 1px solid rgba(17, 24, 21, 0.12);
+  color: var(--muted) !important;
+  font-weight: 700;
+}
+
+.pilot-session-section {
+  scroll-margin-top: 88px;
+}
+
+.pilot-session-summary,
+.pilot-session-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pilot-session-summary {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.pilot-session-stat,
+.pilot-session-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+}
+
+.pilot-session-stat {
+  display: grid;
+  gap: 5px;
+  min-height: 104px;
+  padding: 12px;
+}
+
+.pilot-session-stat span,
+.pilot-session-card span,
+.pilot-session-card-grid span,
+.pilot-session-count {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.pilot-session-stat strong {
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.pilot-session-stat em {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.pilot-session-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pilot-session-form textarea {
+  min-height: 86px;
+}
+
+.builder-wide-field {
+  grid-column: span 2;
+}
+
+.pilot-session-actions {
+  margin-top: 0;
+}
+
+.pilot-session-card {
+  display: grid;
+  gap: 9px;
+  padding: 12px;
+}
+
+.pilot-session-card.is-activated,
+.pilot-session-card.is-second-question,
+.pilot-session-stat.is-good {
+  border-color: rgba(47, 133, 77, 0.24);
+  background: var(--green-soft);
+}
+
+.pilot-session-card.is-source-blocked,
+.pilot-session-card.is-trust-blocked,
+.pilot-session-stat.is-warning {
+  border-color: rgba(164, 92, 24, 0.24);
+  background: var(--amber-soft);
+}
+
+.pilot-session-card.is-not-fit,
+.pilot-session-stat.is-error {
+  border-color: rgba(179, 38, 30, 0.18);
+  background: var(--red-soft);
+}
+
+.pilot-session-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.pilot-session-card-head strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.pilot-session-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.pilot-session-card-grid div {
+  min-height: 58px;
+  display: grid;
+  align-content: center;
+  gap: 3px;
+  padding: 8px;
+  border: 1px solid rgba(17, 24, 21, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.pilot-session-card-grid strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.pilot-session-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.pilot-session-note {
+  padding-top: 8px;
+  border-top: 1px solid rgba(17, 24, 21, 0.12);
+  color: var(--muted) !important;
+  font-weight: 750;
+}
+
+.pilot-session-count {
+  margin-top: 8px;
+  text-align: right;
+}
+
+.pilot-followup-section {
+  scroll-margin-top: 88px;
+}
+
+.pilot-followup-summary,
+.pilot-followup-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pilot-followup-summary {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.pilot-followup-stat,
+.pilot-followup-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+}
+
+.pilot-followup-stat {
+  display: grid;
+  gap: 5px;
+  min-height: 104px;
+  padding: 12px;
+}
+
+.pilot-followup-stat span,
+.pilot-followup-card span,
+.pilot-followup-card-grid span,
+.pilot-followup-count {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.pilot-followup-stat strong {
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.pilot-followup-stat em {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.pilot-followup-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pilot-followup-form textarea {
+  min-height: 86px;
+}
+
+.pilot-followup-actions {
+  margin-top: 0;
+}
+
+.pilot-followup-card {
+  display: grid;
+  gap: 9px;
+  padding: 12px;
+}
+
+.pilot-followup-card.is-scheduled,
+.pilot-followup-stat.is-good {
+  border-color: rgba(47, 133, 77, 0.24);
+  background: var(--green-soft);
+}
+
+.pilot-followup-card.is-due,
+.pilot-followup-card.is-unscheduled,
+.pilot-followup-stat.is-warning {
+  border-color: rgba(164, 92, 24, 0.24);
+  background: var(--amber-soft);
+}
+
+.pilot-followup-card.is-overdue,
+.pilot-followup-stat.is-error {
+  border-color: rgba(179, 38, 30, 0.18);
+  background: var(--red-soft);
+}
+
+.pilot-followup-card.is-high {
+  box-shadow: inset 4px 0 0 var(--red);
+}
+
+.pilot-followup-card.is-medium {
+  box-shadow: inset 4px 0 0 var(--amber);
+}
+
+.pilot-followup-card.is-low {
+  box-shadow: inset 4px 0 0 var(--green);
+}
+
+.pilot-followup-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.pilot-followup-card-head strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.pilot-followup-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.pilot-followup-card-grid div {
+  min-height: 58px;
+  display: grid;
+  align-content: center;
+  gap: 3px;
+  padding: 8px;
+  border: 1px solid rgba(17, 24, 21, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.pilot-followup-card-grid strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.pilot-followup-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.pilot-followup-note {
+  padding-top: 8px;
+  border-top: 1px solid rgba(17, 24, 21, 0.12);
+  color: var(--muted) !important;
+  font-weight: 750;
+}
+
+.pilot-followup-count {
+  margin-top: 8px;
+  text-align: right;
+}
+
+.pilot-outreach-section {
+  scroll-margin-top: 88px;
+}
+
+.pilot-outreach-summary,
+.pilot-outreach-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pilot-outreach-summary {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.pilot-outreach-stat,
+.pilot-outreach-card,
+.pilot-outreach-preview {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+}
+
+.pilot-outreach-stat {
+  display: grid;
+  gap: 5px;
+  min-height: 104px;
+  padding: 12px;
+}
+
+.pilot-outreach-stat span,
+.pilot-outreach-card span,
+.pilot-outreach-card-grid span,
+.pilot-outreach-preview-head span,
+.pilot-outreach-count {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.pilot-outreach-stat strong {
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.pilot-outreach-stat em {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.pilot-outreach-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pilot-outreach-form textarea {
+  min-height: 86px;
+}
+
+.pilot-outreach-actions {
+  margin-top: 0;
+}
+
+.pilot-outreach-preview {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--teal-soft), var(--panel-strong));
+}
+
+.pilot-outreach-preview-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+}
+
+.pilot-outreach-preview-head strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 16px;
+}
+
+.pilot-outreach-preview-head em {
+  border: 1px solid rgba(14, 107, 95, 0.2);
+  border-radius: 999px;
+  padding: 5px 9px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--teal);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.pilot-outreach-preview pre {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  font: 700 13px/1.55 var(--sans);
+}
+
+.pilot-outreach-card {
+  display: grid;
+  gap: 9px;
+  padding: 12px;
+}
+
+.pilot-outreach-card.is-whatsapp,
+.pilot-outreach-stat.is-good {
+  border-color: rgba(47, 133, 77, 0.24);
+  background: var(--green-soft);
+}
+
+.pilot-outreach-card.is-email,
+.pilot-outreach-card.is-linkedin,
+.pilot-outreach-stat.is-warning {
+  border-color: rgba(40, 93, 134, 0.2);
+  background: var(--blue-soft);
+}
+
+.pilot-outreach-card.is-call,
+.pilot-outreach-stat.is-error {
+  border-color: rgba(164, 92, 24, 0.24);
+  background: var(--amber-soft);
+}
+
+.pilot-outreach-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.pilot-outreach-card-head strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.pilot-outreach-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.pilot-outreach-card-grid div {
+  min-height: 58px;
+  display: grid;
+  align-content: center;
+  gap: 3px;
+  padding: 8px;
+  border: 1px solid rgba(17, 24, 21, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.pilot-outreach-card-grid strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.pilot-outreach-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.pilot-outreach-note {
+  padding-top: 8px;
+  border-top: 1px solid rgba(17, 24, 21, 0.12);
+  color: var(--muted) !important;
+  font-weight: 750;
+}
+
+.pilot-outreach-count {
+  margin-top: 8px;
+  text-align: right;
+}
+
+.pilot-conversion-section {
+  scroll-margin-top: 88px;
+}
+
+.pilot-conversion-summary,
+.pilot-conversion-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pilot-conversion-summary {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.pilot-conversion-stat,
+.pilot-conversion-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+}
+
+.pilot-conversion-stat {
+  display: grid;
+  gap: 5px;
+  min-height: 104px;
+  padding: 12px;
+}
+
+.pilot-conversion-stat span,
+.pilot-conversion-card span,
+.pilot-conversion-card-grid span,
+.pilot-conversion-count {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.pilot-conversion-stat strong {
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.pilot-conversion-stat em {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.pilot-conversion-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pilot-conversion-form textarea {
+  min-height: 86px;
+}
+
+.pilot-conversion-actions {
+  margin-top: 0;
+}
+
+.pilot-conversion-card {
+  display: grid;
+  gap: 9px;
+  padding: 12px;
+}
+
+.pilot-conversion-card.is-open,
+.pilot-conversion-stat.is-warning {
+  border-color: rgba(164, 92, 24, 0.24);
+  background: var(--amber-soft);
+}
+
+.pilot-conversion-card.is-review {
+  border-color: rgba(40, 93, 134, 0.2);
+  background: var(--blue-soft);
+}
+
+.pilot-conversion-card.is-won,
+.pilot-conversion-stat.is-good {
+  border-color: rgba(47, 133, 77, 0.24);
+  background: var(--green-soft);
+}
+
+.pilot-conversion-card.is-lost,
+.pilot-conversion-stat.is-error {
+  border-color: rgba(179, 38, 30, 0.18);
+  background: var(--red-soft);
+}
+
+.pilot-conversion-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.pilot-conversion-card-head strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.pilot-conversion-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.pilot-conversion-card-grid div {
+  min-height: 58px;
+  display: grid;
+  align-content: center;
+  gap: 3px;
+  padding: 8px;
+  border: 1px solid rgba(17, 24, 21, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.pilot-conversion-card-grid strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.pilot-conversion-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.pilot-conversion-note {
+  padding-top: 8px;
+  border-top: 1px solid rgba(17, 24, 21, 0.12);
+  color: var(--muted) !important;
+  font-weight: 750;
+}
+
+.pilot-conversion-count {
+  margin-top: 8px;
+  text-align: right;
+}
+
+.pages-doctor-section {
+  scroll-margin-top: 88px;
+}
+
+.pages-doctor-summary,
+.pages-doctor-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pages-doctor-summary {
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 0.22fr);
+  align-items: stretch;
+}
+
+.pages-doctor-hero,
+.pages-doctor-score,
+.pages-doctor-card,
+.pages-doctor-checklist {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+}
+
+.pages-doctor-hero {
+  display: grid;
+  gap: 5px;
+  padding: 14px;
+}
+
+.pages-doctor-hero span,
+.pages-doctor-card span,
+.pages-doctor-checklist span {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.pages-doctor-hero strong {
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.pages-doctor-hero p {
+  max-width: 880px;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pages-doctor-score {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 4px;
+  min-height: 120px;
+  padding: 12px;
+  background: var(--ink);
+  color: #fff;
+}
+
+.pages-doctor-score span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 10px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.pages-doctor-score strong {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.pages-doctor-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pages-doctor-card {
+  display: grid;
+  gap: 6px;
+  min-height: 128px;
+  padding: 12px;
+}
+
+.pages-doctor-card strong {
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.pages-doctor-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pages-doctor-card em {
+  align-self: end;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pages-doctor-card.is-good,
+.pages-doctor-hero.is-good {
+  border-color: rgba(47, 133, 77, 0.24);
+  background: var(--green-soft);
+}
+
+.pages-doctor-card.is-warning,
+.pages-doctor-hero.is-warning {
+  border-color: rgba(164, 92, 24, 0.24);
+  background: var(--amber-soft);
+}
+
+.pages-doctor-card.is-error,
+.pages-doctor-hero.is-error {
+  border-color: rgba(179, 38, 30, 0.2);
+  background: var(--red-soft);
+}
+
+.pages-doctor-checklist {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 12px;
+}
+
+.pages-doctor-checklist ol {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.pages-doctor-checklist li + li {
+  margin-top: 5px;
+}
+
+.pages-doctor-actions {
+  margin-top: 0;
+}
+
 .launch-control-panel {
   scroll-margin-top: 88px;
 }
@@ -4315,6 +5247,11 @@ input[type="range"] {
     grid-template-columns: 1fr;
   }
 
+  .launch-hero,
+  .launch-section {
+    scroll-margin-top: 154px;
+  }
+
   .launch-copy h2 {
     font-size: 34px;
   }
@@ -4354,6 +5291,17 @@ input[type="range"] {
   .brief-workbench-hero,
   .memo-review-context-card,
   .memo-review-card-grid,
+  .decision-journal-card-grid,
+  .pilot-session-summary,
+  .pilot-session-card-grid,
+  .pilot-followup-summary,
+  .pilot-followup-card-grid,
+  .pilot-outreach-summary,
+  .pilot-outreach-card-grid,
+  .pilot-conversion-summary,
+  .pilot-conversion-card-grid,
+  .pages-doctor-summary,
+  .pages-doctor-grid,
   .launch-control-hero,
   .launch-control-stats,
   .launch-control-grid,
@@ -4369,6 +5317,10 @@ input[type="range"] {
   }
 
   .builder-section-editor label:first-child {
+    grid-column: auto;
+  }
+
+  .builder-wide-field {
     grid-column: auto;
   }
 
@@ -4534,8 +5486,8 @@ input[type="range"] {
 }
 
     </style>
-    <link rel="stylesheet" href="styles.css?v=20260509-uae-21-pages-recovery" />
-    <link rel="stylesheet" href="launch.css?v=20260509-uae-21-pages-recovery" />
+    <link rel="stylesheet" href="styles.css?v=20260509-uae-27-pilot-conversion-pipeline" />
+    <link rel="stylesheet" href="launch.css?v=20260509-uae-27-pilot-conversion-pipeline" />
   </head>
   <body>
     <div class="app-shell">
@@ -4562,6 +5514,10 @@ input[type="range"] {
           <span class="status-pill">Mission control v1</span>
           <span class="status-pill">Answer quality v1</span>
           <span class="status-pill">Customer signals v1</span>
+          <span class="status-pill">Pilot sessions v1</span>
+          <span class="status-pill">Pilot follow-ups v1</span>
+          <span class="status-pill">Pilot outreach v1</span>
+          <span class="status-pill">Pilot conversion v1</span>
           <span class="status-pill">Pilot KPI v1</span>
           <span class="status-pill">Compliance audit v1</span>
           <span class="status-pill">Refresh scheduler v1</span>
@@ -4570,6 +5526,7 @@ input[type="range"] {
           <span class="status-pill">Macro radar v1</span>
           <span class="status-pill">Scenario lab v1</span>
           <span class="status-pill">Committee pack v1</span>
+          <span class="status-pill">Pages doctor v1</span>
         </div>
         <div class="top-actions">
           <button class="icon-button" id="copyBrief" type="button" title="Copy current brief" aria-label="Copy current brief">
@@ -4622,6 +5579,10 @@ input[type="range"] {
             <a class="secondary-link" href="#analyst-mission-control">Mission control</a>
             <a class="secondary-link" href="#answer-quality-lab">Quality lab</a>
             <a class="secondary-link" href="#customer-signal-room">Customer signals</a>
+            <a class="secondary-link" href="#pilot-session-command">Pilot sessions</a>
+            <a class="secondary-link" href="#pilot-followup-board">Follow-up board</a>
+            <a class="secondary-link" href="#pilot-outreach-composer">Outreach composer</a>
+            <a class="secondary-link" href="#pilot-conversion-pipeline">Conversion pipeline</a>
             <a class="secondary-link" href="#pilot-kpi-board">Pilot KPI</a>
             <a class="secondary-link" href="#compliance-audit">Compliance audit</a>
             <a class="secondary-link" href="#source-refresh">Refresh scheduler</a>
@@ -4630,6 +5591,7 @@ input[type="range"] {
             <a class="secondary-link" href="#macro-rates-radar">Macro radar</a>
             <a class="secondary-link" href="#aed-scenario-lab">Scenario lab</a>
             <a class="secondary-link" href="#committee-pack-builder">Committee pack</a>
+            <a class="secondary-link" href="#pages-deployment-doctor">Pages doctor</a>
             <a class="secondary-link" href="#source-playbook">Source playbook</a>
             <a class="secondary-link" href="#foundation">Launch plan</a>
             <a class="secondary-link" href="#waitlist">Join pilot</a>
@@ -5811,6 +6773,343 @@ input[type="range"] {
         </div>
       </section>
 
+      <section class="launch-section pilot-session-section" aria-labelledby="pilotSessionTitle" id="pilot-session-command">
+        <div class="section-heading">
+          <span>Pilot Session Command Center</span>
+          <h2 id="pilotSessionTitle">Log every real user test like evidence.</h2>
+          <p>
+            The session loop tracks who tested, what UAE question they brought, whether sources were available, what blocked trust, and whether paid intent appeared.
+          </p>
+        </div>
+        <div class="pilot-session-summary" id="pilotSessionSummary"></div>
+        <form class="pilot-session-form" id="pilotSessionForm">
+          <div class="builder-grid">
+            <label>
+              <span>User or account</span>
+              <input id="pilotSessionUser" type="text" placeholder="Example: UAE family office analyst" maxlength="90" />
+            </label>
+            <label>
+              <span>Segment</span>
+              <select id="pilotSessionSegment">
+                <option>Investor</option>
+                <option>Analyst</option>
+                <option>Founder</option>
+                <option>Family office</option>
+                <option>Advisor</option>
+                <option>Student</option>
+              </select>
+            </label>
+            <label>
+              <span>Outcome</span>
+              <select id="pilotSessionOutcome">
+                <option value="activated">Activated</option>
+                <option value="second-question">Asked second question</option>
+                <option value="source-blocked">Source blocked</option>
+                <option value="trust-blocked">Trust blocked</option>
+                <option value="not-fit">Not fit</option>
+              </select>
+            </label>
+            <label>
+              <span>Paid intent</span>
+              <select id="pilotSessionPaidIntent">
+                <option value="unknown">Unknown</option>
+                <option value="none">None</option>
+                <option value="aed-199">AED 199 pilot</option>
+                <option value="aed-399">AED 399 desk</option>
+                <option value="team">Team / invoice discussion</option>
+              </select>
+            </label>
+          </div>
+          <div class="builder-grid two-col">
+            <label>
+              <span>Real UAE question</span>
+              <textarea id="pilotSessionQuestion" rows="3" placeholder="Example: Compare FAB and ENBD if deposit costs stay high."></textarea>
+            </label>
+            <label>
+              <span>Trust blocker or objection</span>
+              <textarea id="pilotSessionObjection" rows="3" placeholder="Example: Wants official ADX source links before sharing with team."></textarea>
+            </label>
+          </div>
+          <div class="builder-grid">
+            <label>
+              <span>Tickers</span>
+              <input id="pilotSessionTickers" type="text" placeholder="Example: FAB, ENBD, EMAAR" maxlength="120" />
+            </label>
+            <label>
+              <span>Source status</span>
+              <select id="pilotSessionSourceStatus">
+                <option value="starter">Starter evidence only</option>
+                <option value="imported">User imported source</option>
+                <option value="real">REAL source verified</option>
+                <option value="missing">Missing source blocked answer</option>
+              </select>
+            </label>
+            <label class="builder-wide-field">
+              <span>Next step</span>
+              <input id="pilotSessionNextStep" type="text" placeholder="Example: Send FAB risk memo, ask for 2 more UAE questions, test AED 199." maxlength="180" />
+            </label>
+          </div>
+          <div class="builder-actions pilot-session-actions">
+            <button class="primary-button" id="savePilotSession" type="submit">Save pilot session</button>
+            <button class="secondary-button" id="prefillPilotSession" type="button">Use current desk context</button>
+            <button class="secondary-button" id="exportPilotSessions" type="button">Export sessions</button>
+            <button class="secondary-button" id="copyPilotSessions" type="button">Copy pilot report</button>
+            <button class="text-button danger" id="clearPilotSessions" type="button">Clear sessions</button>
+          </div>
+          <div class="builder-result" id="pilotSessionResult" aria-live="polite"></div>
+        </form>
+        <div class="pilot-session-list" id="pilotSessionList"></div>
+        <div class="pilot-session-count" id="pilotSessionCount">0 sessions</div>
+      </section>
+
+      <section class="launch-section pilot-followup-section" aria-labelledby="pilotFollowupTitle" id="pilot-followup-board">
+        <div class="section-heading">
+          <span>Pilot Follow-Up Board</span>
+          <h2 id="pilotFollowupTitle">Turn every pilot call into a next action.</h2>
+          <p>
+            The follow-up board converts demo notes into a conversion pipeline: account, stage, priority, offer, blocker, next date, and the exact message or source task needed before the next conversation.
+          </p>
+        </div>
+        <div class="pilot-followup-summary" id="pilotFollowupSummary"></div>
+        <form class="pilot-followup-form" id="pilotFollowupForm">
+          <div class="builder-grid">
+            <label>
+              <span>Account or user</span>
+              <input id="pilotFollowupAccount" type="text" placeholder="Example: UAE family office analyst" maxlength="90" />
+            </label>
+            <label>
+              <span>Stage</span>
+              <select id="pilotFollowupStage">
+                <option value="new-lead">New lead</option>
+                <option value="demo-done">Demo done</option>
+                <option value="source-needed">Source needed</option>
+                <option value="proposal-sent">Proposal sent</option>
+                <option value="paid-pilot">Paid pilot</option>
+                <option value="closed-lost">Closed lost</option>
+              </select>
+            </label>
+            <label>
+              <span>Priority</span>
+              <select id="pilotFollowupPriority">
+                <option>High</option>
+                <option selected>Medium</option>
+                <option>Low</option>
+              </select>
+            </label>
+            <label>
+              <span>Next date</span>
+              <input id="pilotFollowupNextDate" type="date" />
+            </label>
+          </div>
+          <div class="builder-grid two-col">
+            <label>
+              <span>Offer lane</span>
+              <select id="pilotFollowupOffer">
+                <option value="need-discovery">Need discovery</option>
+                <option value="aed-199">AED 199 pilot</option>
+                <option value="aed-399">AED 399 desk</option>
+                <option value="team-invoice">Team / invoice</option>
+              </select>
+            </label>
+            <label>
+              <span>Blocker</span>
+              <input id="pilotFollowupBlocker" type="text" placeholder="Example: needs official DFM source links before sharing internally" maxlength="180" />
+            </label>
+          </div>
+          <div class="builder-grid two-col">
+            <label>
+              <span>Next action or message</span>
+              <textarea id="pilotFollowupNextAction" rows="3" placeholder="Example: Send ENBD/FAB deposit-cost memo, ask for second question, then propose AED 199 pilot."></textarea>
+            </label>
+            <label>
+              <span>Session note</span>
+              <textarea id="pilotFollowupSessionNote" rows="3" placeholder="Example: Asked FAB vs ENBD. Interested if sources are official and exports are clean."></textarea>
+            </label>
+          </div>
+          <div class="builder-actions pilot-followup-actions">
+            <button class="primary-button" id="savePilotFollowup" type="submit">Save follow-up</button>
+            <button class="secondary-button" id="prefillPilotFollowup" type="button">Use latest pilot session</button>
+            <button class="secondary-button" id="exportPilotFollowups" type="button">Export follow-ups</button>
+            <button class="secondary-button" id="copyPilotFollowups" type="button">Copy follow-up report</button>
+            <button class="text-button danger" id="clearPilotFollowups" type="button">Clear follow-ups</button>
+          </div>
+          <div class="builder-result" id="pilotFollowupResult" aria-live="polite"></div>
+        </form>
+        <div class="pilot-followup-list" id="pilotFollowupList"></div>
+        <div class="pilot-followup-count" id="pilotFollowupCount">0 follow-ups</div>
+      </section>
+
+      <section class="launch-section pilot-outreach-section" aria-labelledby="pilotOutreachTitle" id="pilot-outreach-composer">
+        <div class="section-heading">
+          <span>Pilot Outreach Composer</span>
+          <h2 id="pilotOutreachTitle">Convert follow-ups into messages that move.</h2>
+          <p>
+            The outreach composer turns the pilot pipeline into ready-to-send WhatsApp, email, LinkedIn, and call-script drafts anchored to the account, blocker, offer lane, source hook, and next ask.
+          </p>
+        </div>
+        <div class="pilot-outreach-summary" id="pilotOutreachSummary"></div>
+        <form class="pilot-outreach-form" id="pilotOutreachForm">
+          <div class="builder-grid">
+            <label>
+              <span>Account or user</span>
+              <input id="pilotOutreachAccount" type="text" placeholder="Example: UAE family office analyst" maxlength="90" />
+            </label>
+            <label>
+              <span>Channel</span>
+              <select id="pilotOutreachChannel">
+                <option value="whatsapp">WhatsApp</option>
+                <option value="email">Email</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="call">Call script</option>
+              </select>
+            </label>
+            <label>
+              <span>Tone</span>
+              <select id="pilotOutreachTone">
+                <option value="warm">Warm</option>
+                <option value="concise">Concise</option>
+                <option value="direct">Direct</option>
+                <option value="committee">Committee-ready</option>
+              </select>
+            </label>
+            <label>
+              <span>Offer lane</span>
+              <select id="pilotOutreachOffer">
+                <option value="need-discovery">Need discovery</option>
+                <option value="aed-199">AED 199 pilot</option>
+                <option value="aed-399">AED 399 desk</option>
+                <option value="team-invoice">Team / invoice</option>
+              </select>
+            </label>
+          </div>
+          <div class="builder-grid two-col">
+            <label>
+              <span>Evidence hook</span>
+              <textarea id="pilotOutreachEvidenceHook" rows="3" placeholder="Example: I can send a cited FAB vs ENBD brief with the official source trail visible."></textarea>
+            </label>
+            <label>
+              <span>Blocker to resolve</span>
+              <textarea id="pilotOutreachBlocker" rows="3" placeholder="Example: Needs ADX/DFM links before sharing the memo with the team."></textarea>
+            </label>
+          </div>
+          <div class="builder-grid two-col">
+            <label>
+              <span>Next action</span>
+              <textarea id="pilotOutreachNextAction" rows="3" placeholder="Example: Send the cited brief, ask for one more UAE market question, then test AED 199 pilot intent."></textarea>
+            </label>
+            <label>
+              <span>Close with</span>
+              <select id="pilotOutreachCta">
+                <option value="second-question">Ask for second question</option>
+                <option value="source-review">Ask for source review</option>
+                <option value="paid-pilot">Ask for paid pilot</option>
+                <option value="team-demo">Ask for team demo</option>
+              </select>
+            </label>
+          </div>
+          <div class="builder-actions pilot-outreach-actions">
+            <button class="primary-button" id="generatePilotOutreach" type="submit">Generate outreach</button>
+            <button class="secondary-button" id="prefillPilotOutreach" type="button">Use top follow-up</button>
+            <button class="secondary-button" id="copyPilotOutreach" type="button">Copy latest outreach</button>
+            <button class="secondary-button" id="exportPilotOutreach" type="button">Export outreach</button>
+            <button class="text-button danger" id="clearPilotOutreach" type="button">Clear outreach</button>
+          </div>
+          <div class="builder-result" id="pilotOutreachResult" aria-live="polite"></div>
+        </form>
+        <div class="pilot-outreach-preview" id="pilotOutreachPreview"></div>
+        <div class="pilot-outreach-list" id="pilotOutreachList"></div>
+        <div class="pilot-outreach-count" id="pilotOutreachCount">0 drafts</div>
+      </section>
+
+      <section class="launch-section pilot-conversion-section" aria-labelledby="pilotConversionTitle" id="pilot-conversion-pipeline">
+        <div class="section-heading">
+          <span>Pilot Conversion Pipeline</span>
+          <h2 id="pilotConversionTitle">Track replies, revenue, and close risk.</h2>
+          <p>
+            v27 turns outreach replies into a lightweight conversion board: stage, plan, probability, expected AED monthly revenue, reply type, blocker, and close action.
+          </p>
+        </div>
+        <div class="pilot-conversion-summary" id="pilotConversionSummary"></div>
+        <form class="pilot-conversion-form" id="pilotConversionForm">
+          <div class="builder-grid">
+            <label>
+              <span>Account or user</span>
+              <input id="pilotConversionAccount" type="text" placeholder="Example: UAE family office analyst" maxlength="90" />
+            </label>
+            <label>
+              <span>Stage</span>
+              <select id="pilotConversionStage">
+                <option value="new-reply">New reply</option>
+                <option value="interested">Interested</option>
+                <option value="source-review">Source review</option>
+                <option value="proposal">Proposal</option>
+                <option value="paid-pilot">Paid pilot</option>
+                <option value="won">Won</option>
+                <option value="lost">Lost</option>
+              </select>
+            </label>
+            <label>
+              <span>Plan</span>
+              <select id="pilotConversionPlan">
+                <option value="discovery">Discovery</option>
+                <option value="aed-199">AED 199 pilot</option>
+                <option value="aed-399">AED 399 desk</option>
+                <option value="team-invoice">Team / invoice</option>
+              </select>
+            </label>
+            <label>
+              <span>Close odds</span>
+              <input id="pilotConversionProbability" type="number" min="0" max="100" step="5" value="40" />
+            </label>
+          </div>
+          <div class="builder-grid">
+            <label>
+              <span>Expected AED MRR</span>
+              <input id="pilotConversionMrr" type="number" min="0" step="1" placeholder="399" />
+            </label>
+            <label>
+              <span>Next date</span>
+              <input id="pilotConversionNextDate" type="date" />
+            </label>
+            <label>
+              <span>Reply type</span>
+              <select id="pilotConversionReply">
+                <option value="no-reply">No reply</option>
+                <option value="positive">Positive</option>
+                <option value="pricing">Pricing</option>
+                <option value="source">Source trust</option>
+                <option value="team">Team interest</option>
+                <option value="not-now">Not now</option>
+              </select>
+            </label>
+            <label>
+              <span>Blocker</span>
+              <input id="pilotConversionBlocker" type="text" placeholder="Example: wants one official-source sample before paying" maxlength="180" />
+            </label>
+          </div>
+          <div class="builder-grid two-col">
+            <label>
+              <span>Close action</span>
+              <textarea id="pilotConversionCloseAction" rows="3" placeholder="Example: Send one cited sample, then ask to start AED 199 pilot on Monday."></textarea>
+            </label>
+            <label>
+              <span>Pipeline note</span>
+              <textarea id="pilotConversionNote" rows="3" placeholder="Example: Pricing asked. Needs FAB/ENBD source trail and clean PDF export."></textarea>
+            </label>
+          </div>
+          <div class="builder-actions pilot-conversion-actions">
+            <button class="primary-button" id="savePilotConversion" type="submit">Save conversion</button>
+            <button class="secondary-button" id="prefillPilotConversion" type="button">Use latest outreach</button>
+            <button class="secondary-button" id="exportPilotConversions" type="button">Export pipeline</button>
+            <button class="secondary-button" id="copyPilotConversions" type="button">Copy pipeline report</button>
+            <button class="text-button danger" id="clearPilotConversions" type="button">Clear pipeline</button>
+          </div>
+          <div class="builder-result" id="pilotConversionResult" aria-live="polite"></div>
+        </form>
+        <div class="pilot-conversion-list" id="pilotConversionList"></div>
+        <div class="pilot-conversion-count" id="pilotConversionCount">0 deals</div>
+      </section>
+
       <section class="launch-section pilot-kpi-section" aria-labelledby="pilotKpiTitle" id="pilot-kpi-board">
         <div class="section-heading">
           <span>Pilot KPI Board</span>
@@ -6107,6 +7406,30 @@ input[type="range"] {
         </div>
       </section>
 
+      <section class="launch-section pages-doctor-section" aria-labelledby="pagesDoctorTitle" id="pages-deployment-doctor">
+        <div class="section-heading">
+          <span>Pages Deployment Doctor</span>
+          <h2 id="pagesDoctorTitle">Know whether the live site is truly healthy.</h2>
+          <p>
+            The deployment health panel checks version, data packs, embedded styling fallback, Pages path, browser storage, and the exact post-upload checks.
+          </p>
+        </div>
+        <div class="pages-doctor-summary" id="pagesDoctorSummary"></div>
+        <div class="pages-doctor-grid" id="pagesDoctorGrid"></div>
+        <div class="pages-doctor-checklist">
+          <div class="launch-control-card-head">
+            <span>Upload checklist</span>
+            <strong id="pagesDoctorStatus">Checking</strong>
+          </div>
+          <ol id="pagesDoctorChecklist"></ol>
+          <div class="builder-actions pages-doctor-actions">
+            <button class="secondary-button" id="copyPagesDoctorChecklist" type="button">Copy deploy checklist</button>
+            <button class="secondary-button" id="openLivePagesUrl" type="button">Open live URL</button>
+          </div>
+          <div class="builder-result" id="pagesDoctorResult" aria-live="polite"></div>
+        </div>
+      </section>
+
       <section class="launch-section foundation-section" aria-labelledby="foundationTitle" id="foundation">
         <div class="section-heading">
           <span>Production foundation</span>
@@ -6278,8 +7601,14 @@ input[type="range"] {
       </footer>
     </div>
 
-    <script src="app.js?v=20260509-uae-21-pages-recovery"></script>
+    <script src="app.js?v=20260509-uae-27-pilot-conversion-pipeline"></script>
   </body>
 </html>
+
+
+
+
+
+
 
 

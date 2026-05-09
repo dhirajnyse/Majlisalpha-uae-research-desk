@@ -20,7 +20,7 @@ const manifest = read("site.webmanifest");
 assert(index.includes("Content-Security-Policy"), "index.html is missing the CSP meta tag.");
 assert(index.includes("UAE readiness gate v1"), "index.html does not show the UAE readiness gate marker.");
 assert(!/\son[a-z]+\s*=/i.test(index), "index.html contains an inline event handler.");
-assert(app.includes('const DATA_VERSION = "20260509-uae-21";'), "app.js DATA_VERSION is not aligned with UAE v21.");
+assert(app.includes('const DATA_VERSION = "20260509-uae-27";'), "app.js DATA_VERSION is not aligned with UAE v27.");
 assert(app.includes("normalizeExternalUrl"), "app.js is missing source URL normalization.");
 assert(app.includes("MAX_IMPORT_FILE_BYTES"), "app.js is missing import size limits.");
 assert(app.includes("STARTER_PACK_TICKERS"), "app.js is missing the starter pack list.");
@@ -45,6 +45,16 @@ assert(index.includes("ownership-pulse") && index.includes("Ownership Pulse Moni
 assert(index.includes("macro-rates-radar") && index.includes("Macro &amp; Rates Radar"), "index.html is missing the Macro & Rates Radar section.");
 assert(index.includes("aed-scenario-lab") && index.includes("AED Scenario Lab"), "index.html is missing the AED Scenario Lab section.");
 assert(index.includes("committee-pack-builder") && index.includes("Committee Pack Builder"), "index.html is missing the Committee Pack Builder section.");
+assert(index.includes("pages-deployment-doctor") && index.includes("Pages Deployment Doctor"), "index.html is missing the Pages Deployment Doctor section.");
+assert(index.includes("pages-doctor-grid"), "index.html is missing the embedded Pages Doctor styles.");
+assert(index.includes("pilot-session-command") && index.includes("Pilot Session Command Center"), "index.html is missing the Pilot Session Command Center section.");
+assert(index.includes("pilot-session-summary"), "index.html is missing the embedded Pilot Session styles.");
+assert(index.includes("pilot-followup-board") && index.includes("Pilot Follow-Up Board"), "index.html is missing the Pilot Follow-Up Board section.");
+assert(index.includes("pilot-followup-summary"), "index.html is missing the embedded Pilot Follow-Up styles.");
+assert(index.includes("pilot-outreach-composer") && index.includes("Pilot Outreach Composer"), "index.html is missing the Pilot Outreach Composer section.");
+assert(index.includes("pilot-outreach-summary"), "index.html is missing the embedded Pilot Outreach styles.");
+assert(index.includes("pilot-conversion-pipeline") && index.includes("Pilot Conversion Pipeline"), "index.html is missing the Pilot Conversion Pipeline section.");
+assert(index.includes("pilot-conversion-summary"), "index.html is missing the embedded Pilot Conversion styles.");
 assert(index.includes("https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/"), "index.html is missing the case-correct GitHub Pages URL.");
 assert(manifest.includes("/Majlisalpha-uae-research-desk/"), "site.webmanifest start_url is missing the case-correct GitHub Pages path.");
 assert(index.includes("brief-workbench") && app.includes("renderBriefWorkbench"), "app.js or index.html is missing the evidence-to-brief workbench.");
@@ -52,6 +62,11 @@ assert(index.includes("memo-review-room") && app.includes("renderMemoReviewRoom"
 assert(index.includes("launch-control-room") && app.includes("renderLaunchControlRoom"), "app.js or index.html is missing the launch control room.");
 assert(index.includes("source-intake-doctor") && app.includes("renderSourceIntakeDoctor"), "app.js or index.html is missing the source intake doctor.");
 assert(index.includes("investment-gate") && app.includes("renderInvestmentGate"), "app.js or index.html is missing the investment readiness gate.");
+assert(app.includes("renderPagesDeploymentDoctor") && app.includes("MajlisAlphaPagesDoctor"), "app.js is missing the Pages Deployment Doctor runtime.");
+assert(app.includes("renderPilotSessionCommandCenter") && app.includes("pilotSessions"), "app.js is missing the Pilot Session runtime.");
+assert(app.includes("renderPilotFollowupBoard") && app.includes("pilotFollowups"), "app.js is missing the Pilot Follow-Up runtime.");
+assert(app.includes("renderPilotOutreachComposer") && app.includes("pilotOutreachDrafts"), "app.js is missing the Pilot Outreach runtime.");
+assert(app.includes("renderPilotConversionPipeline") && app.includes("pilotConversions"), "app.js is missing the Pilot Conversion runtime.");
 
 for (const file of listFiles("data").filter((name) => name.endsWith(".json"))) {
   try {
@@ -87,6 +102,9 @@ for (const required of [
   "docs/ANALYST_MISSION_CONTROL.md",
   "docs/ANSWER_QUALITY_LAB.md",
   "docs/CUSTOMER_SIGNAL_ROOM.md",
+  "docs/PILOT_FOLLOWUP_BOARD.md",
+  "docs/PILOT_OUTREACH_COMPOSER.md",
+  "docs/PILOT_CONVERSION_PIPELINE.md",
   "docs/PILOT_KPI_BOARD.md",
   "docs/COMPLIANCE_AUDIT_CENTER.md",
   "docs/SOURCE_REFRESH_SCHEDULER.md",
@@ -107,3 +125,6 @@ if (failures.length) {
 }
 
 console.log("MajlisAlpha static checks passed.");
+
+
+
