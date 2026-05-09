@@ -29,6 +29,8 @@ Suggested SaaS packaging:
 - Company dossier with KPI summary, document timeline, source mix, risk checklist, and one-click research questions.
 - Source Pack Studio for building verified source records in the browser and exporting source-pack JSON.
 - Official-source helper links for ADX, DFM, Nasdaq Dubai CANDI, SCA, and company IR pages.
+- UAE Source Playbook section with direct official-source routes and REAL-evidence rules.
+- Pilot Command Center with a seven-day plan for making FAB, EMAAR, and ADNOCGAS review-ready.
 - Coverage Command Center, Evidence-to-Brief Workbench, Memo Review Room, Decision Journal, Source Intake Doctor, and Launch Control Room.
 - AED valuation lens with revenue growth, FCF margin, terminal multiple, and discount-rate sensitivities.
 - A 3D-style SVG brand mark in assets/majlisalpha-logo.svg plus social preview artwork.
@@ -46,6 +48,14 @@ The application shell is in index.html, styles.css, launch.css, and app.js. The 
 - data/questions.json: Left-rail question templates.
 - data/watchlists.json: Watchlist definitions and ticker aliases.
 - data/source-pack-template.json: Copyable template for adding real annual reports, results summaries, ownership extracts, and ADX/DFM/Nasdaq Dubai disclosures.
+- data/official-sources.json: Official UAE source index for ADX, DFM, Nasdaq Dubai CANDI, SCA, and company IR workflows.
+- data/pilot-sprint.json: Seven-day pilot sprint plan and launch gate.
+
+## Operating playbooks
+
+- docs/UAE_SOURCE_PLAYBOOK.md: first source-collection sprint and REAL-evidence rules.
+- docs/PILOT_COMMAND_CENTER.md: operational sprint plan for the first three UAE issuers.
+- docs/GITHUB_PAGES_DEPLOYMENT.md: GitHub Pages upload, settings, and smoke-test checklist.
 
 ## Quality checks
 

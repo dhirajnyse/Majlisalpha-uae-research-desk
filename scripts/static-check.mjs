@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, statSync } from "node:fs";
+﻿import { readFileSync, readdirSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -19,12 +19,14 @@ const app = read("app.js");
 assert(index.includes("Content-Security-Policy"), "index.html is missing the CSP meta tag.");
 assert(index.includes("UAE readiness gate v1"), "index.html does not show the UAE readiness gate marker.");
 assert(!/\son[a-z]+\s*=/i.test(index), "index.html contains an inline event handler.");
-assert(app.includes('const DATA_VERSION = "20260509-uae-01";'), "app.js DATA_VERSION is not aligned with UAE v1.");
+assert(app.includes('const DATA_VERSION = "20260509-uae-03";'), "app.js DATA_VERSION is not aligned with UAE v3.");
 assert(app.includes("normalizeExternalUrl"), "app.js is missing source URL normalization.");
 assert(app.includes("MAX_IMPORT_FILE_BYTES"), "app.js is missing import size limits.");
 assert(app.includes("STARTER_PACK_TICKERS"), "app.js is missing the starter pack list.");
 assert(app.includes("FAB") && app.includes("EMAAR") && app.includes("ADNOCGAS"), "app.js is missing UAE starter tickers.");
 assert(app.includes("ADX disclosures") && app.includes("DFM disclosures") && app.includes("Nasdaq Dubai CANDI"), "app.js is missing UAE official source helpers.");
+assert(index.includes("source-playbook") && index.includes("UAE Source Playbook"), "index.html is missing the UAE Source Playbook section.");
+assert(index.includes("pilot-command") && index.includes("Pilot Command Center"), "index.html is missing the Pilot Command Center section.");
 assert(index.includes("brief-workbench") && app.includes("renderBriefWorkbench"), "app.js or index.html is missing the evidence-to-brief workbench.");
 assert(index.includes("memo-review-room") && app.includes("renderMemoReviewRoom"), "app.js or index.html is missing the memo review room.");
 assert(index.includes("launch-control-room") && app.includes("renderLaunchControlRoom"), "app.js or index.html is missing the launch control room.");
@@ -53,7 +55,10 @@ for (const required of [
   "docs/SOURCE_INTAKE_DOCTOR.md",
   "docs/INVESTMENT_READINESS_GATE.md",
   "docs/LAUNCH_ROADMAP.md",
-  "docs/REPO_OPERATIONS.md"
+  "docs/REPO_OPERATIONS.md",
+  "docs/UAE_SOURCE_PLAYBOOK.md",
+  "docs/PILOT_COMMAND_CENTER.md",
+  "docs/GITHUB_PAGES_DEPLOYMENT.md"
 ]) {
   assert(read(required).trim().length > 200, required + " is missing or too short.");
 }

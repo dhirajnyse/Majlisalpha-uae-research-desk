@@ -316,6 +316,8 @@
 .waitlist-section,
 .roadmap-section,
 .data-section,
+.source-playbook-section,
+.pilot-command-section,
 .foundation-section,
 .real-starter-section {
   min-height: 246px;
@@ -324,6 +326,8 @@
 .pricing-section,
 .roadmap-section,
 .data-section,
+.source-playbook-section,
+.pilot-command-section,
 .foundation-section {
   display: grid;
   grid-template-columns: minmax(260px, 0.42fr) minmax(620px, 1fr);
@@ -346,6 +350,8 @@
 .pricing-section .section-heading,
 .roadmap-section .section-heading,
 .data-section .section-heading,
+.source-playbook-section .section-heading,
+.pilot-command-section .section-heading,
 .foundation-section .section-heading {
   margin-bottom: 0;
   align-self: start;
@@ -794,6 +800,176 @@
   border-color: #ffffff;
 }
 
+.source-playbook-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  align-self: stretch;
+}
+
+.source-playbook-grid article {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.source-playbook-grid article:nth-child(2),
+.source-playbook-grid article:nth-child(4) {
+  background: var(--panel-strong);
+}
+
+.source-playbook-grid .source-playbook-callout {
+  color: #ffffff;
+  background: var(--ink);
+  border-color: rgba(16, 40, 41, 0.82);
+}
+
+.source-playbook-grid span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  width: fit-content;
+  padding: 0 9px;
+  border-radius: 999px;
+  color: var(--teal);
+  background: var(--teal-soft);
+  border: 1px solid rgba(20, 118, 111, 0.22);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.source-playbook-callout span {
+  color: #fff2cf;
+  background: rgba(200, 150, 56, 0.18);
+  border-color: rgba(200, 150, 56, 0.34);
+}
+
+.source-playbook-grid h3 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.18;
+}
+
+.source-playbook-callout h3 {
+  color: #ffffff;
+}
+
+.source-playbook-grid p {
+  margin: 8px 0 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.source-playbook-callout p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.source-playbook-grid a {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 0 10px;
+  border: 1px solid rgba(20, 118, 111, 0.22);
+  border-radius: 8px;
+  color: var(--teal);
+  background: #ffffff;
+  font-size: 11px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.source-playbook-callout a {
+  color: var(--ink);
+  border-color: #ffffff;
+}
+
+.pilot-command-section {
+  background:
+    linear-gradient(135deg, rgba(14, 107, 95, 0.12), transparent 42%),
+    linear-gradient(315deg, rgba(200, 150, 56, 0.14), transparent 38%),
+    rgba(255, 255, 255, 0.96);
+}
+
+.pilot-command-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  align-self: stretch;
+}
+
+.pilot-command-card {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.pilot-command-card.is-priority {
+  border-color: rgba(20, 118, 111, 0.34);
+  background: var(--teal-soft);
+}
+
+.pilot-command-card.is-launch {
+  color: #ffffff;
+  background: var(--ink);
+  border-color: rgba(16, 40, 41, 0.82);
+}
+
+.pilot-command-card span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  width: fit-content;
+  padding: 0 9px;
+  border-radius: 999px;
+  color: var(--teal);
+  background: #ffffff;
+  border: 1px solid rgba(20, 118, 111, 0.22);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pilot-command-card.is-launch span {
+  color: #fff2cf;
+  background: rgba(200, 150, 56, 0.18);
+  border-color: rgba(200, 150, 56, 0.34);
+}
+
+.pilot-command-card h3 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.18;
+}
+
+.pilot-command-card.is-launch h3 {
+  color: #ffffff;
+}
+
+.pilot-command-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.pilot-command-card.is-launch p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
 .roadmap-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -899,6 +1075,8 @@
   .roadmap-section,
   .waitlist-section,
   .data-section,
+  .source-playbook-section,
+  .pilot-command-section,
   .foundation-section,
   .real-starter-section {
     grid-template-columns: 1fr;
@@ -907,6 +1085,8 @@
   .pricing-section .section-heading,
   .roadmap-section .section-heading,
   .data-section .section-heading,
+  .source-playbook-section .section-heading,
+  .pilot-command-section .section-heading,
   .foundation-section .section-heading {
     margin-bottom: 12px;
   }
@@ -929,6 +1109,14 @@
   }
 
   .data-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .source-playbook-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pilot-command-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -960,6 +1148,8 @@
   .waitlist-section,
   .roadmap-section,
   .data-section,
+  .source-playbook-section,
+  .pilot-command-section,
   .foundation-section,
   .real-starter-section {
     min-height: 0;
@@ -1018,6 +1208,14 @@
   }
 
   .data-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .source-playbook-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pilot-command-grid {
     grid-template-columns: 1fr;
   }
 

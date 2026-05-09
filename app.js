@@ -12,7 +12,7 @@ const STORAGE_KEYS = {
 };
 
 const WAITLIST_ENDPOINT = "https://formsubmit.co/ajax/dhirajnyse@gmail.com";
-const DATA_VERSION = "20260509-uae-01";
+const DATA_VERSION = "20260509-uae-03";
 const MAX_IMPORT_FILE_BYTES = 2 * 1024 * 1024;
 const MAX_IMPORT_TOTAL_BYTES = 8 * 1024 * 1024;
 const MAX_SOURCE_TEXT_CHARS = 120000;

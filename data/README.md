@@ -9,6 +9,8 @@ MajlisAlpha UAE v1 loads its starter research universe from this folder.
 - questions.json: default question templates shown in the left rail.
 - watchlists.json: default UAE watchlist and aliases.
 - source-pack-template.json: copyable schema for adding real annual reports, earnings calls, results notes, ownership extracts, and ADX/DFM/Nasdaq Dubai disclosures.
+- official-sources.json: official source map for ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer IR workflows.
+- pilot-sprint.json: seven-day operating plan for making FAB, EMAAR, and ADNOCGAS pilot-ready.
 
 ## Source labels
 

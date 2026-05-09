@@ -1,0 +1,48 @@
+{
+  "market": "United Arab Emirates",
+  "version": "20260509-uae-03",
+  "sources": [
+    {
+      "id": "adx-disclosures",
+      "name": "ADX Disclosures",
+      "url": "https://www.adx.ae/english/Pages/Market-Information/Disclosures.aspx",
+      "useFor": ["exchange disclosure", "results", "board decisions", "dividends"],
+      "captureRule": "Filter by issuer and date, then capture exact disclosure text, title, source URL, period, and publication date."
+    },
+    {
+      "id": "adx-report-centre",
+      "name": "ADX Report Centre",
+      "url": "https://www.adx.ae/english/Pages/Market-Information/Report-Center.aspx",
+      "useFor": ["financial reports", "market reports", "issuer context"],
+      "captureRule": "Use for financial report discovery and cross-checking issuer reporting periods."
+    },
+    {
+      "id": "dfm-disclosures",
+      "name": "DFM Market Disclosures",
+      "url": "https://www.dfm.ae/market-information/market-disclosures",
+      "useFor": ["exchange disclosure", "results", "board decisions", "dividends"],
+      "captureRule": "Capture issuer, disclosure title, filing date, source URL, and the relevant cited paragraphs."
+    },
+    {
+      "id": "nasdaq-dubai-candi",
+      "name": "Nasdaq Dubai CANDI",
+      "url": "https://www.nasdaqdubai.com/candi",
+      "useFor": ["regulatory announcements", "listed securities", "issuer disclosures"],
+      "captureRule": "Use CANDI records for Nasdaq Dubai issuer announcements and regulatory notices."
+    },
+    {
+      "id": "sca",
+      "name": "Securities and Commodities Authority",
+      "url": "https://www.sca.gov.ae",
+      "useFor": ["market rules", "issuer regulation", "ownership and governance context"],
+      "captureRule": "Use SCA pages to verify regulatory context, market rules, governance references, and issuer-related notices."
+    },
+    {
+      "id": "company-ir",
+      "name": "Company Investor Relations",
+      "url": "data/companies.json",
+      "useFor": ["annual reports", "investor presentations", "earnings materials"],
+      "captureRule": "Use the issuer IR URL from app.js/company source links; official company documents should be preferred for annual-report and presentation evidence."
+    }
+  ]
+}
