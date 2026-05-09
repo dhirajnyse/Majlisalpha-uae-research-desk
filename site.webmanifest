@@ -18,7 +18,7 @@
     <link rel="canonical" href="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/majlisalpha-logo.svg" />
-    <link rel="manifest" href="site.webmanifest?v=20260509-uae-20" />
+    <link rel="manifest" href="site.webmanifest?v=20260509-uae-20-stylefix" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MajlisAlpha" />
     <meta property="og:title" content="MajlisAlpha | Ask UAE disclosures. See the signal." />
@@ -35,8 +35,8 @@
       content="Evidence-backed UAE market research across filings, earnings-call notes, exchange disclosures, ownership updates, and AED valuation."
     />
     <meta name="twitter:image" content="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/assets/majlisalpha-social-card.svg" />
-    <link rel="stylesheet" href="styles.css?v=20260509-uae-20" />
-    <link rel="stylesheet" href="launch.css?v=20260509-uae-20" />
+    <link rel="stylesheet" href="styles.css?v=20260509-uae-20-stylefix" />
+    <link rel="stylesheet" href="launch.css?v=20260509-uae-20-stylefix" />
   </head>
   <body>
     <div class="app-shell">
@@ -1779,6 +1779,6 @@
       </footer>
     </div>
 
-    <script src="app.js?v=20260509-uae-20"></script>
+    <script src="app.js?v=20260509-uae-20-stylefix"></script>
   </body>
 </html>
