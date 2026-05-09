@@ -34,6 +34,11 @@ Suggested SaaS packaging:
 - Revenue Pilot Console for testing 10 pilot users, 50 real questions, paid intent, and launch readiness.
 - UAE Catalyst Calendar for tracking source-backed earnings windows, board decisions, dividends, ownership updates, and macro read-throughs.
 - Peer Benchmark Matrix for comparing UAE banks, property names, energy/utilities, and platform issuers with cited source logic.
+- Portfolio Risk Radar for triaging UAE watchlists by concentration, catalyst pressure, evidence freshness, and next analyst action.
+- Claim Trace Inspector for auditing brief claims against source snippets, official URLs, reviewer status, and unresolved evidence gaps.
+- Disclosure Alert Watchtower for routing ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer IR updates into assigned research actions.
+- Analyst Mission Control for converting alerts, claim gaps, portfolio risks, peer checks, and pilot requests into owner-assigned tasks.
+- Answer Quality Lab for scoring source coverage, claim trace, UAE specificity, valuation logic, user value, and review readiness before export.
 - Coverage Command Center, Evidence-to-Brief Workbench, Memo Review Room, Decision Journal, Source Intake Doctor, and Launch Control Room.
 - AED valuation lens with revenue growth, FCF margin, terminal multiple, and discount-rate sensitivities.
 - A 3D-style SVG brand mark in assets/majlisalpha-logo.svg plus social preview artwork.
@@ -56,6 +61,11 @@ The application shell is in index.html, styles.css, launch.css, and app.js. The 
 - data/pilot-revenue.json: Revenue pilot targets, ICPs, demo script, pricing hypotheses, conversion signals, and scale gate.
 - data/catalyst-calendar.json: UAE catalyst watch streams, source policy, required fields, and calendar readiness gate.
 - data/peer-benchmark.json: UAE peer groups, benchmark metrics, source routes, matrix gate, and starter outputs.
+- data/portfolio-risk-radar.json: portfolio exposure buckets, risk signals, next actions, and radar launch gate.
+- data/claim-trace-inspector.json: claim types, trace statuses, review workflow, and export readiness gate.
+- data/disclosure-alert-watchtower.json: official source routes, alert types, SLA rules, triage fields, and review statuses.
+- data/analyst-mission-control.json: workflow lanes, task priorities, statuses, required fields, and publish-readiness gate.
+- data/answer-quality-lab.json: answer score bands, evaluation dimensions, failure reasons, and export quality gate.
 
 ## Operating playbooks
 
@@ -64,6 +74,11 @@ The application shell is in index.html, styles.css, launch.css, and app.js. The 
 - docs/PILOT_REVENUE_PLAYBOOK.md: 14-day pilot plan for validating users, source usage, and paid intent.
 - docs/CATALYST_CALENDAR.md: source-first operating workflow for monitoring UAE market catalysts.
 - docs/PEER_BENCHMARK_MATRIX.md: source-first peer comparison workflow and launch gate.
+- docs/PORTFOLIO_RISK_RADAR.md: portfolio triage workflow for concentration, catalysts, evidence freshness, and action tracking.
+- docs/CLAIM_TRACE_INSPECTOR.md: claim-level audit workflow for supported, inferred, source-blocked, and rejected claims.
+- docs/DISCLOSURE_ALERT_WATCHTOWER.md: official-disclosure alert routing workflow for source-first research actions.
+- docs/ANALYST_MISSION_CONTROL.md: operating queue for owned analyst tasks, priorities, lanes, and publish readiness.
+- docs/ANSWER_QUALITY_LAB.md: repeatable answer-evaluation rubric and publish-readiness quality gate.
 - docs/GITHUB_PAGES_DEPLOYMENT.md: GitHub Pages upload, settings, and smoke-test checklist.
 
 ## Quality checks

@@ -1,0 +1,97 @@
+{
+  "version": "20260509-uae-11",
+  "name": "MajlisAlpha UAE Answer Quality Lab",
+  "purpose": "Evaluate each generated research answer before export using source coverage, UAE specificity, claim trace, valuation logic, risk balance, and user value.",
+  "qualityPolicy": "An answer should not be exported as pilot-ready unless it clears minimum scores for source coverage, claim trace, math logic, and reviewer readiness.",
+  "scoreBands": [
+    {
+      "band": "publish-ready",
+      "minimumScore": 85,
+      "meaning": "Answer has enough source evidence, traceable claims, clear logic, and reviewer approval for pilot use."
+    },
+    {
+      "band": "review-ready",
+      "minimumScore": 70,
+      "meaning": "Answer is useful but needs analyst review before export."
+    },
+    {
+      "band": "source-blocked",
+      "minimumScore": 50,
+      "meaning": "Answer has missing, stale, synthetic, or unreviewed evidence and should stay internal."
+    },
+    {
+      "band": "reject",
+      "minimumScore": 0,
+      "meaning": "Answer overstates evidence, fails UAE context, or has unsupported conclusions."
+    }
+  ],
+  "evaluationDimensions": [
+    {
+      "dimension": "source coverage",
+      "weight": 25,
+      "checks": [
+        "uses official or verified source route",
+        "covers issuer, period, document type, and source date",
+        "does not present synthetic evidence as real"
+      ]
+    },
+    {
+      "dimension": "claim trace",
+      "weight": 20,
+      "checks": [
+        "material claims have source snippets",
+        "inferred claims include analyst reasoning",
+        "blocked claims are labelled clearly"
+      ]
+    },
+    {
+      "dimension": "UAE market specificity",
+      "weight": 15,
+      "checks": [
+        "uses ADX, DFM, Nasdaq Dubai, SCA, issuer IR, and AED context correctly",
+        "handles dividends, ownership, governance, and disclosure routes appropriately",
+        "avoids generic global-market wording"
+      ]
+    },
+    {
+      "dimension": "valuation and logic",
+      "weight": 15,
+      "checks": [
+        "valuation inputs tie to assumptions",
+        "peer and portfolio conclusions follow from evidence",
+        "risk severity is justified"
+      ]
+    },
+    {
+      "dimension": "user value",
+      "weight": 15,
+      "checks": [
+        "answer is concise and decision-ready",
+        "states next action or unresolved gap",
+        "would help a pilot user ask a sharper follow-up"
+      ]
+    },
+    {
+      "dimension": "review readiness",
+      "weight": 10,
+      "checks": [
+        "review status is recorded",
+        "export gate is clear",
+        "mission-control task can be closed or routed"
+      ]
+    }
+  ],
+  "failureReasons": [
+    "missing official source route",
+    "unsupported material claim",
+    "stale period or unclear date",
+    "generic non-UAE answer",
+    "valuation math does not tie out",
+    "no next action",
+    "reviewer status missing"
+  ],
+  "launchGate": {
+    "readyRule": "Answer Quality Lab is pilot-ready when exported answers can show score band, dimension scores, failure reasons, reviewer status, and next action.",
+    "blockedRule": "If source coverage or claim trace fails, the answer cannot be publish-ready regardless of total score."
+  }
+}

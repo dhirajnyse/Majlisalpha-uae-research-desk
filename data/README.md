@@ -1,6 +1,6 @@
 # MajlisAlpha Data Pack
 
-MajlisAlpha UAE v6 loads its starter research universe, source workflow, and pilot operating data from this folder.
+MajlisAlpha UAE v11 loads its starter research universe, source workflow, and pilot operating data from this folder.
 
 ## Files
 
@@ -14,6 +14,11 @@ MajlisAlpha UAE v6 loads its starter research universe, source workflow, and pil
 - pilot-revenue.json: 14-day revenue pilot targets, ideal customer profiles, demo script, pricing hypotheses, conversion signals, and launch gate.
 - catalyst-calendar.json: source-first UAE catalyst watch streams, official-source policy, calendar required fields, and readiness gate.
 - peer-benchmark.json: UAE peer groups, benchmark metrics, source routes, matrix gate, and starter comparison outputs.
+- portfolio-risk-radar.json: UAE exposure buckets, evidence freshness rules, catalyst pressure signals, next actions, and launch gate.
+- claim-trace-inspector.json: claim families, trace statuses, source requirements, review workflow, and export gate.
+- disclosure-alert-watchtower.json: official source routes, alert types, SLA rules, triage fields, review statuses, and launch gate.
+- analyst-mission-control.json: workflow lanes, priorities, task statuses, required fields, and publish-readiness gate.
+- answer-quality-lab.json: score bands, evaluation dimensions, failure reasons, and answer export gate.
 
 ## Source labels
 

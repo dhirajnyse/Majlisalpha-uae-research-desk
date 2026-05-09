@@ -20,7 +20,7 @@ const manifest = read("site.webmanifest");
 assert(index.includes("Content-Security-Policy"), "index.html is missing the CSP meta tag.");
 assert(index.includes("UAE readiness gate v1"), "index.html does not show the UAE readiness gate marker.");
 assert(!/\son[a-z]+\s*=/i.test(index), "index.html contains an inline event handler.");
-assert(app.includes('const DATA_VERSION = "20260509-uae-06";'), "app.js DATA_VERSION is not aligned with UAE v6.");
+assert(app.includes('const DATA_VERSION = "20260509-uae-11";'), "app.js DATA_VERSION is not aligned with UAE v11.");
 assert(app.includes("normalizeExternalUrl"), "app.js is missing source URL normalization.");
 assert(app.includes("MAX_IMPORT_FILE_BYTES"), "app.js is missing import size limits.");
 assert(app.includes("STARTER_PACK_TICKERS"), "app.js is missing the starter pack list.");
@@ -31,6 +31,11 @@ assert(index.includes("pilot-command") && index.includes("Pilot Command Center")
 assert(index.includes("revenue-pilot") && index.includes("Revenue Pilot Console"), "index.html is missing the Revenue Pilot Console section.");
 assert(index.includes("catalyst-calendar") && index.includes("UAE Catalyst Calendar"), "index.html is missing the UAE Catalyst Calendar section.");
 assert(index.includes("peer-benchmark") && index.includes("Peer Benchmark Matrix"), "index.html is missing the Peer Benchmark Matrix section.");
+assert(index.includes("portfolio-risk-radar") && index.includes("Portfolio Risk Radar"), "index.html is missing the Portfolio Risk Radar section.");
+assert(index.includes("claim-trace") && index.includes("Claim Trace Inspector"), "index.html is missing the Claim Trace Inspector section.");
+assert(index.includes("disclosure-alerts") && index.includes("Disclosure Alert Watchtower"), "index.html is missing the Disclosure Alert Watchtower section.");
+assert(index.includes("analyst-mission-control") && index.includes("Analyst Mission Control"), "index.html is missing the Analyst Mission Control section.");
+assert(index.includes("answer-quality-lab") && index.includes("Answer Quality Lab"), "index.html is missing the Answer Quality Lab section.");
 assert(index.includes("https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/"), "index.html is missing the case-correct GitHub Pages URL.");
 assert(manifest.includes("/Majlisalpha-uae-research-desk/"), "site.webmanifest start_url is missing the case-correct GitHub Pages path.");
 assert(index.includes("brief-workbench") && app.includes("renderBriefWorkbench"), "app.js or index.html is missing the evidence-to-brief workbench.");
@@ -67,6 +72,11 @@ for (const required of [
   "docs/PILOT_REVENUE_PLAYBOOK.md",
   "docs/CATALYST_CALENDAR.md",
   "docs/PEER_BENCHMARK_MATRIX.md",
+  "docs/PORTFOLIO_RISK_RADAR.md",
+  "docs/CLAIM_TRACE_INSPECTOR.md",
+  "docs/DISCLOSURE_ALERT_WATCHTOWER.md",
+  "docs/ANALYST_MISSION_CONTROL.md",
+  "docs/ANSWER_QUALITY_LAB.md",
   "docs/GITHUB_PAGES_DEPLOYMENT.md"
 ]) {
   assert(read(required).trim().length > 200, required + " is missing or too short.");

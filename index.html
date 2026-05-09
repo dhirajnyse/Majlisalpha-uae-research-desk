@@ -18,7 +18,7 @@
     <link rel="canonical" href="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/majlisalpha-logo.svg" />
-    <link rel="manifest" href="site.webmanifest?v=20260509-uae-06" />
+    <link rel="manifest" href="site.webmanifest?v=20260509-uae-11" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MajlisAlpha" />
     <meta property="og:title" content="MajlisAlpha | Ask UAE disclosures. See the signal." />
@@ -35,8 +35,8 @@
       content="Evidence-backed UAE market research across filings, earnings-call notes, exchange disclosures, ownership updates, and AED valuation."
     />
     <meta name="twitter:image" content="https://dhirajnyse.github.io/Majlisalpha-uae-research-desk/assets/majlisalpha-social-card.svg" />
-    <link rel="stylesheet" href="styles.css?v=20260509-uae-06" />
-    <link rel="stylesheet" href="launch.css?v=20260509-uae-06" />
+    <link rel="stylesheet" href="styles.css?v=20260509-uae-11" />
+    <link rel="stylesheet" href="launch.css?v=20260509-uae-11" />
   </head>
   <body>
     <div class="app-shell">
@@ -57,6 +57,11 @@
           <span class="status-pill">Revenue pilot v1</span>
           <span class="status-pill">Catalyst calendar v1</span>
           <span class="status-pill">Peer matrix v1</span>
+          <span class="status-pill">Portfolio radar v1</span>
+          <span class="status-pill">Claim trace v1</span>
+          <span class="status-pill">Disclosure alerts v1</span>
+          <span class="status-pill">Mission control v1</span>
+          <span class="status-pill">Answer quality v1</span>
         </div>
         <div class="top-actions">
           <button class="icon-button" id="copyBrief" type="button" title="Copy current brief" aria-label="Copy current brief">
@@ -103,6 +108,11 @@
             <a class="secondary-link" href="#revenue-pilot">Revenue pilot</a>
             <a class="secondary-link" href="#catalyst-calendar">Catalyst calendar</a>
             <a class="secondary-link" href="#peer-benchmark">Peer matrix</a>
+            <a class="secondary-link" href="#portfolio-risk-radar">Portfolio radar</a>
+            <a class="secondary-link" href="#claim-trace">Claim trace</a>
+            <a class="secondary-link" href="#disclosure-alerts">Disclosure alerts</a>
+            <a class="secondary-link" href="#analyst-mission-control">Mission control</a>
+            <a class="secondary-link" href="#answer-quality-lab">Quality lab</a>
             <a class="secondary-link" href="#source-playbook">Source playbook</a>
             <a class="secondary-link" href="#foundation">Launch plan</a>
             <a class="secondary-link" href="#waitlist">Join pilot</a>
@@ -1030,7 +1040,7 @@
           <span>Peer Benchmark Matrix</span>
           <h2 id="peerBenchmarkTitle">Compare UAE issuers without losing the source trail.</h2>
           <p>
-            v6 adds a peer lens for banks, property, energy/utilities, and platform names so each comparison starts with the right metrics, risks, and official evidence routes.
+            The peer lens covers banks, property, energy/utilities, and platform names so each comparison starts with the right metrics, risks, and official evidence routes.
           </p>
         </div>
         <div class="peer-benchmark-grid" aria-label="MajlisAlpha UAE peer benchmark matrix">
@@ -1062,11 +1072,196 @@
         </div>
       </section>
 
+      <section class="launch-section portfolio-risk-section" aria-labelledby="portfolioRiskTitle" id="portfolio-risk-radar">
+        <div class="section-heading">
+          <span>Portfolio Risk Radar</span>
+          <h2 id="portfolioRiskTitle">See which UAE exposure deserves attention first.</h2>
+          <p>
+            The portfolio layer tracks concentration, catalyst pressure, evidence freshness, liquidity sensitivity, and the next analyst action across a UAE watchlist.
+          </p>
+        </div>
+        <div class="portfolio-risk-grid" aria-label="MajlisAlpha portfolio risk radar">
+          <article class="portfolio-risk-card is-focus">
+            <span>Concentration</span>
+            <h3>Banks, property, energy, platforms.</h3>
+            <p>Map exposure by sector, issuer, catalyst cluster, and risk driver before a single company view becomes a portfolio blind spot.</p>
+          </article>
+          <article class="portfolio-risk-card">
+            <span>Evidence freshness</span>
+            <h3>Stale sources get flagged.</h3>
+            <p>Prioritize holdings where the latest source is old, synthetic, unreviewed, or missing a current results or disclosure update.</p>
+          </article>
+          <article class="portfolio-risk-card">
+            <span>Catalyst pressure</span>
+            <h3>Events drive review order.</h3>
+            <p>Use earnings windows, dividend decisions, board meetings, ownership updates, and macro releases to rank what needs review today.</p>
+          </article>
+          <article class="portfolio-risk-card">
+            <span>Decision action</span>
+            <h3>Hold, review, source-blocked.</h3>
+            <p>Every portfolio signal should become an action in the decision journal, not just a colored dashboard tile.</p>
+          </article>
+          <article class="portfolio-risk-card is-gate">
+            <span>Radar gate</span>
+            <h3>No alert without a source path.</h3>
+            <p>A portfolio risk is actionable only when the exposure, event, source status, and next analyst step are visible together.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section claim-trace-section" aria-labelledby="claimTraceTitle" id="claim-trace">
+        <div class="section-heading">
+          <span>Claim Trace Inspector</span>
+          <h2 id="claimTraceTitle">Make every answer defensible before it leaves the desk.</h2>
+          <p>
+            The claim-level audit layer lets each brief show the claim, source snippet, official URL, confidence status, reviewer decision, and unresolved gap.
+          </p>
+        </div>
+        <div class="claim-trace-grid" aria-label="MajlisAlpha claim trace inspector">
+          <article class="claim-trace-card is-primary">
+            <span>Claim map</span>
+            <h3>Break the brief into checkable claims.</h3>
+            <p>Separate valuation assumptions, risk statements, management-tone reads, peer rankings, and portfolio alerts before review.</p>
+          </article>
+          <article class="claim-trace-card">
+            <span>Source snippet</span>
+            <h3>Quote the evidence, not the vibe.</h3>
+            <p>Each supported claim needs a source excerpt, official URL, issuer, period, and document type that a reviewer can inspect.</p>
+          </article>
+          <article class="claim-trace-card">
+            <span>Status</span>
+            <h3>Supported, inferred, or blocked.</h3>
+            <p>Mark claims as supported when cited, inferred when judgement is involved, and source-blocked when evidence is missing.</p>
+          </article>
+          <article class="claim-trace-card">
+            <span>Reviewer loop</span>
+            <h3>Push weak claims back to research.</h3>
+            <p>Unsupported claims should return to Source Studio, Intake Doctor, or Memo Review Room before a PDF or committee memo ships.</p>
+          </article>
+          <article class="claim-trace-card is-gate">
+            <span>Trace gate</span>
+            <h3>No trace, no publish.</h3>
+            <p>A brief is publish-ready only when material claims have source paths, reviewer status, and no synthetic evidence presented as real.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section disclosure-alert-section" aria-labelledby="disclosureAlertTitle" id="disclosure-alerts">
+        <div class="section-heading">
+          <span>Disclosure Alert Watchtower</span>
+          <h2 id="disclosureAlertTitle">Turn market notices into assigned research actions.</h2>
+          <p>
+            The alert workflow routes ADX, DFM, Nasdaq Dubai CANDI, SCA, and issuer IR updates from raw notice to triaged memo work.
+          </p>
+        </div>
+        <div class="disclosure-alert-grid" aria-label="MajlisAlpha disclosure alert watchtower">
+          <article class="disclosure-alert-card is-lead">
+            <span>Ingest</span>
+            <h3>Capture official notices first.</h3>
+            <p>Track source route, issuer, disclosure type, source timestamp, and whether the notice is official, duplicate, or watch-only.</p>
+          </article>
+          <article class="disclosure-alert-card">
+            <span>Classify</span>
+            <h3>Results, board, dividend, ownership.</h3>
+            <p>Sort alerts by event type, affected ticker, source confidence, expected impact, and whether a brief or memo is required.</p>
+          </article>
+          <article class="disclosure-alert-card">
+            <span>Assign</span>
+            <h3>Every alert needs an owner.</h3>
+            <p>Route high-priority notices to Source Intake Doctor, Claim Trace Inspector, Portfolio Risk Radar, or Decision Journal.</p>
+          </article>
+          <article class="disclosure-alert-card">
+            <span>SLA</span>
+            <h3>Review fast, publish carefully.</h3>
+            <p>Use urgency windows for material results, dividend changes, governance items, capital actions, and trading-status updates.</p>
+          </article>
+          <article class="disclosure-alert-card is-gate">
+            <span>Alert gate</span>
+            <h3>No alert without official route.</h3>
+            <p>An alert becomes actionable only when source URL, event type, issuer, owner, priority, and next step are recorded.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section analyst-mission-section" aria-labelledby="analystMissionTitle" id="analyst-mission-control">
+        <div class="section-heading">
+          <span>Analyst Mission Control</span>
+          <h2 id="analystMissionTitle">Convert research signals into owned work.</h2>
+          <p>
+            The command queue turns alerts, claim gaps, portfolio risks, peer checks, and source blockers into owner-assigned tasks with SLA and publish readiness.
+          </p>
+        </div>
+        <div class="analyst-mission-grid" aria-label="MajlisAlpha analyst mission control">
+          <article class="analyst-mission-card is-lead">
+            <span>Queue</span>
+            <h3>One lane for every task.</h3>
+            <p>Unify source intake, memo review, claim trace, portfolio review, peer check, and decision-journal work into a single operating view.</p>
+          </article>
+          <article class="analyst-mission-card">
+            <span>Priority</span>
+            <h3>Urgent, high, normal, blocked.</h3>
+            <p>Rank work by disclosure materiality, stale evidence, catalyst pressure, customer pilot need, and publish dependency.</p>
+          </article>
+          <article class="analyst-mission-card">
+            <span>Owner</span>
+            <h3>No orphan research work.</h3>
+            <p>Each task needs owner, workflow lane, due window, source state, reviewer state, and next action before it counts as active.</p>
+          </article>
+          <article class="analyst-mission-card">
+            <span>Handoff</span>
+            <h3>From source to memo to decision.</h3>
+            <p>Move tasks across Source Studio, Intake Doctor, Claim Trace, Memo Review Room, Portfolio Radar, and Decision Journal.</p>
+          </article>
+          <article class="analyst-mission-card is-gate">
+            <span>Publish gate</span>
+            <h3>Done means reviewed, not just drafted.</h3>
+            <p>A mission is complete only when sources, claims, memo status, and decision record all agree.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section answer-quality-section" aria-labelledby="answerQualityTitle" id="answer-quality-lab">
+        <div class="section-heading">
+          <span>Answer Quality Lab</span>
+          <h2 id="answerQualityTitle">Score answers before users trust them.</h2>
+          <p>
+            v11 adds a repeatable evaluation layer for source coverage, UAE specificity, claim trace, valuation math, risk balance, and publish readiness.
+          </p>
+        </div>
+        <div class="answer-quality-grid" aria-label="MajlisAlpha answer quality lab">
+          <article class="answer-quality-card is-lead">
+            <span>Source coverage</span>
+            <h3>Every answer needs enough evidence.</h3>
+            <p>Check whether the brief cites the right official sources, current periods, source snippets, and issuer-specific documents.</p>
+          </article>
+          <article class="answer-quality-card">
+            <span>UAE specificity</span>
+            <h3>No generic market filler.</h3>
+            <p>Score whether the answer understands ADX, DFM, Nasdaq Dubai, AED valuation, ownership rules, dividends, and issuer context.</p>
+          </article>
+          <article class="answer-quality-card">
+            <span>Math and logic</span>
+            <h3>Assumptions must tie out.</h3>
+            <p>Validate valuation inputs, risk labels, peer rankings, portfolio alerts, and whether the conclusion follows from the evidence.</p>
+          </article>
+          <article class="answer-quality-card">
+            <span>User value</span>
+            <h3>Useful, concise, decision-ready.</h3>
+            <p>Measure whether the answer gives a clear memo, next action, unresolved gaps, and a reason to keep using the desk.</p>
+          </article>
+          <article class="answer-quality-card is-gate">
+            <span>Quality gate</span>
+            <h3>Low score stays internal.</h3>
+            <p>An answer should not be exported unless it clears source, trace, math, and reviewer thresholds.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="launch-section foundation-section" aria-labelledby="foundationTitle" id="foundation">
         <div class="section-heading">
           <span>Production foundation</span>
           <h2 id="foundationTitle">Build it like a research product, not a demo.</h2>
-          <p>v6 turns the current desk into a clearer product system: evidence provenance, source-first catalyst monitoring, peer comparison discipline, repo checks, pilot revenue gates, and a backend path for accounts, ingestion, and audit logs.</p>
+          <p>v11 turns the current desk into a clearer product system: evidence provenance, source-first catalyst monitoring, peer comparison discipline, portfolio risk triage, claim-level audit, disclosure alert routing, analyst work ownership, answer-quality scoring, repo checks, pilot revenue gates, and a backend path for accounts, ingestion, and audit logs.</p>
         </div>
         <div class="foundation-grid" aria-label="MajlisAlpha production foundation">
           <article>
@@ -1233,6 +1428,6 @@
       </footer>
     </div>
 
-    <script src="app.js?v=20260509-uae-06"></script>
+    <script src="app.js?v=20260509-uae-11"></script>
   </body>
 </html>

@@ -1,0 +1,82 @@
+{
+  "version": "20260509-uae-11",
+  "name": "MajlisAlpha UAE Claim Trace Inspector",
+  "purpose": "Create a claim-level audit workflow so each brief can show its claim, source snippet, official URL, reviewer status, and unresolved evidence gap.",
+  "tracePolicy": "No material claim should be exported as committee-ready unless it has a trace status and a reviewer can inspect the evidence path.",
+  "claimTypes": [
+    {
+      "type": "Valuation assumption",
+      "examples": [
+        "discount-rate sensitivity",
+        "terminal multiple support",
+        "free-cash-flow margin assumption"
+      ],
+      "requiredEvidence": ["model input", "source period", "official URL", "analyst reason"]
+    },
+    {
+      "type": "Risk statement",
+      "examples": [
+        "deposit-cost pressure",
+        "property-cycle durability",
+        "governance complexity"
+      ],
+      "requiredEvidence": ["risk source", "source snippet", "severity reason", "reviewer status"]
+    },
+    {
+      "type": "Management-tone read",
+      "examples": [
+        "cautious outlook",
+        "confidence on dividend durability",
+        "limited recovery assumption"
+      ],
+      "requiredEvidence": ["transcript or results wording", "speaker/context", "period", "official or verified source"]
+    },
+    {
+      "type": "Peer ranking",
+      "examples": [
+        "best cash conversion",
+        "highest deposit-cost resilience",
+        "cleanest capital-allocation signal"
+      ],
+      "requiredEvidence": ["peer group", "metric", "period", "source snippets for each ranked issuer"]
+    },
+    {
+      "type": "Portfolio alert",
+      "examples": [
+        "concentration risk",
+        "stale evidence",
+        "catalyst pressure"
+      ],
+      "requiredEvidence": ["exposure bucket", "event or risk driver", "source status", "next analyst action"]
+    }
+  ],
+  "traceStatuses": [
+    {
+      "status": "supported",
+      "meaning": "Claim is backed by source text, official URL, period, issuer, and reviewer status."
+    },
+    {
+      "status": "inferred",
+      "meaning": "Claim uses analyst judgment from cited evidence and needs explicit reasoning."
+    },
+    {
+      "status": "source-blocked",
+      "meaning": "Claim should not be exported as final because the source path is missing, stale, synthetic, or unreviewed."
+    },
+    {
+      "status": "rejected",
+      "meaning": "Claim conflicts with the source or overstates what the evidence supports."
+    }
+  ],
+  "reviewWorkflow": [
+    "Split each brief into material claims.",
+    "Attach source snippet, official URL, issuer, period, and document type.",
+    "Classify each claim as supported, inferred, source-blocked, or rejected.",
+    "Send blocked claims back to Source Studio, Intake Doctor, or Memo Review Room.",
+    "Export only after all material claims have reviewer status."
+  ],
+  "launchGate": {
+    "readyRule": "Claim Trace Inspector is pilot-ready when every exported brief can list material claims, trace statuses, evidence snippets, and unresolved gaps.",
+    "blockedRule": "If a claim depends on synthetic evidence or missing source text, the export must label it source-blocked."
+  }
+}

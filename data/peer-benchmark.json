@@ -1,5 +1,5 @@
 {
-  "version": "20260509-uae-06",
+  "version": "20260509-uae-11",
   "name": "MajlisAlpha UAE Peer Benchmark Matrix",
   "purpose": "Give analysts a source-first framework for comparing UAE issuers by sector, metric quality, risk, and valuation sensitivity.",
   "rankPolicy": "Do not publish a peer rank unless the metric, period, official source URL, and analyst reason are recorded together.",

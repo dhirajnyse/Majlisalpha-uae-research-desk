@@ -1,0 +1,86 @@
+{
+  "version": "20260509-uae-11",
+  "name": "MajlisAlpha UAE Disclosure Alert Watchtower",
+  "purpose": "Convert official UAE market notices into assigned research actions with source route, alert type, owner, SLA, and next workflow step.",
+  "alertPolicy": "No disclosure alert is actionable unless the official source route, issuer, event type, priority, owner, and next step are recorded.",
+  "sourceRoutes": [
+    {
+      "route": "ADX disclosures",
+      "coverage": ["ADX-listed issuer notices", "board decisions", "results", "dividend updates", "trading-status items"],
+      "defaultOwner": "source analyst"
+    },
+    {
+      "route": "DFM market disclosures",
+      "coverage": ["DFM-listed issuer notices", "results", "AGM items", "dividend notices", "corporate actions"],
+      "defaultOwner": "source analyst"
+    },
+    {
+      "route": "Nasdaq Dubai CANDI",
+      "coverage": ["Nasdaq Dubai announcements", "sukuk/bond notices", "international issuer disclosures"],
+      "defaultOwner": "capital-markets reviewer"
+    },
+    {
+      "route": "SCA and issuer IR",
+      "coverage": ["regulator context", "annual reports", "presentations", "governance and ownership context"],
+      "defaultOwner": "review analyst"
+    }
+  ],
+  "alertTypes": [
+    {
+      "type": "Results release",
+      "priority": "high",
+      "slaHours": 4,
+      "routeTo": ["Source Intake Doctor", "Claim Trace Inspector", "Peer Benchmark Matrix"]
+    },
+    {
+      "type": "Dividend or distribution change",
+      "priority": "high",
+      "slaHours": 4,
+      "routeTo": ["Portfolio Risk Radar", "Claim Trace Inspector", "Decision Journal"]
+    },
+    {
+      "type": "Board meeting or AGM",
+      "priority": "medium",
+      "slaHours": 24,
+      "routeTo": ["Catalyst Calendar", "Source Queue", "Decision Journal"]
+    },
+    {
+      "type": "Ownership or related-party update",
+      "priority": "high",
+      "slaHours": 8,
+      "routeTo": ["Company Dossier", "Portfolio Risk Radar", "Memo Review Room"]
+    },
+    {
+      "type": "Capital action or trading status",
+      "priority": "urgent",
+      "slaHours": 2,
+      "routeTo": ["Portfolio Risk Radar", "Claim Trace Inspector", "Decision Journal"]
+    }
+  ],
+  "triageFields": [
+    "officialUrl",
+    "sourceRoute",
+    "issuer",
+    "ticker",
+    "eventType",
+    "sourceTimestamp",
+    "priority",
+    "owner",
+    "slaHours",
+    "nextWorkflowStep",
+    "reviewStatus"
+  ],
+  "reviewStatuses": [
+    "new",
+    "duplicate",
+    "watch-only",
+    "source-ready",
+    "memo-required",
+    "claim-trace-required",
+    "decision-recorded"
+  ],
+  "launchGate": {
+    "readyRule": "Disclosure Alert Watchtower is pilot-ready when priority alerts have official URLs, owners, SLA, next workflow step, and review status.",
+    "blockedRule": "If an alert has no official route, it must stay watch-only or source-blocked rather than becoming an actionable research task."
+  }
+}

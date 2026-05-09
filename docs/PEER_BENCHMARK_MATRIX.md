@@ -4,7 +4,7 @@ The Peer Benchmark Matrix gives MajlisAlpha a repeatable comparison workflow. Th
 
 ## Peer Groups
 
-The v6 matrix starts with four groups:
+The matrix starts with four groups:
 
 - UAE Banks: FAB, ENBD, and DIB.
 - Property Developers: EMAAR and ALDAR.
