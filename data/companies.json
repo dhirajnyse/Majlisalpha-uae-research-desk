@@ -1,0 +1,542 @@
+[
+  {
+    "ticker": "IHC",
+    "name": "International Holding Company",
+    "sector": "Diversified holding company",
+    "revenue": 86000,
+    "growth": 16,
+    "grossMargin": 34.8,
+    "opMargin": 22.5,
+    "fcfMargin": 12,
+    "netDebt": 18500,
+    "shares": 2200,
+    "multiple": 18,
+    "risk": 54,
+    "sentiment": 67,
+    "thesis": "A diversified UAE holding platform with scale advantages, acquisition optionality, and disclosure-complexity watchpoints.",
+    "riskFactors": [
+      {
+        "title": "Portfolio complexity and look-through earnings quality",
+        "severity": "High",
+        "terms": [
+          "portfolio",
+          "acquisition",
+          "segment",
+          "earnings",
+          "complexity",
+          "disclosure"
+        ],
+        "body": "IHC requires a look-through review of segment contribution, related-party exposure, acquisition accounting, and cash conversion before headline earnings are treated as recurring."
+      },
+      {
+        "title": "Capital allocation and acquisition discipline",
+        "severity": "High",
+        "terms": [
+          "capital allocation",
+          "acquisition",
+          "investment",
+          "valuation",
+          "returns"
+        ],
+        "body": "The investment case depends on disciplined deployment of capital into assets that can compound cash flow rather than only expand reported scale."
+      },
+      {
+        "title": "Governance and transparency discount",
+        "severity": "Medium",
+        "terms": [
+          "governance",
+          "related party",
+          "board",
+          "disclosure",
+          "ownership"
+        ],
+        "body": "Large anchor ownership and complex subsidiaries can create a transparency discount unless disclosures clearly connect growth, cash flow, and shareholder returns."
+      }
+    ]
+  },
+  {
+    "ticker": "FAB",
+    "name": "First Abu Dhabi Bank",
+    "sector": "UAE banking",
+    "revenue": 34500,
+    "growth": 9,
+    "grossMargin": 44.2,
+    "opMargin": 38.5,
+    "fcfMargin": 24,
+    "netDebt": 0,
+    "shares": 10900,
+    "multiple": 12,
+    "risk": 38,
+    "sentiment": 73,
+    "thesis": "Systemically important UAE bank with deposit scale, corporate franchise strength, and rate-cycle sensitivity.",
+    "riskFactors": [
+      {
+        "title": "Rate-cycle and deposit-cost sensitivity",
+        "severity": "High",
+        "terms": [
+          "rates",
+          "deposit",
+          "funding",
+          "margin",
+          "nim",
+          "liquidity"
+        ],
+        "body": "Net interest margin depends on the balance between asset repricing and funding-cost pressure as UAE rates follow global monetary conditions."
+      },
+      {
+        "title": "Credit concentration and corporate cycle",
+        "severity": "Medium",
+        "terms": [
+          "credit",
+          "corporate",
+          "real estate",
+          "impairment",
+          "exposure"
+        ],
+        "body": "Corporate and government-linked exposure can be resilient, but the desk should monitor sector concentration, staging movement, and provisioning language."
+      },
+      {
+        "title": "Capital return versus growth balance",
+        "severity": "Medium",
+        "terms": [
+          "dividend",
+          "capital",
+          "cet1",
+          "growth",
+          "buyback"
+        ],
+        "body": "Strong capital supports dividends, but growth, cross-border expansion, and regulatory buffers can change capital return assumptions."
+      }
+    ]
+  },
+  {
+    "ticker": "ADNOCGAS",
+    "name": "ADNOC Gas",
+    "sector": "Integrated gas processing and LNG",
+    "revenue": 92000,
+    "growth": 8,
+    "grossMargin": 36.5,
+    "opMargin": 28.2,
+    "fcfMargin": 20,
+    "netDebt": 9800,
+    "shares": 76000,
+    "multiple": 15,
+    "risk": 42,
+    "sentiment": 75,
+    "thesis": "Contracted gas infrastructure exposure with dividend appeal, commodity linkage, and project execution watchpoints.",
+    "riskFactors": [
+      {
+        "title": "Commodity and contract pricing mix",
+        "severity": "High",
+        "terms": [
+          "gas",
+          "lng",
+          "commodity",
+          "pricing",
+          "contract",
+          "margin"
+        ],
+        "body": "Cash flow depends on the mix of regulated, contracted, and commodity-linked volumes. The desk should separate volume reliability from price sensitivity."
+      },
+      {
+        "title": "Expansion project execution",
+        "severity": "Medium",
+        "terms": [
+          "project",
+          "capex",
+          "expansion",
+          "commissioning",
+          "execution"
+        ],
+        "body": "Growth projects can support long-term volumes but may pressure near-term cash flow if commissioning or cost assumptions shift."
+      },
+      {
+        "title": "Dividend coverage discipline",
+        "severity": "Medium",
+        "terms": [
+          "dividend",
+          "free cash flow",
+          "coverage",
+          "debt",
+          "capex"
+        ],
+        "body": "A dividend-led thesis should be checked against free cash flow, capex cadence, and leverage rather than yield alone."
+      }
+    ]
+  },
+  {
+    "ticker": "ALDAR",
+    "name": "Aldar Properties",
+    "sector": "Real estate development and investment",
+    "revenue": 18000,
+    "growth": 14,
+    "grossMargin": 37.2,
+    "opMargin": 26.4,
+    "fcfMargin": 10,
+    "netDebt": 12500,
+    "shares": 7860,
+    "multiple": 14,
+    "risk": 47,
+    "sentiment": 72,
+    "thesis": "Abu Dhabi property platform with development momentum, recurring asset income, and cycle timing risk.",
+    "riskFactors": [
+      {
+        "title": "Development-cycle and handover timing",
+        "severity": "High",
+        "terms": [
+          "handover",
+          "development",
+          "presales",
+          "backlog",
+          "delivery"
+        ],
+        "body": "Revenue and cash conversion can shift with launch timing, construction progress, and handover schedules."
+      },
+      {
+        "title": "Interest-rate and mortgage affordability",
+        "severity": "Medium",
+        "terms": [
+          "rates",
+          "mortgage",
+          "affordability",
+          "demand",
+          "financing"
+        ],
+        "body": "Higher rates can affect buyer affordability and investor appetite even when Abu Dhabi demand stays structurally supported."
+      },
+      {
+        "title": "Land bank and capital deployment",
+        "severity": "Medium",
+        "terms": [
+          "land",
+          "capex",
+          "investment",
+          "yield",
+          "asset management"
+        ],
+        "body": "Returns depend on disciplined land use, recurring-income asset yields, and capital recycling."
+      }
+    ]
+  },
+  {
+    "ticker": "EAND",
+    "name": "e&",
+    "sector": "Telecom and digital services",
+    "revenue": 57000,
+    "growth": 6,
+    "grossMargin": 55.1,
+    "opMargin": 25.6,
+    "fcfMargin": 18,
+    "netDebt": 21000,
+    "shares": 8700,
+    "multiple": 13,
+    "risk": 35,
+    "sentiment": 70,
+    "thesis": "Defensive telecom cash engine with digital optionality and cross-border capital allocation risk.",
+    "riskFactors": [
+      {
+        "title": "Telecom maturity and ARPU pressure",
+        "severity": "Medium",
+        "terms": [
+          "arpu",
+          "subscriber",
+          "telecom",
+          "competition",
+          "pricing"
+        ],
+        "body": "The UAE telecom base is resilient, but growth depends on pricing, enterprise demand, and new digital-services monetisation."
+      },
+      {
+        "title": "International portfolio execution",
+        "severity": "Medium",
+        "terms": [
+          "international",
+          "acquisition",
+          "currency",
+          "portfolio",
+          "integration"
+        ],
+        "body": "Cross-border investments can diversify growth but introduce currency, integration, and governance complexity."
+      },
+      {
+        "title": "Technology capex and return discipline",
+        "severity": "Medium",
+        "terms": [
+          "capex",
+          "5g",
+          "fiber",
+          "cloud",
+          "return"
+        ],
+        "body": "Network and platform capex must convert into higher-value services rather than only capacity additions."
+      }
+    ]
+  },
+  {
+    "ticker": "EMAAR",
+    "name": "Emaar Properties",
+    "sector": "Dubai real estate and hospitality",
+    "revenue": 36000,
+    "growth": 13,
+    "grossMargin": 42.3,
+    "opMargin": 31.1,
+    "fcfMargin": 14,
+    "netDebt": 8200,
+    "shares": 8840,
+    "multiple": 13,
+    "risk": 45,
+    "sentiment": 74,
+    "thesis": "Dubai property and hospitality franchise with brand strength, presales visibility, and property-cycle sensitivity.",
+    "riskFactors": [
+      {
+        "title": "Dubai property-cycle normalisation",
+        "severity": "High",
+        "terms": [
+          "property",
+          "cycle",
+          "presales",
+          "pricing",
+          "demand"
+        ],
+        "body": "Presales and margins can stay strong in an upcycle, but the desk should watch pricing, cancellations, inventory, and buyer-mix changes."
+      },
+      {
+        "title": "Execution and handover concentration",
+        "severity": "Medium",
+        "terms": [
+          "handover",
+          "project",
+          "construction",
+          "delivery",
+          "backlog"
+        ],
+        "body": "Cash conversion relies on construction progress and timely handovers across large development phases."
+      },
+      {
+        "title": "Tourism and hospitality sensitivity",
+        "severity": "Medium",
+        "terms": [
+          "tourism",
+          "hospitality",
+          "mall",
+          "retail",
+          "occupancy"
+        ],
+        "body": "Recurring income benefits from tourism and retail traffic, but occupancy and spend can soften with global travel or consumer cycles."
+      }
+    ]
+  },
+  {
+    "ticker": "DEWA",
+    "name": "Dubai Electricity and Water Authority",
+    "sector": "Regulated utilities",
+    "revenue": 31000,
+    "growth": 5,
+    "grossMargin": 46.2,
+    "opMargin": 29.8,
+    "fcfMargin": 16,
+    "netDebt": 18500,
+    "shares": 50000,
+    "multiple": 11,
+    "risk": 30,
+    "sentiment": 76,
+    "thesis": "Regulated Dubai utility with visible demand, dividend appeal, and tariff/regulatory assumptions to monitor.",
+    "riskFactors": [
+      {
+        "title": "Regulatory return and tariff assumptions",
+        "severity": "Medium",
+        "terms": [
+          "tariff",
+          "regulated",
+          "return",
+          "demand",
+          "capacity"
+        ],
+        "body": "The stability case depends on regulatory frameworks, tariff recovery, demand growth, and allowed returns."
+      },
+      {
+        "title": "Energy-transition capex",
+        "severity": "Medium",
+        "terms": [
+          "renewable",
+          "solar",
+          "capex",
+          "transition",
+          "grid"
+        ],
+        "body": "Clean-energy and grid investments can strengthen the franchise but affect free cash flow timing."
+      },
+      {
+        "title": "Dividend coverage",
+        "severity": "Low",
+        "terms": [
+          "dividend",
+          "cash flow",
+          "coverage",
+          "debt"
+        ],
+        "body": "Dividend visibility is central to the thesis and should be checked against operating cash flow, capex, and leverage."
+      }
+    ]
+  },
+  {
+    "ticker": "DIB",
+    "name": "Dubai Islamic Bank",
+    "sector": "Islamic banking",
+    "revenue": 21000,
+    "growth": 10,
+    "grossMargin": 39.5,
+    "opMargin": 33.4,
+    "fcfMargin": 21,
+    "netDebt": 0,
+    "shares": 7220,
+    "multiple": 10,
+    "risk": 41,
+    "sentiment": 69,
+    "thesis": "Large Islamic banking franchise with funding scale, asset-quality monitoring, and rate-cycle upside/downside.",
+    "riskFactors": [
+      {
+        "title": "Asset-quality seasoning",
+        "severity": "High",
+        "terms": [
+          "asset quality",
+          "impairment",
+          "npl",
+          "provision",
+          "credit"
+        ],
+        "body": "Financing growth should be tested against stage migration, collateral quality, and provisioning language."
+      },
+      {
+        "title": "Funding cost and margin pressure",
+        "severity": "Medium",
+        "terms": [
+          "funding",
+          "deposit",
+          "profit rate",
+          "margin",
+          "liquidity"
+        ],
+        "body": "Deposit competition and profit-rate movement can affect spreads even with a strong Islamic banking franchise."
+      },
+      {
+        "title": "Real estate exposure concentration",
+        "severity": "Medium",
+        "terms": [
+          "real estate",
+          "construction",
+          "mortgage",
+          "collateral"
+        ],
+        "body": "Dubai property strength supports credit quality, but concentration should be watched through collateral and sector disclosures."
+      }
+    ]
+  },
+  {
+    "ticker": "ENBD",
+    "name": "Emirates NBD",
+    "sector": "UAE banking and wealth",
+    "revenue": 43000,
+    "growth": 11,
+    "grossMargin": 43.6,
+    "opMargin": 37.8,
+    "fcfMargin": 23,
+    "netDebt": 0,
+    "shares": 6310,
+    "multiple": 11,
+    "risk": 39,
+    "sentiment": 72,
+    "thesis": "Dubai-linked banking franchise with rate leverage, digital scale, and regional growth optionality.",
+    "riskFactors": [
+      {
+        "title": "Rate cycle and deposit beta",
+        "severity": "High",
+        "terms": [
+          "rates",
+          "deposit",
+          "funding",
+          "margin",
+          "nim"
+        ],
+        "body": "Earnings can benefit from higher rates, but deposit beta and liquidity competition may narrow the margin advantage."
+      },
+      {
+        "title": "Regional exposure and currency translation",
+        "severity": "Medium",
+        "terms": [
+          "regional",
+          "turkey",
+          "currency",
+          "translation",
+          "international"
+        ],
+        "body": "International operations add growth and diversification but can introduce currency and macro volatility."
+      },
+      {
+        "title": "Credit costs after rapid growth",
+        "severity": "Medium",
+        "terms": [
+          "credit cost",
+          "impairment",
+          "loan growth",
+          "npl"
+        ],
+        "body": "Strong loan growth should be matched against stage migration, watchlist loans, and provisioning coverage."
+      }
+    ]
+  },
+  {
+    "ticker": "AIRARABIA",
+    "name": "Air Arabia",
+    "sector": "Low-cost airline",
+    "revenue": 7200,
+    "growth": 12,
+    "grossMargin": 27.5,
+    "opMargin": 17.2,
+    "fcfMargin": 9,
+    "netDebt": 1800,
+    "shares": 4670,
+    "multiple": 12,
+    "risk": 50,
+    "sentiment": 68,
+    "thesis": "Regional low-cost aviation exposure with tourism tailwinds, fuel sensitivity, and fleet growth execution risk.",
+    "riskFactors": [
+      {
+        "title": "Fuel cost and yield volatility",
+        "severity": "High",
+        "terms": [
+          "fuel",
+          "yield",
+          "fare",
+          "load factor",
+          "margin"
+        ],
+        "body": "Margins depend on the balance between fuel cost, fare yields, load factors, and ancillary revenue."
+      },
+      {
+        "title": "Fleet delivery and capacity discipline",
+        "severity": "Medium",
+        "terms": [
+          "fleet",
+          "aircraft",
+          "delivery",
+          "capacity",
+          "route"
+        ],
+        "body": "Growth depends on aircraft availability, route economics, and disciplined capacity deployment."
+      },
+      {
+        "title": "Travel demand and geopolitical disruption",
+        "severity": "Medium",
+        "terms": [
+          "travel",
+          "tourism",
+          "geopolitical",
+          "route",
+          "demand"
+        ],
+        "body": "Regional travel demand is supportive, but route disruptions or weaker tourism can affect utilisation and yields."
+      }
+    ]
+  }
+]

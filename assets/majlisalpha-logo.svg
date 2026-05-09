@@ -1,0 +1,31 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MajlisAlpha 3D logo</title>
+  <desc id="desc">A dimensional UAE capital markets mark combining a majlis arch, alpha signal, and glass research lens.</desc>
+  <defs>
+    <linearGradient id="sand" x1="96" y1="96" x2="618" y2="626" gradientUnits="userSpaceOnUse"><stop stop-color="#F8F4EA"/><stop offset="1" stop-color="#D9C28F"/></linearGradient>
+    <linearGradient id="emerald" x1="154" y1="125" x2="587" y2="594" gradientUnits="userSpaceOnUse"><stop stop-color="#21A67A"/><stop offset="0.5" stop-color="#0E5F55"/><stop offset="1" stop-color="#082B32"/></linearGradient>
+    <linearGradient id="gold" x1="206" y1="146" x2="552" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE59A"/><stop offset="0.48" stop-color="#C89638"/><stop offset="1" stop-color="#7B4A12"/></linearGradient>
+    <linearGradient id="glass" x1="248" y1="176" x2="498" y2="452" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset="0.42" stop-color="#BFEFE3"/><stop offset="1" stop-color="#21806E"/></linearGradient>
+    <filter id="shadow" x="44" y="48" width="642" height="648" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feDropShadow dx="0" dy="32" stdDeviation="28" flood-color="#062B2F" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="720" height="720" rx="150" fill="url(#sand)"/>
+  <g filter="url(#shadow)">
+    <path d="M128 548V256C128 181 189 120 264 120H456C531 120 592 181 592 256V548H486V274C486 218 442 174 386 174H334C278 174 234 218 234 274V548H128Z" fill="#073238"/>
+    <path d="M162 548V264C162 207 208 162 265 162H455C512 162 558 207 558 264V548H488V280C488 209 431 152 360 152C289 152 232 209 232 280V548H162Z" fill="url(#emerald)"/>
+    <path d="M232 548H128L162 596H266L232 548Z" fill="#06272D"/>
+    <path d="M558 548H488L522 596H626L592 548H558Z" fill="#06272D"/>
+    <circle cx="362" cy="352" r="144" fill="#06272D"/>
+    <circle cx="344" cy="334" r="144" fill="url(#gold)"/>
+    <circle cx="344" cy="334" r="98" fill="url(#glass)"/>
+    <path d="M432 438L548 554" stroke="#061F24" stroke-width="52" stroke-linecap="round"/>
+    <path d="M418 424L534 540" stroke="url(#gold)" stroke-width="52" stroke-linecap="round"/>
+    <path d="M262 398L342 232L430 398" stroke="#061F24" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M246 382L326 216L414 382" stroke="#FDF8E9" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M246 382L326 216L414 382" stroke="#0E5F55" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M292 324H374" stroke="url(#gold)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M470 216H512V390H470V216Z" fill="#06272D"/>
+    <path d="M454 200H496V374H454V200Z" fill="url(#gold)"/>
+    <path d="M214 180C277 124 400 118 481 177" stroke="white" stroke-opacity="0.38" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="300" cy="282" r="17" fill="white" fill-opacity="0.48"/>
+  </g>
+</svg>
