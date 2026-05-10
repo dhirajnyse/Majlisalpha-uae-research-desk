@@ -1,4 +1,4 @@
-# MajlisAlpha Data Provenance
+﻿# MajlisAlpha Data Provenance
 
 MajlisAlpha should earn trust by showing where every UAE market answer came from. A source is production-ready only when an analyst can identify the issuer, market, source type, period, publication date, official URL, and exact citation sections.
 
@@ -11,3 +11,4 @@ MajlisAlpha should earn trust by showing where every UAE market answer came from
 ## Required Fields
 
 Every source record needs ticker, company, type, period, date, sourceStatus, sourceLabel, sourceUrl, and one or more cited sections. REAL source records require https URLs and enough section depth for a reader to check the claim. If MajlisAlpha cannot show the source, period, citation section, and quality label, it should not present the output as investment-grade research.
+

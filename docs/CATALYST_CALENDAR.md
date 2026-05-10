@@ -1,4 +1,4 @@
-# MajlisAlpha UAE Catalyst Calendar
+﻿# MajlisAlpha UAE Catalyst Calendar
 
 The Catalyst Calendar turns MajlisAlpha from a research desk into a recurring market workflow. It helps users know what to watch next, but it stays source-first: no catalyst date should be shown as real unless it is backed by an official exchange, issuer, regulator, or government URL.
 
@@ -51,3 +51,4 @@ End of day:
 ## Launch Gate
 
 The calendar is launch-ready when at least three catalyst streams have REAL source-backed items, each linked to a memo, company dossier, or decision-journal entry. If the calendar is only a list of expected dates, it is not ready.
+

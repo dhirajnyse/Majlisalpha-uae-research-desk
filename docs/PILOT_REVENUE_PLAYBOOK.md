@@ -1,4 +1,4 @@
-# MajlisAlpha Pilot Revenue Playbook
+﻿# MajlisAlpha Pilot Revenue Playbook
 
 MajlisAlpha should not wait for a perfect data pipeline before learning whether the UAE market wants the product. The pilot is designed to test one practical question: will serious UAE market users pay for cited disclosure answers, real-source imports, watchlists, and committee-ready research exports?
 
@@ -81,3 +81,4 @@ Green gate:
 - No synthetic evidence presented as real research.
 
 If the gate is yellow, keep the pilot small and interview users. If the gate is red, improve positioning and source workflow before adding more features.
+

@@ -1,4 +1,4 @@
-# MajlisAlpha Ownership Pulse Monitor
+﻿# MajlisAlpha Ownership Pulse Monitor
 
 Ownership Pulse Monitor tracks who owns the UAE signal before the market story changes. It turns major-holder movement, government-linked ownership, free float, foreign-ownership room, insider activity, and strategic stake changes into source-backed research events.
 
@@ -52,3 +52,4 @@ The monitor records each ownership signal as an auditable item:
 Ownership Pulse Monitor is pilot-ready when every material ownership signal has holder identity, stake level, effective date, official URL, ticker, research impact, owner, and reviewer status.
 
 It is not ready when the desk cannot prove who owns the stake, how much changed, when it changed, why it matters, and who reviewed it.
+

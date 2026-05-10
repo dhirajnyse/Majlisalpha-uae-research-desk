@@ -1,4 +1,4 @@
-# MajlisAlpha AED Scenario Lab
+﻿# MajlisAlpha AED Scenario Lab
 
 AED Scenario Lab turns UAE evidence into auditable valuation cases. It connects disclosures, macro drivers, ownership signals, corporate actions, peer context, and answer-quality checks into base, upside, downside, rate-shock, and corporate-action-adjusted scenarios.
 
@@ -52,3 +52,4 @@ The lab records each scenario as an auditable item:
 AED Scenario Lab is pilot-ready when every exported scenario has ticker, scenario type, assumption provenance, official URL, evidence date, sensitivity range, affected metrics, owner, reviewer status, and unresolved gaps.
 
 It is not ready when a material assumption is unsourced, stale, unreviewed, missing sensitivity range, or disconnected from the evidence modules.
+

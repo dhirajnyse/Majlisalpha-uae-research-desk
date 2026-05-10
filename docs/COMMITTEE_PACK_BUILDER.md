@@ -1,4 +1,4 @@
-# MajlisAlpha Committee Pack Builder
+﻿# MajlisAlpha Committee Pack Builder
 
 Committee Pack Builder turns UAE research into a review-ready decision packet. It combines the desk's thesis, sources, scenarios, risks, quality checks, and compliance controls into one auditable package.
 
@@ -52,3 +52,4 @@ The pack records:
 Committee Pack Builder is pilot-ready when each pack has source list, scenario table, risk register, claim trace status, quality score, reviewer status, disclaimer, unresolved gaps, and export timestamp.
 
 It is not ready when any material claim, assumption, risk, or scenario lacks source provenance or reviewer status.
+

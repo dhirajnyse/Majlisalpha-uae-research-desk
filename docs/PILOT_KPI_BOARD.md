@@ -1,4 +1,4 @@
-# MajlisAlpha Pilot KPI Board
+﻿# MajlisAlpha Pilot KPI Board
 
 Pilot KPI Board gives MajlisAlpha a founder/operator view of the UAE pilot. It tells the team whether the product is ready to scale, needs more interviews, or should stay in a narrow trust-building loop.
 
@@ -37,3 +37,4 @@ Review KPIs every three pilot days. Any yellow or red metric should create a Mis
 ## Scale Gate
 
 Scale only when activated usage, source readiness, answer quality, repeat behavior, and paid intent are all visible. If users like the demo but do not bring real questions or source material, keep the pilot narrow.
+

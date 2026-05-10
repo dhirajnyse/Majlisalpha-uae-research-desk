@@ -1,4 +1,4 @@
-# MajlisAlpha Analyst Mission Control
+﻿# MajlisAlpha Analyst Mission Control
 
 Analyst Mission Control is the operating queue for MajlisAlpha. It turns alerts, source gaps, claim issues, peer checks, portfolio risks, and pilot customer requests into owned work.
 
@@ -46,3 +46,4 @@ Each active task needs:
 ## Launch Gate
 
 Mission Control is pilot-ready when every high-priority alert, claim gap, and portfolio risk has owner, SLA, next action, and review status. If owner, source state, or next action is missing, the task cannot be marked ready-to-publish.
+

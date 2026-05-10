@@ -1,4 +1,4 @@
-# MajlisAlpha Answer Quality Lab
+﻿# MajlisAlpha Answer Quality Lab
 
 Answer Quality Lab gives MajlisAlpha a repeatable evaluation layer. It checks whether a generated answer is source-backed, UAE-specific, traceable, logical, useful, and ready for a pilot user.
 
@@ -47,3 +47,4 @@ Failure reasons should create Mission Control tasks rather than disappear into n
 ## Launch Gate
 
 The lab is pilot-ready when exported answers can show score band, dimension scores, failure reasons, reviewer status, and next action. If the answer cannot explain why it passed, it should not be exported.
+

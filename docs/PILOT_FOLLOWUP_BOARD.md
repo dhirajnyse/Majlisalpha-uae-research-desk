@@ -1,4 +1,4 @@
-# Pilot Follow-Up Board
+﻿# Pilot Follow-Up Board
 
 The Pilot Follow-Up Board turns MajlisAlpha demo conversations into an operating queue for the next user touch. It sits after the Pilot Session Command Center because a session is only useful when it produces a clear next action, source task, pricing test, or conversion blocker.
 
@@ -29,3 +29,4 @@ The summary tiles are designed for fast launch review:
 ## Export
 
 The board can export JSON for a structured pilot archive or copy a Markdown follow-up report for a daily sales/research standup. These records are local browser workflow notes and are not investment advice.
+

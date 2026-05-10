@@ -1,4 +1,4 @@
-# Pilot Conversion Pipeline
+﻿# Pilot Conversion Pipeline
 
 The Pilot Conversion Pipeline turns outreach replies into a measurable launch board. It completes the pilot loop after session logging, follow-up capture, and outreach drafting by showing which accounts are moving toward paid use and which blockers still need work.
 
@@ -23,3 +23,4 @@ The board tracks open deals, weighted monthly recurring revenue, warm replies, p
 ## Review
 
 The pipeline can be exported as JSON or copied as a Markdown report. These are product and sales workflow notes for MajlisAlpha pilot operations and are not investment advice.
+

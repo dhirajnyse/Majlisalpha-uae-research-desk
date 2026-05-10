@@ -1,4 +1,4 @@
-# MajlisAlpha UAE Source Playbook
+﻿# MajlisAlpha UAE Source Playbook
 
 MajlisAlpha should move from synthetic evidence to verified UAE evidence in a controlled order. The first goal is not maximum coverage; it is a small source library that an analyst would trust.
 
@@ -40,3 +40,4 @@ If one field is uncertain, keep the record as `imported` and leave the memo in a
 4. Paste each source into Source Studio.
 5. Run Source Intake Doctor before marking anything REAL.
 6. Export the source pack JSON and review it before replacing `data/documents.json`.
+

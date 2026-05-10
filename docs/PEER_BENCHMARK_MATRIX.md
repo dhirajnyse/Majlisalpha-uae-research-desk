@@ -1,4 +1,4 @@
-# MajlisAlpha Peer Benchmark Matrix
+﻿# MajlisAlpha Peer Benchmark Matrix
 
 The Peer Benchmark Matrix gives MajlisAlpha a repeatable comparison workflow. The goal is not to produce a simple ranking table. The goal is to show why one UAE issuer looks stronger, weaker, cheaper, riskier, or more durable than another using source-backed evidence.
 
@@ -47,3 +47,4 @@ If the answer cannot cite the source text, mark the cell as source-blocked. A bl
 ## Launch Gate
 
 The matrix is ready for pilot users when at least two peer groups have reviewed comparison briefs, each with cited metrics, source snippets, and a clear reviewer decision. If the matrix has attractive cards but no traceable source logic, keep it in demo mode.
+

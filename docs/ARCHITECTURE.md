@@ -1,4 +1,4 @@
-# MajlisAlpha Architecture
+﻿# MajlisAlpha Architecture
 
 MajlisAlpha is a static GitHub Pages application for UAE market research. The first build keeps all retrieval, source import, memo generation, review logs, and AED valuation scenarios in the browser so the product can be shipped without backend infrastructure.
 
@@ -12,3 +12,4 @@ MajlisAlpha is a static GitHub Pages application for UAE market research. The fi
 ## Production Direction
 
 The next backend should add source ingestion for ADX, DFM, Nasdaq Dubai CANDI, SCA pages, and company IR sites; OCR/PDF parsing; reviewed source storage; user accounts; audit logs; and scheduled disclosure refresh jobs. The product should keep every answer tied to source passages, source quality labels, and analyst review decisions.
+

@@ -1,4 +1,4 @@
-# Pilot Outreach Composer
+﻿# Pilot Outreach Composer
 
 The Pilot Outreach Composer turns MajlisAlpha follow-up records into usable next-touch drafts for WhatsApp, email, LinkedIn, and call scripts. It sits after the Follow-Up Board so the product can move from logged learning to concrete pilot conversion activity.
 
@@ -29,3 +29,4 @@ The composer supports four formats:
 ## Review
 
 Drafts can be copied, exported as JSON, or cleared from local browser storage. These are product and sales workflow notes, not investment advice, and should not imply a recommendation about any UAE security.
+

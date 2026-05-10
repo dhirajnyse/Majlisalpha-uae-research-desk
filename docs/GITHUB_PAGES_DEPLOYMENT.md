@@ -1,4 +1,4 @@
-# MajlisAlpha GitHub Pages Deployment
+﻿# MajlisAlpha GitHub Pages Deployment
 
 Use this checklist whenever a new MajlisAlpha release is uploaded to GitHub Pages.
 
@@ -64,15 +64,26 @@ After deployment:
 11. Open `Mission control`.
 12. Open `Quality lab`.
 13. Open `Customer signals`.
-14. Open `Pilot KPI`.
-15. Open `Compliance audit`.
-16. Open `Refresh scheduler`.
-17. Open `Corporate actions`.
-18. Open `Ownership pulse`.
-19. Open `Macro radar`.
-20. Open `Scenario lab`.
-21. Open `Committee pack`.
-22. Open one official source link in a new tab.
-23. Export Markdown or PDF from a generated brief.
+14. Open `Investor Momentum Ledger`.
+15. Open `Investor Update Composer`.
+16. Open `Investor Objection Desk`.
+17. Open `Investor Commitment Tracker`.
+18. Open `Investor Close Plan Room`.
+19. Open `Investor Terms & Follow-Up Room`.
+20. Open `Investor IC Memo Room`.
+21. Open `Investor Decision Room`.
+22. Open `Funding Round Command Center`.
+23. Open `Board Pack War Room`.
+24. Open `Pilot KPI`.
+25. Open `Compliance audit`.
+26. Open `Refresh scheduler`.
+27. Open `Corporate actions`.
+28. Open `Ownership pulse`.
+29. Open `Macro radar`.
+30. Open `Scenario lab`.
+31. Open `Committee pack`.
+32. Open one official source link in a new tab.
+33. Export Markdown or PDF from a generated brief.
 
 If the public URL returns 404 after a green Pages build, wait two to five minutes and hard refresh. If it still fails, check repository name casing and Pages branch/root settings.
+

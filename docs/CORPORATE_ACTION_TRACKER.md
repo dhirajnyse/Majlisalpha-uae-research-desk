@@ -1,4 +1,4 @@
-# MajlisAlpha Corporate Action Tracker
+﻿# MajlisAlpha Corporate Action Tracker
 
 Corporate Action Tracker turns UAE issuer events into source-backed research work. It gives the desk a clean way to follow dividends, board decisions, AGMs, rights issues, capital changes, and trading status updates without mixing official evidence with loose market commentary.
 
@@ -50,3 +50,4 @@ The tracker records each event as an auditable source item:
 Corporate Action Tracker is pilot-ready when every material action has event type, official URL, dates, ticker, economic impact, owner, and reviewer status.
 
 It is not ready when the desk cannot prove where the event came from, when it happened, why it matters, and who reviewed it.
+

@@ -1,4 +1,4 @@
-# MajlisAlpha Macro & Rates Radar
+﻿# MajlisAlpha Macro & Rates Radar
 
 Macro & Rates Radar connects company answers to the UAE macro tape. It helps MajlisAlpha explain whether an issuer signal is being shaped by rates, oil, the AED/USD peg context, real estate liquidity, bank funding, inflation pressure, or government spending.
 
@@ -49,3 +49,4 @@ The radar records each macro driver as an auditable item:
 Macro & Rates Radar is pilot-ready when every material macro driver has driver type, source route, official URL, observation date, affected tickers, assumption impact, owner, and reviewer status.
 
 It is not ready when the desk cannot prove the driver source, date, affected ticker mapping, assumption impact, and reviewer decision.
+

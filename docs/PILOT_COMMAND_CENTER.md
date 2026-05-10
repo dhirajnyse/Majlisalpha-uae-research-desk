@@ -1,4 +1,4 @@
-# MajlisAlpha Pilot Command Center
+﻿# MajlisAlpha Pilot Command Center
 
 The Pilot Command Center is the operating plan for turning MajlisAlpha from a strong static prototype into a UAE research workflow that can be tested with real evidence.
 
@@ -31,3 +31,4 @@ MajlisAlpha should be called pilot-ready only when:
 ## Next Product Move
 
 After the first sprint, add a small backend only for ingestion and audit storage. Keep the current GitHub Pages shell as the product surface until the source workflow and pricing signal are proven.
+

@@ -1,4 +1,4 @@
-# MajlisAlpha Claim Trace Inspector
+﻿# MajlisAlpha Claim Trace Inspector
 
 Claim Trace Inspector is the trust layer for MajlisAlpha briefs. It makes each material claim inspectable before the answer becomes a PDF, committee memo, or saved research note.
 
@@ -38,3 +38,4 @@ Use four statuses:
 ## Launch Gate
 
 The inspector is pilot-ready when every exported brief can list material claims, trace statuses, evidence snippets, and unresolved gaps. If a claim depends on synthetic evidence or missing source text, the export must label it source-blocked.
+

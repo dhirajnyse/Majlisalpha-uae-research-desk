@@ -1,4 +1,4 @@
-# MajlisAlpha Compliance Audit Center
+﻿# MajlisAlpha Compliance Audit Center
 
 Compliance Audit Center keeps MajlisAlpha clear, reviewable, and safe for pilot export. It does not turn the product into legal or investment advice. It gives the team the controls needed to keep research outputs source-backed, non-advisory, and auditable.
 
@@ -55,3 +55,4 @@ Each exported brief should carry:
 - Export timestamp.
 
 If an output contains source-blocked material, missing disclaimer, or unreviewed claims, it must not be marked share-ready.
+

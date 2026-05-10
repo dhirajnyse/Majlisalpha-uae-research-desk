@@ -1,4 +1,4 @@
-# MajlisAlpha Disclosure Alert Watchtower
+﻿# MajlisAlpha Disclosure Alert Watchtower
 
 Disclosure Alert Watchtower converts UAE market notices into assigned research actions. It is the operating layer between official sources and the rest of the MajlisAlpha workflow.
 
@@ -47,3 +47,4 @@ Each actionable alert needs:
 ## Launch Gate
 
 The watchtower is pilot-ready when priority alerts have official URLs, owners, SLA, next workflow step, and review status. If the source route is missing, the item should not become an actionable research task.
+

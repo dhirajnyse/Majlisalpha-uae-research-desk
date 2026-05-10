@@ -1,4 +1,4 @@
-# MajlisAlpha Portfolio Risk Radar
+﻿# MajlisAlpha Portfolio Risk Radar
 
 Portfolio Risk Radar turns MajlisAlpha from a company research desk into a portfolio triage workflow. It helps analysts decide which UAE exposure deserves attention first based on concentration, evidence freshness, catalyst pressure, and required next action.
 
@@ -43,3 +43,4 @@ If the evidence is stale, synthetic, or unreviewed, the radar should label the i
 ## Launch Gate
 
 The radar is pilot-ready when each watchlist bucket has a current source status, catalyst status, concentration note, and next action. If the portfolio view cannot explain why a holding is green, yellow, red, or source-blocked, keep it in demo mode.
+

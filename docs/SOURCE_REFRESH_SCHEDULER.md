@@ -1,4 +1,4 @@
-# MajlisAlpha Source Refresh Scheduler
+﻿# MajlisAlpha Source Refresh Scheduler
 
 Source Refresh Scheduler keeps MajlisAlpha honest about source freshness. It turns official UAE source monitoring into an operating cadence so stale evidence becomes assigned work instead of quietly leaking into answers.
 
@@ -54,3 +54,4 @@ These fields make freshness auditable. They also allow the desk to show when an 
 Source Refresh Scheduler is pilot-ready when priority routes have owners, freshness windows, last-checked timestamps, official URLs, and escalation paths.
 
 It is not ready when any pilot-critical answer depends on a stale, blocked, unreviewed, or unlinked source route.
+

@@ -1,4 +1,4 @@
-# MajlisAlpha Customer Signal Room
+﻿# MajlisAlpha Customer Signal Room
 
 Customer Signal Room turns pilot conversations into product evidence. It helps the team separate compliments from demand, objections from confusion, and real revenue signals from polite interest.
 
@@ -42,3 +42,4 @@ Use four decisions:
 ## Launch Gate
 
 The room is pilot-ready when every roadmap decision links to user segment, feedback evidence, frequency, owner, and Mission Control task. Do not build from praise alone; require repeated demand, paid intent, or a specific trust objection.
+
